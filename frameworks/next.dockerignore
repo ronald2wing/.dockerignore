@@ -1,0 +1,24 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# NEXT.JS DOCKERIGNORE TEMPLATE
+# ============================================
+# For Next.js projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Next.js-specific patterns.
+# Combine with language templates (Node.dockerignore, TypeScript.dockerignore)
+# and category templates (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# NEXTJS SPECIFIC PATTERNS
+# -----------------------------------------
+
+.next/
+.next/cache/
+.next/standalone/
+.next/telemetry/
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

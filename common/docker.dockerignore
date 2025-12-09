@@ -1,0 +1,72 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# DOCKER DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding Docker specific files.
+# CATEGORY TEMPLATE - Contains Docker-specific patterns.
+# Combine with other templates as needed for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# DOCKER SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Docker Desktop and CLI configuration
+.docker/
+.dockercfg
+.dockerconfig
+.dockerconfig.json
+.dockerignore
+
+# Docker build cache and temporary files
+.docker-build/
+.docker-cache/
+.docker-context/
+.docker-tmp/
+docker-build/
+docker-cache/
+docker-context/
+docker-tmp/
+
+# Docker Compose override and development files
+docker-compose.override.yml
+docker-compose.dev.yml
+docker-compose.local.yml
+docker-compose.test.yml
+docker-compose.ci.yml
+docker-compose.debug.yml
+
+# Docker test and example files
+Dockerfile.test
+Dockerfile.dev
+Dockerfile.local
+Dockerfile.example
+docker-compose.example.yml
+
+# Docker security scan reports
+docker-security-scan.json
+docker-vulnerability-report.json
+trivy-report.json
+grype-report.json
+snyk-report.json
+
+# Docker build artifacts and logs
+docker-build.log
+docker-build-output/
+docker-logs/
+
+# Docker volume and network configuration
+docker-volumes/
+docker-networks/
+
+# ============================================
+# CATEGORY TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================
+# Combine with:
+# 1. Language templates (Node.dockerignore, Python.dockerignore, Java.dockerignore, etc.)
+# 2. Framework templates (React.dockerignore, Django.dockerignore, etc.)
+# 3. Other category templates (Security.dockerignore, Cache.dockerignore, Logs.dockerignore, etc.)
+# 4. IDE templates (VSCode.dockerignore, IntelliJ.dockerignore, etc.)
+# 5. Operating system templates (Linux.dockerignore, macOS.dockerignore, Windows.dockerignore)
+# ============================================

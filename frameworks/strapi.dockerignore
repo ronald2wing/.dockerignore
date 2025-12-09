@@ -1,0 +1,182 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# STRAPI DOCKERIGNORE TEMPLATE
+# ============================================
+# For Strapi projects (Node.js headless CMS).
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Strapi-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# STRAPI SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Strapi build artifacts
+/.astro/
+/.cache/
+/.next/
+/.nuxt/
+/.svelte-kit/
+/.strapi/
+/.turbo/
+/build/
+/dist/
+
+# Strapi dependency directories
+/.npm/
+/.parcel-cache/
+/.pnpm/
+/.yarn/
+/node_modules/
+
+# Strapi cache and log directories
+/.logs/
+/.strapi/cache/
+/.strapi/logs/
+/logs/
+/var/cache/
+/var/log/
+
+# Strapi uploads and media files (development)
+/public/uploads/
+/uploads/
+/media/
+/static/
+/assets/
+
+# Strapi test files and reports
+/tests/
+/test/
+/coverage/
+/.nyc_output/
+/test-results/
+/playwright-report/
+/vitest-reports/
+/jest.config.js
+/jest.config.ts
+/vitest.config.js
+/vitest.config.ts
+/cypress.config.js
+/cypress.config.ts
+/playwright.config.js
+/playwright.config.ts
+
+# Strapi package management files
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+/bun.lockb
+/Gruntfile.js
+/gulpfile.js
+/webpack.config.js
+/webpack.config.ts
+/vite.config.js
+/vite.config.ts
+/rollup.config.js
+/rollup.config.ts
+
+# Strapi environment and configuration files
+/.env
+/.env.*
+/.env.local
+/.env.production
+/.env.development
+/.env.test
+/.env.staging
+/*.key
+/*.pem
+/*.crt
+/*.cert
+/config/env/*.js
+/config/env/*.json
+/config/database.js
+/config/database.json
+/config/server.js
+/config/server.json
+/config/admin.js
+/config/admin.json
+/config/plugins.js
+/config/plugins.json
+
+# Strapi TypeScript compilation files
+/*.tsbuildinfo
+/tsconfig.tsbuildinfo
+/.tsbuildinfo
+/dist-ts/
+/out-tsc/
+
+# Strapi cache and temporary files
+/.tmp/
+/tmp/
+/temp/
+/*.tmp
+/*.temp
+/*.cache
+
+# Strapi log files
+/*.log
+/debug.log
+/error_log
+
+# Strapi backup and migration files
+/backups/
+/exports/
+*.sql
+*.sqlite
+*.sql.gz
+
+# Strapi database files
+/.data/
+/*.db
+/*.sqlite
+/*.sqlite3
+/data/
+/database/
+
+# Strapi admin panel build files
+/admin/build/
+/admin/dist/
+/.strapi/admin/
+
+# Strapi documentation and examples
+/docs/
+/documentation/
+/examples/
+/samples/
+/patches/
+
+# Strapi IDE and editor files
+/.idea/
+/.vscode/
+/.vs/
+/.sublime-*
+/*.sublime-*
+/*.code-workspace
+/*.iml
+/*.ipr
+/*.iws
+
+# Strapi OS metadata files
+/.DS_Store
+/.DS_Store?
+/._*
+/.Spotlight-V100
+/.Trashes
+/desktop.ini
+/ehthumbs.db
+/Thumbs.db
+/$RECYCLE.BIN/
+/*.lnk
+
+# Strapi plugin development files
+/src/admin/
+/src/extensions/
+/plugins/
+/extensions/
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

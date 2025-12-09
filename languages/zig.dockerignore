@@ -1,0 +1,87 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# ZIG DOCKERIGNORE TEMPLATE
+# ============================================
+# For Zig projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# and category templates (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# ZIG SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Zig build artifacts
+/zig-cache/
+/zig-out/
+/build/
+/dist/
+/out/
+/target/
+/bin/
+/obj/
+
+# Zig package and dependency directories
+/.zig/
+/zig/
+/deps/
+/dependencies/
+/vendor/
+
+# Zig package manager files
+/zig.mod
+/zig.lock
+/build.zig
+/build.zig.zon
+/*.zon
+
+# Zig compilation artifacts
+/*.o
+/*.obj
+/*.a
+/*.lib
+/*.so
+/*.dylib
+/*.dll
+/*.exe
+/*.wasm
+
+# Zig debug symbols
+/*.debug
+/*.pdb
+/*.dSYM/
+/*.dwarf
+
+# Zig test and coverage reports
+/coverage/
+/.coverage
+/html-report/
+/test-results/
+/test-output/
+/*.test
+/*.test.*
+
+# Zig documentation
+/docs/_build/
+/docs/build/
+/_site/
+/site/
+/apidoc/
+/api-docs/
+
+# Zig generated files
+/generated/
+/gen/
+/*.generated.zig
+/*.generated.*
+
+# Zig backup and old files
+*.zig.old
+*.zig.bak
+
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE - COMBINE WITH CATEGORY TEMPLATES
+# ============================================

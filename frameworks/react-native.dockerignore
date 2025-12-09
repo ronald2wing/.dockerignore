@@ -1,0 +1,108 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# REACT NATIVE DOCKERIGNORE TEMPLATE
+# ============================================
+# For React Native projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only React-native-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# REACT NATIVE SPECIFIC PATTERNS
+# -----------------------------------------
+
+# React Native build artifacts
+android/build/
+android/.gradle/
+android/app/build/
+android/app/.cxx/
+ios/build/
+ios/Pods/
+ios/.xcode/
+DerivedData/
+*.xcworkspace/
+*.xcodeproj/
+
+# React Native cache and temporary files
+.metro-cache/
+
+# React Native package management
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+.npm/
+.yarn/
+.pnpm/
+Podfile.lock
+
+# React Native configuration files
+metro.config.*.js
+metro.config.*.ts
+rn-cli.config.*.js
+
+# React Native IDE files
+.xcuserdata/
+
+# React Native test and coverage
+test/
+tests/
+__tests__/
+__mocks__/
+jest.config.*
+jest.setup.*
+*.test.js
+*.test.ts
+*.test.jsx
+*.test.tsx
+*.spec.js
+*.spec.ts
+*.spec.jsx
+*.spec.tsx
+
+# React Native security files
+*.keystore
+*.jks
+*.mobileprovision
+*.provisionprofile
+
+# React Native documentation
+docs/
+documentation/
+examples/
+samples/
+
+# React Native OS metadata
+
+# React Native backup files
+*.rar
+*.7z
+
+# React Native development tools
+.expo/
+.expo-shared/
+.husky/
+.lintstagedrc*
+
+# React Native bundle files
+*.bundle
+*.bundle.map
+*.jsbundle
+*.jsbundle.map
+
+# React Native asset catalogs
+android/app/src/main/assets/
+ios/Assets.xcassets/
+
+# React Native Gradle files (keep wrapper jar)
+gradle/wrapper/gradle-wrapper.properties
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/
+gradle.properties
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

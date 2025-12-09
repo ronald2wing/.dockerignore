@@ -1,0 +1,88 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# CODEIGNITER DOCKERIGNORE TEMPLATE
+# ============================================
+# For CodeIgniter projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Codeigniter-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# CODEIGNITER SPECIFIC PATTERNS
+# -----------------------------------------
+
+# CodeIgniter core files that should not be in production
+/CHANGELOG.md
+/CODE_OF_CONDUCT.md
+/CONTRIBUTING.md
+/LICENSE
+/README.md
+
+# CodeIgniter development and testing files
+/.php-cs-fixer.dist.php
+/.php-cs-fixer.php
+/.phpcs.xml
+/.phpcs.xml.dist
+/phpcs.xml
+/phpcs.xml.dist
+/phpunit.xml
+/phpunit.xml.dist
+
+# CodeIgniter build artifacts
+/application/cache/
+/application/logs/
+/writable/
+
+# CodeIgniter backup and migration files
+*.sql
+*.sql.gz
+*.sqlite
+/backup/
+/backups/
+
+# CodeIgniter cache and log directories
+/application/session/
+/writable/cache/
+/writable/logs/
+/writable/session/
+/writable/uploads/
+
+# CodeIgniter security and configuration files
+/application/config/custom/
+/application/config/development/
+/application/config/local/
+/application/config/staging/
+/application/config/testing/
+
+# CodeIgniter debug and log files
+/error_log
+/php-error.log
+/php-fpm-error.log
+
+# CodeIgniter temporary files
+/writable/tmp/
+
+# CodeIgniter documentation and examples
+/user_guide/
+
+# CodeIgniter database files
+/*.db
+/*.sqlite
+/*.sqlite3
+/application/database/
+/database/
+
+# CodeIgniter uploads directory
+/application/uploads/
+/uploads/
+
+# CodeIgniter session files
+/*.sess
+/*.session
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

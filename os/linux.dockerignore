@@ -1,0 +1,37 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# LINUX DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding Linux system files.
+# Combine with other templates as needed.
+# ============================================
+
+# -----------------------------------------
+# LINUX SYSTEM FILES
+# -----------------------------------------
+
+.history
+.bash_history
+.zsh_history
+.fish_history
+.cshrc
+.login
+.logout
+.profile
+.bashrc
+.zshrc
+.fishrc
+
+# Cross-platform (included in Linux template)
+*.swp
+*.swo
+*~
+~$*
+*.tmp
+*.temp
+
+# ============================================
+# END OF LINUX PATTERNS
+# ============================================
+

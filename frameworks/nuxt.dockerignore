@@ -1,0 +1,32 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# NUXT.JS DOCKERIGNORE TEMPLATE
+# ============================================
+# For Nuxt.js projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Nuxt.js-specific patterns.
+# Combine with language templates (Node.dockerignore, TypeScript.dockerignore)
+# and category templates (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# NUXTJS SPECIFIC PATTERNS
+# -----------------------------------------
+
+.nuxt
+.nuxt-analyze/
+.nuxt-build/
+.nuxt-components/
+.nuxt-dev/
+.nuxt-modules/
+.nuxt-types/
+.nuxt/
+.nuxtignore
+.nuxtrc
+.output/
+nuxt.config.*
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

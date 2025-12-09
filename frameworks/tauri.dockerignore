@@ -1,0 +1,166 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# TAURI DOCKERIGNORE TEMPLATE
+# ============================================
+# For Tauri projects (desktop apps with web frontend).
+# Combine with Node.dockerignore and Rust.dockerignore for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# TAURI SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Tauri environment and security files
+.env
+.env.*
+.env.example
+.env.local
+.env.production
+.env.staging
+.env.testing
+
+# Tauri Rust backend files
+/src-tauri/target/
+/src-tauri/Cargo.lock
+/src-tauri/.rustc_info.json
+/src-tauri/.cargo/
+/src-tauri/*.rs.bk
+/src-tauri/*.rs.old
+
+# Tauri build artifacts and bundles
+/dist/
+/build/
+/src-tauri/target/release/
+/src-tauri/target/debug/
+/*.app
+/*.dmg
+/*.exe
+/*.msi
+/*.deb
+/*.rpm
+/*.AppImage
+/*.snap
+/src-tauri/dist/
+
+# Tauri dependency directories
+/node_modules/
+/.npm/
+/.yarn/
+/.pnpm/
+/.cache/
+/.parcel-cache/
+/.turbo/
+
+# Tauri frontend build artifacts
+/.next/
+/.nuxt/
+/.svelte-kit/
+/.astro/
+/.output/
+
+# Tauri test files and reports
+/tests/
+/test/
+/coverage/
+/.nyc_output/
+/test-results/
+/playwright-report/
+/vitest-reports/
+/cypress/screenshots/
+/cypress/videos/
+/jest.config.js
+/jest.config.ts
+/vitest.config.js
+/vitest.config.ts
+/cypress.config.js
+/cypress.config.ts
+/playwright.config.js
+/playwright.config.ts
+
+# Tauri package management files
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+/bun.lockb
+/Gruntfile.js
+/gulpfile.js
+/webpack.config.js
+/webpack.config.ts
+/vite.config.js
+/vite.config.ts
+/rollup.config.js
+/rollup.config.ts
+
+# Tauri configuration files
+/tauri.conf.json
+/tauri.conf.json.example
+/tauri.conf.json.bak
+/src-tauri/tauri.conf.json
+/src-tauri/tauri.conf.json.example
+/src-tauri/tauri.conf.json.bak
+
+# Tauri TypeScript compilation files
+/*.tsbuildinfo
+/tsconfig.tsbuildinfo
+/.tsbuildinfo
+/dist-ts/
+/out-tsc/
+
+# Tauri cache and temporary files
+/.tmp/
+/tmp/
+/temp/
+/*.tmp
+/*.temp
+/*.cache
+
+# Tauri log files
+/*.log
+/logs/
+/.next/logs/
+/debug.log
+/src-tauri/*.log
+
+# Tauri icons and assets (development versions)
+/icons/
+/assets/
+/src-tauri/icons/
+/src-tauri/assets/
+
+# Tauri documentation and examples
+/docs/
+/documentation/
+/examples/
+/samples/
+/stories/
+/.storybook/
+
+# Tauri IDE and editor files
+/.idea/
+/.vscode/
+/.vs/
+/.sublime-*
+/*.sublime-*
+/*.code-workspace
+/*.iml
+/*.ipr
+/*.iws
+
+# Tauri OS metadata files
+/.DS_Store
+/.DS_Store?
+/._*
+/.Spotlight-V100
+/.Trashes
+/desktop.ini
+/ehthumbs.db
+/Thumbs.db
+/$RECYCLE.BIN/
+/*.lnk
+
+# Tauri backup and old files
+
+# ============================================
+# COMBINE WITH NODE.DOCKERIGNORE AND RUST.DOCKERIGNORE FOR COMPLETE COVERAGE
+# ============================================

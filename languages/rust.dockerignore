@@ -1,0 +1,40 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# RUST DOCKERIGNORE TEMPLATE
+# ============================================
+# For Rust projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# and category templates (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# RUST SPECIFIC PATTERNS
+# -----------------------------------------
+
+**/*.rs.bk
+*.d
+*.dSYM/
+*.rlib
+.cargo/git/
+.cargo/registry/
+/target/
+/target/debug/build/
+/target/debug/deps/
+/target/doc/
+/target/incremental/
+/target/release/build/
+/target/release/deps/
+/vcpkg/
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates as needed
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, WebStorm.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

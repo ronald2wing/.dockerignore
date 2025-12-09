@@ -1,0 +1,89 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# ASTRO DOCKERIGNORE TEMPLATE
+# ============================================
+# For Astro projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Astro-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# ASTRO SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Astro build artifacts
+.astro/
+.out/
+.output/
+.vercel/
+.netlify/
+.render/
+
+# Astro configuration and cache
+astro.config.*.ts
+astro.config.*.js
+astro.config.*.mjs
+.astro/types.d.ts
+.astro/content.d.ts
+.astro/content.config.*.ts
+.astro/content.config.*.js
+.astro/content.config.*.mjs
+
+# Astro development server
+.dev/
+.devcontainer/
+.husky/
+
+# Astro package management
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+.npm/
+.yarn/
+.pnpm/
+
+# Astro test and coverage
+test/
+tests/
+__tests__/
+__mocks__/
+vitest.config.*
+vitest.config.*.ts
+vitest.config.*.js
+vitest.config.*.mjs
+playwright.config.*
+cypress.config.*
+jest.config.*
+
+# Astro IDE files
+
+# Astro temporary files
+
+# Astro security files
+
+# Astro deployment files
+.fly/
+.railway/
+.aws/
+.azure/
+.gcp/
+
+# Astro documentation
+docs/
+documentation/
+examples/
+samples/
+
+# Astro OS metadata
+
+# Astro backup files
+*.rar
+*.7z
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

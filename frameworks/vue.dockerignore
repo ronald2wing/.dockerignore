@@ -1,0 +1,27 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# VUE DOCKERIGNORE TEMPLATE
+# ============================================
+# For Vue projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Vue-specific patterns.
+# Combine with language templates (Node.dockerignore, TypeScript.dockerignore)
+# and category templates (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# VUE SPECIFIC PATTERNS
+# -----------------------------------------
+
+.vuepress/dist
+dist/
+.vite/
+.vitest/
+.vue/
+.vue-tsc/
+vue.config.*
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

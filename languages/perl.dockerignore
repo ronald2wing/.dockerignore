@@ -1,0 +1,118 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# PERL DOCKERIGNORE TEMPLATE
+# ============================================
+# For Perl projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (Catalyst.dockerignore, Dancer.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# PERL COMPILED AND BYTECODE FILES
+# -----------------------------------------
+
+*.o
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.obj
+*.exe
+*.bin
+*.pmc
+*.bs
+*.def
+*.exp
+*.xsub
+*.xs
+
+# -----------------------------------------
+# PERL DEPENDENCY AND MODULE DIRECTORIES
+# -----------------------------------------
+
+blib/
+_build/
+.local/
+.cpan/
+.cpanm/
+.perl/
+.perl5/
+.perlbrew/
+.carton/
+.fatpacker/
+.vendor/
+local/
+site/
+site_perl/
+vendor/
+vendor_perl/
+inc/
+lib/auto/
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+*.egg
+*.whl
+
+# -----------------------------------------
+# PERL BUILD AND CONFIGURATION FILES
+# -----------------------------------------
+
+Makefile
+Makefile.old
+Build
+Build.bat
+Build.com
+MYMETA.json
+MYMETA.yml
+META.json
+META.yml
+Makefile.PL
+Build.PL
+cpanfile
+cpanfile.snapshot
+.minilla
+.dist/
+.dzil/
+
+# -----------------------------------------
+# PERL TEST AND COVERAGE FILES
+# -----------------------------------------
+
+*.t
+*.t.bak
+*.t.orig
+*.t.rej
+cover_db/
+.coverage
+.coverage.*
+*.cover
+*.gcov
+*.gcda
+*.gcno
+nytprof.out
+nytprof/
+Devel-Cover/
+test-reports/
+test-results/
+*.prof
+*.nytprof
+
+# -----------------------------------------
+# PERL RUNTIME FILES
+# -----------------------------------------
+
+*.pid
+*.lock
+*.sock
+.perldb
+.perl_history
+.perl_debug
+.perl_repl
+

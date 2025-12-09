@@ -1,0 +1,101 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# HASKELL DOCKERIGNORE TEMPLATE
+# ============================================
+# For Haskell projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (Yesod.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# HASKELL BUILD ARTIFACTS AND COMPILED FILES
+# -----------------------------------------
+
+*.hi
+*.o
+*.dyn_hi
+*.dyn_o
+*.p_hi
+*.p_o
+*.tix
+*.prof
+*.hp
+*.eventlog
+*.dump-*
+*.annot
+*.hcr
+*.cmm
+*.cmm.h
+*.cmm.s
+*.s
+*.ll
+*.bc
+*.manifest
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+
+# -----------------------------------------
+# HASKELL BUILD DIRECTORIES (Cabal, Stack, etc.)
+# -----------------------------------------
+
+dist/
+dist-newstyle/
+.stack-work/
+.cabal-sandbox/
+.hpc/
+.hie/
+.hiedb/
+.hs-tmp/
+.cabal-dev/
+.ghc.environment.*
+cabal.project.local
+cabal.project.freeze
+stack.yaml.lock
+package.db/
+
+# -----------------------------------------
+# HASKELL DEPENDENCY FILES
+# -----------------------------------------
+
+.cabal/
+.cabal-store/
+.vendor/
+.cabal/packages/
+.cabal/store/
+.stack/
+.stack/snapshots/
+.stack/indices/
+.stack/programs/
+
+# -----------------------------------------
+# HASKELL TEST AND BENCHMARK OUTPUTS
+# -----------------------------------------
+
+test-reports/
+test-results/
+bench-results/
+coverage/
+
+# -----------------------------------------
+# HASKELL IDE AND DEVELOPMENT FILES
+# -----------------------------------------
+
+.idea/
+.vscode/
+.haskell-code/
+.haskell/
+.haskell-ci/
+.hlint.yaml
+.hdevtools.sock
+.ghci
+.ghci-history
+.ghci.local
+.haskeline
+

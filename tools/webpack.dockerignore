@@ -1,0 +1,84 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# WEBPACK DOCKERIGNORE TEMPLATE
+# ============================================
+# For Webpack projects (JavaScript module bundler).
+# TOOL-SPECIFIC TEMPLATE - Contains only Webpack-specific patterns.
+# Combine with language templates (Node.dockerignore, JavaScript.dockerignore, TypeScript.dockerignore),
+# framework templates, and category templates for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# WEBPACK BUILD ARTIFACTS
+# -----------------------------------------
+
+/.webpack-cache/
+/webpack.config.js
+/webpack.config.ts
+/webpack.config.*.js
+/webpack.config.*.ts
+/webpack.*.config.js
+/webpack.*.config.ts
+/webpack.config.js.map
+/webpack.config.ts.map
+
+# -----------------------------------------
+# WEBPACK BUNDLE AND OUTPUT FILES
+# -----------------------------------------
+
+/*.bundle.js
+/*.bundle.css
+/*.chunk.js
+/*.chunk.css
+/*.vendor.js
+/*.vendor.css
+/*.bundle.js.map
+/*.bundle.css.map
+
+# -----------------------------------------
+# WEBPACK STATISTICS AND MANIFEST FILES
+# -----------------------------------------
+
+/stats.json
+/webpack-stats.json
+/*.stats.json
+/*.webpack-stats.json
+/manifest.json
+/webpack-manifest.json
+/*.manifest.json
+/*.webpack-manifest.json
+
+# -----------------------------------------
+# WEBPACK HOT MODULE REPLACEMENT FILES
+# -----------------------------------------
+
+/*.hot-update.*
+/*.hot-update.js
+/*.hot-update.json
+
+# -----------------------------------------
+# WEBPACK DLL FILES
+# -----------------------------------------
+
+/*.dll.js
+/*.dll.js.map
+/dll/
+/.dll/
+
+# -----------------------------------------
+# WEBPACK LOG FILES
+# -----------------------------------------
+
+/webpack.log
+/webpack-*.log
+
+# ============================================
+# TOOL-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================
+# Combine with:
+# 1. Language templates (Node.dockerignore, JavaScript.dockerignore, TypeScript.dockerignore)
+# 2. Framework templates (React.dockerignore, Vue.dockerignore, etc.)
+# 3. Category templates (Cache.dockerignore, Logs.dockerignore, Security.dockerignore, etc.)
+# 4. Build tool templates (Vite.dockerignore, etc. if using multiple bundlers)
+# ============================================

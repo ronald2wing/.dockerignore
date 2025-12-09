@@ -1,0 +1,130 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# DENO DOCKERIGNORE TEMPLATE
+# ============================================
+# For Deno projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# and category templates (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# DENO RUNTIME AND CACHE DIRECTORIES
+# -----------------------------------------
+
+.deno/
+.deno_dir/
+.deno_cache/
+.deno/gen/
+.deno/tmp/
+
+# -----------------------------------------
+# DENO CONFIGURATION AND LOCK FILES
+# -----------------------------------------
+
+deno.json
+deno.jsonc
+deno.lock
+deno.json.example
+deno.jsonc.example
+deno.json.bak
+deno.jsonc.bak
+
+# -----------------------------------------
+# DENO IMPORT MAP FILES
+# -----------------------------------------
+
+import_map.json
+import_map.json.example
+import_map.json.bak
+
+# -----------------------------------------
+# DENO STANDALONE EXECUTABLES
+# -----------------------------------------
+
+*.deno
+*.deno.exe
+*.deno.app
+
+# -----------------------------------------
+# DENO VENDOR AND DEPENDENCY DIRECTORIES
+# -----------------------------------------
+
+vendor/
+.vendor/
+deps/
+.deps/
+
+# -----------------------------------------
+# DENO COMPILATION ARTIFACTS
+# -----------------------------------------
+
+*.wasm
+*.node
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# -----------------------------------------
+# DENO DEBUG SYMBOLS
+# -----------------------------------------
+
+*.debug
+*.pdb
+*.dSYM/
+*.dwarf
+
+# -----------------------------------------
+# DENO BUNDLE FILES
+# -----------------------------------------
+
+*.bundle.js
+*.bundle.js.map
+*.bundle.css
+*.bundle.css.map
+
+# -----------------------------------------
+# DENO GENERATED FILES
+# -----------------------------------------
+
+generated/
+gen/
+*.generated.js
+*.generated.ts
+*.generated.*
+
+# -----------------------------------------
+# DENO COMPILED FILES
+# -----------------------------------------
+
+*.js.map
+*.css.map
+*.ts.map
+*.tsx.map
+*.jsx.map
+
+# -----------------------------------------
+# DENO TYPESCRIPT COMPILATION FILES
+# -----------------------------------------
+
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+.tsbuildinfo
+
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates as needed
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

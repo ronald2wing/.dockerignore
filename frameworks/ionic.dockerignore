@@ -1,0 +1,182 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# IONIC DOCKERIGNORE TEMPLATE
+# ============================================
+# For Ionic projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Combine with language templates
+# (TypeScript.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# IONIC BUILD AND DISTRIBUTION FILES
+# -----------------------------------------
+
+www/
+platforms/
+plugins/
+node_modules/
+.npm/
+.npmrc
+.npmignore
+.yarn/
+.yarnrc
+.yarnignore
+.pnpm/
+.pnpmfile.js
+.pnpm-store/
+.pnpm-lock.yaml
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# -----------------------------------------
+# IONIC CONFIGURATION AND ENVIRONMENT FILES
+# -----------------------------------------
+
+ionic.config.json
+ionic.starter.json
+ionic.project
+ionic.app
+ionic.app.json
+ionic.environment.ts
+ionic.environment.js
+ionic.environment.json
+ionic.environment.prod.ts
+ionic.environment.prod.js
+ionic.environment.prod.json
+ionic.environment.dev.ts
+ionic.environment.dev.js
+ionic.environment.dev.json
+ionic.environment.staging.ts
+ionic.environment.staging.js
+ionic.environment.staging.json
+ionic.environment.test.ts
+ionic.environment.test.js
+ionic.environment.test.json
+
+# -----------------------------------------
+# IONIC CORDOVA AND CAPACITOR FILES
+# -----------------------------------------
+
+.cordova/
+cordova/
+.capacitor/
+capacitor/
+capacitor.config.json
+capacitor.config.ts
+capacitor.config.js
+cordova.config.xml
+cordova.config.json
+config.xml
+.resources/
+resources/
+.splash/
+splash/
+.icon/
+icon/
+.icons/
+icons/
+
+# -----------------------------------------
+# IONIC NATIVE PLUGIN AND PACKAGE FILES
+# -----------------------------------------
+
+.plugins/
+.plugin/
+plugin/
+.native/
+native/
+.natives/
+natives/
+.package/
+package/
+.packages/
+packages/
+.bundle/
+bundle/
+.bundles/
+bundles/
+.artifact/
+artifact/
+.artifacts/
+artifacts/
+.build/
+build/
+.builds/
+builds/
+.output/
+output/
+.outputs/
+outputs/
+.dist/
+dist/
+.dists/
+dists/
+.release/
+release/
+.releases/
+releases/
+.stage/
+stage/
+.stages/
+stages/
+.target/
+target/
+.targets/
+targets/
+
+# -----------------------------------------
+# IONIC LOG AND TEMPORARY FILES
+# -----------------------------------------
+
+*.log
+logs/
+.log/
+.logs/
+.tmp/
+tmp/
+.temp/
+temp/
+.cache/
+cache/
+.pids/
+pids/
+.sockets/
+sockets/
+.sessions/
+sessions/
+.session/
+session/
+.cookies/
+cookies/
+.cookie/
+cookie/
+
+# -----------------------------------------
+# IONIC TEST AND COVERAGE FILES
+# -----------------------------------------
+
+coverage/
+.nyc_output/
+test-reports/
+test-results/
+*.cov
+*.cover
+.coverage
+.coverage.*
+*.lcov
+*.html
+*.xml
+*.json
+*.txt
+*.out
+*.err
+

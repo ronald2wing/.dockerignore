@@ -1,0 +1,92 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# MAGENTO DOCKERIGNORE TEMPLATE
+# ============================================
+# For Magento projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Magento-specific patterns.
+# Combine with language templates (PHP.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# MAGENTO SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Magento core files that should not be in production
+/CHANGELOG.md
+/COPYING.txt
+/INSTALL*.txt
+/LICENSE.txt
+/LICENSE_AFL.txt
+/LICENSE_EE.txt
+/README.md
+/RELEASE_NOTES.txt
+/UPGRADE*.txt
+
+# Magento development and testing files
+/.php-cs-fixer.dist.php
+/.php-cs-fixer.php
+/.phpcs.xml
+/.phpcs.xml.dist
+/dev/
+/dev/tests/
+/phpcs.xml
+/phpcs.xml.dist
+/phpunit.xml
+/phpunit.xml.dist
+
+# Magento build artifacts
+/generated/
+/pub/media/
+/pub/static/
+/var/
+
+# Magento backup and migration files
+*.sql
+*.sql.gz
+*.sqlite
+/var/backups/
+/var/export/
+
+# Magento cache and log directories
+/var/cache/
+/var/log/
+/var/page_cache/
+/var/session/
+/var/tmp/
+/var/view_preprocessed/
+
+# Magento security and configuration files
+/app/etc/config.local.php
+/app/etc/config.php
+/app/etc/env.php
+
+# Magento debug and log files
+/error_log
+/php-error.log
+/php-fpm-error.log
+/var/debug/
+/var/report/
+
+# Magento temporary files
+
+# Magento test coverage and reports
+/coverage/
+
+# Magento documentation and examples
+/dev/docs/
+/docs/
+/documentation/
+/examples/
+/patches/
+/samples/
+
+# Magento generated code
+/generated/code/
+/generated/metadata/
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

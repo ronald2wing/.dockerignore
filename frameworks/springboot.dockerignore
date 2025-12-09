@@ -1,0 +1,31 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# SPRINGBOOT DOCKERIGNORE TEMPLATE
+# ============================================
+# For SpringBoot projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only SpringBoot-specific patterns.
+# Combine with language templates (Java.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# SPRINGBOOT SPECIFIC PATTERNS
+# -----------------------------------------
+
+*.ear
+*.jar
+*.war
+.spring/
+.springBeans
+actuator/
+application-*.properties
+application-*.yaml
+application-*.yml
+config/application-*.properties
+config/application-*.yaml
+config/application-*.yml
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

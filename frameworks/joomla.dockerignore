@@ -1,0 +1,179 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# JOOMLA DOCKERIGNORE TEMPLATE
+# ============================================
+# For Joomla projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Joomla-specific patterns.
+# Combine with language templates (PHP.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# JOOMLA SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Joomla core development files
+/.git/
+/.github/
+/.gitignore
+/.editorconfig
+/.eslintignore
+/.eslintrc.js
+/.eslintrc.json
+/.prettierignore
+/.prettierrc.js
+/.prettierrc.json
+/.stylelintignore
+/.stylelintrc.js
+/.stylelintrc.json
+/.travis.yml
+/.circleci/
+/.gitlab-ci.yml
+/.husky/
+
+# Joomla core files that should not be in production
+/README.txt
+/CHANGELOG.txt
+/COPYRIGHT.txt
+/LICENSE.txt
+/MAINTAINERS.txt
+/INSTALL*.txt
+/UPGRADE*.txt
+/installation/
+
+# Joomla development and testing files
+/phpunit.xml
+/phpunit.xml.dist
+/tests/
+/test/
+/phpcs.xml
+/phpcs.xml.dist
+/.phpcs.xml
+/.phpcs.xml.dist
+/.php-cs-fixer.php
+/.php-cs-fixer.dist.php
+
+# Joomla package management
+/composer.json
+/composer.lock
+/package.json
+/package-lock.json
+/yarn.lock
+/bower.json
+/bower.lock
+/Gruntfile.js
+/gulpfile.js
+/webpack.config.js
+/webpack.mix.js
+
+# Joomla build artifacts
+/node_modules/
+/vendor/
+/.npm/
+/.yarn/
+/.bower/
+/.cache/
+/.parcel-cache/
+/.turbo/
+/dist/
+/build/
+/media/
+/tmp/
+
+# Joomla backup and migration files
+*.rar
+*.7z
+*.sql
+*.sqlite
+*.sql.gz
+/backup/
+/backups/
+
+# Joomla cache and log directories
+/cache/
+/logs/
+/administrator/cache/
+/administrator/logs/
+/media/cache/
+/media/tmp/
+
+# Joomla security and configuration files
+/.env
+/.env.*
+/.env.local
+/.env.production
+/.env.development
+/.env.test
+/.env.staging
+/*.key
+/*.pem
+/*.crt
+/*.cert
+/configuration.php
+/configuration.php.bak
+/htaccess.txt
+/web.config.txt
+
+# Joomla debug and log files
+/debug.log
+/*.log
+/error_log
+/php-error.log
+/php-fpm-error.log
+
+# Joomla temporary files
+/temp/
+/*.tmp
+/*.temp
+/*.cache
+
+# Joomla IDE and editor files
+/.idea/
+/.vscode/
+/.vs/
+/.sublime-*
+/*.sublime-*
+/*.code-workspace
+/*.iml
+/*.ipr
+/*.iws
+/*.kdev4
+/*.komodoproject
+/*.swo
+/*.swp
+
+# Joomla OS metadata files
+/.DS_Store
+/.DS_Store?
+/._*
+/.Spotlight-V100
+/.Trashes
+/desktop.ini
+/ehthumbs.db
+/Thumbs.db
+/$RECYCLE.BIN/
+/*.lnk
+
+# Joomla test coverage and reports
+/coverage/
+/.nyc_output/
+/html-report/
+/test-results/
+/playwright-report/
+/vitest-reports/
+/junit.xml
+/clover.xml
+/coverage.xml
+
+# Joomla documentation and examples
+/docs/
+/documentation/
+/examples/
+/samples/
+/patches/
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

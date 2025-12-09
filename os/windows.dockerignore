@@ -1,0 +1,31 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# WINDOWS DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding Windows system files.
+# Combine with other templates as needed.
+# ============================================
+
+# -----------------------------------------
+# WINDOWS SPECIFIC PATTERNS
+# -----------------------------------------
+
+desktop.ini
+*.lnk
+Desktop.ini
+$RECYCLE.BIN/
+*.stackdump
+
+# Cross-platform temporary files
+*.swp
+*.swo
+*~
+~$*
+*.tmp
+*.temp
+
+# ============================================
+# END OF WINDOWS PATTERNS
+# ============================================
+

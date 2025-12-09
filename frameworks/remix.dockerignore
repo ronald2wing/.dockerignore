@@ -1,0 +1,86 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# REMIX DOCKERIGNORE TEMPLATE
+# ============================================
+# For Remix projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Remix-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# REMIX SPECIFIC PATTERNS
+# -----------------------------------------
+
+!public/*.ico
+!public/*.jpeg
+!public/*.jpg
+!public/*.png
+!public/*.svg
+!public/favicon.ico
+!public/robots.txt
+!public/sitemap.xml
+!README.md
+**/*.spec.js
+**/*.spec.ts
+**/*.test.js
+**/*.test.ts
+**/__mocks__/
+**/__tests__/
+*.md
+*.pid.lock
+*.seed
+*.tsbuildinfo
+.azure-pipelines.yml
+.biome/
+.build/
+.bun/
+.cache
+.circleci/
+.eslintcache
+.github/
+.gitlab-ci.yml
+.gitlab/
+.jenkins/
+.node_repl_history
+.npm/
+.nx/
+.nyc_output/
+.parcel-cache
+.pnpm-store/
+.prettiercache
+.remix-types/
+.remix/
+.rollup.cache
+.rush/
+.server/
+.sessions/
+.travis.yml
+.yarn/
+app/entry.*.js
+app/entry.*.jsx
+app/entry.*.ts
+app/entry.*.tsx
+app/root.*.js
+app/root.*.jsx
+app/root.*.ts
+app/root.*.tsx
+app/routes/**/*.js
+app/routes/**/*.js.map
+app/routes/**/*.ts
+app/routes/**/*.ts.map
+bun.lockb
+coverage
+Dockerfile
+docs/
+package-lock.json
+pids
+pnpm-lock.yaml
+public/*
+public/build/
+yarn.lock
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

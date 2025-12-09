@@ -1,0 +1,38 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# GIT DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding Git version control files.
+# CATEGORY TEMPLATE - Contains Git-specific patterns.
+# Combine with other templates as needed for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# GIT SPECIFIC PATTERNS
+# -----------------------------------------
+
+.git/
+.git/*
+.git-blame-ignore-revs
+.git-crypt/
+.git-rewrite/
+.gitattributes
+.gitconfig
+.gitcredentials
+.gitignore
+.gitkeep
+.gitmodules
+.gitreview
+
+# ============================================
+# CATEGORY TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================
+# Combine with:
+# 1. Language templates (Node.dockerignore, Python.dockerignore, Java.dockerignore, etc.)
+# 2. Framework templates (React.dockerignore, Django.dockerignore, etc.)
+# 3. Other category templates (Security.dockerignore, Cache.dockerignore, Logs.dockerignore, etc.)
+# 4. IDE templates (VSCode.dockerignore, IntelliJ.dockerignore, etc.)
+# 5. Operating system templates (Linux.dockerignore, macOS.dockerignore, Windows.dockerignore)
+# 6. CI/CD templates (if using GitHub Actions, GitLab CI, etc.)
+# ============================================

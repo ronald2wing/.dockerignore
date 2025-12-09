@@ -1,0 +1,117 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# JAVA DOCKERIGNORE TEMPLATE
+# ============================================
+# For Java projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (SpringBoot.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# JAVA BUILD ARTIFACTS AND COMPILED FILES
+# -----------------------------------------
+
+*.ctxt
+*.ear
+*.jar
+*.nar
+*.rar
+*.war
+*.class
+*.classpath
+*.factorypath
+*.project
+*.settings/
+*.springBeans
+
+# -----------------------------------------
+# JAVA BUILD SYSTEM FILES
+# -----------------------------------------
+
+.bazel/
+.bazelrc
+.gradle/
+.gradle/*
+!.gradle/wrapper/
+.gradle/wrapper/*
+!.gradle/wrapper/gradle-wrapper.jar
+.gradle/daemon/
+.gradle/native/
+.gradle/caches/
+.gradle/notifications/
+.gradle/buildOutputCleanup/
+.gradle/buildScan/
+.gradle/workers/
+.gradle/tooling/
+.gradle/test-kit/
+.gradle/test-output/
+.gradle/test-results/
+.micronaut/
+.mtj.tmp/
+.mvn/
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+bazel-*
+gradle-app.setting
+gradle-wrapper.jar
+hs_err_pid*
+mvnw
+mvnw.cmd
+pom.xml.next
+pom.xml.releaseBackup
+pom.xml.tag
+pom.xml.versionsBackup
+spring-boot-devtools.properties
+target/quarkus-app/
+target/quarkus-gen/
+
+# -----------------------------------------
+# JAVA BUILD OUTPUT DIRECTORIES
+# -----------------------------------------
+
+target/
+build/
+out/
+dist/
+bin/
+_output/
+
+# -----------------------------------------
+# JAVA TEST AND COVERAGE OUTPUTS
+# -----------------------------------------
+
+__coverage__/
+__tests__/__snapshots__/
+*.spec.java
+*.test.java
+test-results/
+test-output/
+test-reports/
+surefire-reports/
+failsafe-reports/
+jacoco-reports/
+jmeter-reports/
+
+# -----------------------------------------
+# JAVA TEMPORARY AND CACHE FILES
+# -----------------------------------------
+
+.m2/repository/
+.m2/wrapper/
+.m2/settings.xml
+.m2/settings-security.xml
+
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates (SpringBoot.dockerignore, etc.)
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, WebStorm.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

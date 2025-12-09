@@ -1,0 +1,100 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# SWIFT DOCKERIGNORE TEMPLATE
+# ============================================
+# For Swift projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (Vapor.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# SWIFT SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Swift Package Manager build artifacts
+.build/
+.swiftpm/
+.xcode/
+DerivedData/
+*.xcodeproj/
+*.xcworkspace/
+Package.resolved
+
+# Dependency management
+Pods/
+Carthage/
+.vendor/
+.swiftpm/configuration/registries.json
+
+# Build artifacts and intermediates
+*.dylib
+*.framework
+*.bundle
+*.app
+*.ipa
+*.dSYM/
+*.build/
+.build/artifacts/
+.build/debug/
+.build/release/
+.build/checkouts/
+.build/repositories/
+
+# Swift compilation artifacts
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+*.swiftinterface
+*.swiftdeps
+*.d
+*.dia
+*.autolink
+
+# Test and coverage reports
+.codecov.yml
+.xctestplan
+.xcresult/
+.xcworkspacedata
+.xcuserdata/
+.xcscheme
+.xccheckout
+.xcscmblueprint
+
+# Swift Package Manager cache
+.swiftpm/cache/
+.swiftpm/artifacts/
+.swiftpm/checkouts/
+.swiftpm/repositories/
+
+# Xcode specific files
+xcuserdata/
+project.xcworkspace/
+xcshareddata/
+xcschemes/
+
+# Swift debugging symbols
+*.dSYM.zip
+*.symbols
+
+# Swift documentation
+docs/
+Documentation/
+.swiftdoc/
+
+# Swift temporary files
+.swiftpm/configuration/cache/
+
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates (Vapor.dockerignore, etc.)
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, WebStorm.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

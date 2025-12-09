@@ -1,0 +1,193 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# ADONISJS DOCKERIGNORE TEMPLATE
+# ============================================
+# For AdonisJS projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Combine with language templates
+# (Node.dockerignore, TypeScript.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# ADONISJS BUILD AND COMPILED FILES
+# -----------------------------------------
+
+build/
+dist/
+.out/
+.output/
+.release/
+release/
+.stage/
+stage/
+.target/
+target/
+.coverage/
+coverage/
+.nyc_output/
+nyc_output/
+.test/
+test/
+.tests/
+tests/
+.spec/
+spec/
+.specs/
+specs/
+
+# -----------------------------------------
+# ADONISJS CONFIGURATION AND ENVIRONMENT FILES
+# -----------------------------------------
+
+.env
+.env.local
+.env.*.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.staging
+.env.staging.local
+.config/
+config/
+.config.local/
+config.local/
+.config.*.local/
+config.*.local/
+.config.development/
+config.development/
+.config.development.local/
+config.development.local/
+.config.test/
+config.test/
+.config.test.local/
+config.test.local/
+.config.production/
+config.production/
+.config.production.local/
+config.production.local/
+.config.staging/
+config.staging/
+.config.staging.local/
+config.staging.local/
+
+# -----------------------------------------
+# ADONISJS DATABASE AND MIGRATION FILES
+# -----------------------------------------
+
+database/
+.database/
+.databases/
+databases/
+.migrations/
+migrations/
+.migration/
+migration/
+.seeds/
+seeds/
+.seed/
+seed/
+.factories/
+factories/
+.factory/
+factory/
+.models/
+models/
+.model/
+model/
+.entities/
+entities/
+.entity/
+entity/
+.schemas/
+schemas/
+.schema/
+schema/
+.queries/
+queries/
+.query/
+query/
+
+# -----------------------------------------
+# ADONISJS LOG AND TEMPORARY FILES
+# -----------------------------------------
+
+*.log
+logs/
+.log/
+.logs/
+.tmp/
+tmp/
+.temp/
+temp/
+.cache/
+cache/
+.pids/
+pids/
+.sockets/
+sockets/
+.sessions/
+sessions/
+.session/
+session/
+.cookies/
+cookies/
+.cookie/
+cookie/
+
+# -----------------------------------------
+# ADONISJS TEST AND COVERAGE FILES
+# -----------------------------------------
+
+test-reports/
+test-results/
+*.cov
+*.cover
+.coverage
+.coverage.*
+*.lcov
+*.html
+*.xml
+*.json
+*.txt
+*.out
+*.err
+
+# -----------------------------------------
+# ADONISJS PUBLIC AND ASSET FILES
+# -----------------------------------------
+
+public/
+.public/
+static/
+.static/
+assets/
+.assets/
+.uploads/
+uploads/
+.media/
+media/
+.images/
+images/
+.videos/
+videos/
+.audios/
+audios/
+.fonts/
+fonts/
+.icons/
+icons/
+.favicon/
+favicon/
+.robots.txt
+robots.txt
+.sitemap.xml
+sitemap.xml
+.manifest.json
+manifest.json
+

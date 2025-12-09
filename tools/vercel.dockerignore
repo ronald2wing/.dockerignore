@@ -1,0 +1,71 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# VERCEL DOCKERIGNORE TEMPLATE
+# ============================================
+# For Vercel projects (deployment platform).
+# TOOL-SPECIFIC TEMPLATE - Contains only Vercel-specific patterns.
+# Combine with language templates, framework templates, and category templates
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# VERCEL SPECIFIC PATTERNS
+# -----------------------------------------
+
+/.vercel/
+/.vercel/cache/
+/.vercel/tmp/
+
+# -----------------------------------------
+# VERCEL CONFIGURATION FILES
+# -----------------------------------------
+
+/vercel.json
+/vercel.json.example
+/vercel.json.bak
+/now.json
+/now.json.example
+/now.json.bak
+/project.json
+/project.json.example
+/project.json.bak
+/vercel.env.*
+/vercel.env.local
+/vercel.env.production
+
+# -----------------------------------------
+# VERCEL FUNCTIONS AND EDGE FUNCTIONS
+# -----------------------------------------
+
+/.vercel/functions/
+/.vercel/output/functions/
+/.vercel/output/edge-functions/
+/api/
+/functions/
+/edge-functions/
+
+# -----------------------------------------
+# VERCEL DEPLOYMENT AND OUTPUT FILES
+# -----------------------------------------
+
+/.vercel/output/
+/.vercel/builds/
+/.vercel/deployments/
+
+# -----------------------------------------
+# VERCEL LOG FILES
+# -----------------------------------------
+
+/vercel.log
+/vercel-*.log
+
+# ============================================
+# TOOL-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================
+# Combine with:
+# 1. Language templates (Node.dockerignore, JavaScript.dockerignore, Python.dockerignore, etc.)
+# 2. Framework templates (React.dockerignore, Next.dockerignore, Nuxt.dockerignore, etc.)
+# 3. Category templates (Security.dockerignore, Cache.dockerignore, Logs.dockerignore, etc.)
+# 4. Build tool templates (Webpack.dockerignore, Vite.dockerignore, etc.)
+# ============================================

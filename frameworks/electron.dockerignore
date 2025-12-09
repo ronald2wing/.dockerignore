@@ -1,0 +1,190 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# ELECTRON DOCKERIGNORE TEMPLATE
+# ============================================
+# For Electron projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Combine with language templates
+# (Node.dockerignore, TypeScript.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# ELECTRON BUILD AND DISTRIBUTION FILES
+# -----------------------------------------
+
+dist/
+build/
+.out/
+.output/
+.release/
+release/
+.stage/
+stage/
+.target/
+target/
+.coverage/
+coverage/
+.nyc_output/
+nyc_output/
+.test/
+test/
+.tests/
+tests/
+.spec/
+spec/
+.specs/
+specs/
+
+# -----------------------------------------
+# ELECTRON PACKAGED AND INSTALLER FILES
+# -----------------------------------------
+
+*.7z
+*.AppImage
+*.appimage
+*.deb
+*.dmg
+*.exe
+*.img
+*.iso
+*.msi
+*.nsis
+*.pkg
+*.rar
+*.rpm
+*.snap
+*.tar.bz2
+*.tar.gz
+*.tar.xz
+*.zip
+
+# -----------------------------------------
+# ELECTRON CONFIGURATION AND PACKAGE FILES
+# -----------------------------------------
+
+.electron/
+electron/
+.electron-builder/
+electron-builder/
+.electron-packager/
+electron-packager/
+.electron-forge/
+electron-forge/
+.electron-react/
+electron-react/
+.electron-vue/
+electron-vue/
+.electron-angular/
+electron-angular/
+.electron-svelte/
+electron-svelte/
+.electron-solid/
+electron-solid/
+.electron-preact/
+electron-preact/
+.electron-qwik/
+electron-qwik/
+.electron-remix/
+electron-remix/
+.electron-next/
+electron-next/
+.electron-nuxt/
+electron-nuxt/
+.electron-astro/
+electron-astro/
+.electron-gatsby/
+electron-gatsby/
+
+# -----------------------------------------
+# ELECTRON NATIVE MODULE AND BINARY FILES
+# -----------------------------------------
+
+*.node
+.node
+.node_modules/
+node_modules/
+.native/
+native/
+.natives/
+natives/
+.binary/
+binary/
+.binaries/
+binaries/
+.addon/
+addon/
+.addons/
+addons/
+.binding/
+binding/
+.bindings/
+bindings/
+.lib/
+lib/
+.libs/
+libs/
+.dll/
+dll/
+.dlls/
+dlls/
+.so/
+.sos/
+sos/
+.dylib/
+dylib/
+.dylibs/
+dylibs/
+.a/
+.as/
+as/
+
+# -----------------------------------------
+# ELECTRON LOG AND DEBUG FILES
+# -----------------------------------------
+
+*.log
+logs/
+.log/
+.logs/
+.debug/
+debug/
+.debugs/
+debugs/
+.crash/
+crash/
+.crashes/
+crashes/
+.dump/
+dump/
+.dumps/
+dumps/
+.core/
+core/
+.cores/
+cores/
+.minidump/
+minidump/
+.minidumps/
+minidumps/
+
+# -----------------------------------------
+# ELECTRON TEST AND COVERAGE FILES
+# -----------------------------------------
+
+test-reports/
+test-results/
+*.cov
+*.cover
+.coverage
+.coverage.*
+*.lcov
+*.html
+*.xml
+*.json
+*.txt
+*.out
+*.err
+

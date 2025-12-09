@@ -1,0 +1,82 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# SYMFONY DOCKERIGNORE TEMPLATE
+# ============================================
+# For Symfony projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Symfony-specific patterns.
+# Combine with language templates (PHP.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# SYMFONY SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Symfony cache and log directories
+/var/cache/
+/var/log/
+/var/sessions/
+/var/spool/
+
+# Symfony build and dependency directories
+/bin/
+/node_modules/
+/public/bundles/
+/vendor/
+
+# Symfony environment and configuration files
+/.env
+/.env.*
+/.env.dev
+/.env.local
+/.env.prod
+/.env.production
+/.env.test
+
+# Symfony debug and profiling files
+/*.prof
+/profiler/
+/var/debug/
+
+# Symfony test files and reports
+/.phpunit.result.cache
+/coverage/
+/phpunit.xml
+/phpunit.xml.dist
+/test/
+/tests/
+
+# Symfony package management files
+/composer.json
+/composer.lock
+/package.json
+/package-lock.json
+/yarn.lock
+
+# Symfony backup and migration files
+*.sql
+*.sqlite
+
+# Symfony temporary files
+/*.cache
+/*.tmp
+/temp/
+/tmp/
+
+# Symfony IDE and editor files
+/.idea/
+/.vs/
+/.vscode/
+/*.iml
+/*.ipr
+/*.iws
+
+# Symfony documentation files
+/doc/
+/docs/
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

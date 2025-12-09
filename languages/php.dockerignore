@@ -1,0 +1,48 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# PHP DOCKERIGNORE TEMPLATE
+# ============================================
+# For PHP projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (Laravel.dockerignore, Symfony.dockerignore, WordPress.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# PHP SPECIFIC PATTERNS
+# -----------------------------------------
+
+.phpunit.result.cache
+bootstrap/cache/
+composer.lock
+composer.phar
+config.php
+configuration.php
+pub/static/
+public/hot
+public/storage
+sites/*/files/
+sites/*/private/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+var/
+var/cache/
+var/page_cache/
+var/session/
+var/tmp/
+vendor/
+web/bundles/
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates (Laravel.dockerignore, Symfony.dockerignore, WordPress.dockerignore, etc.)
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, WebStorm.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

@@ -1,0 +1,129 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# .NET DOCKERIGNORE TEMPLATE
+# ============================================
+# For .NET projects (ASP.NET Core, Console Apps, etc.).
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Dotnet-specific patterns.
+# Combine with language templates (CSharp.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# .NET SPECIFIC PATTERNS
+# -----------------------------------------
+
+# .NET build output directories
+/bin/
+/obj/
+/Bin/
+/Obj/
+/build/
+/out/
+/publish/
+/Release/
+/Debug/
+/x64/
+/x86/
+/AnyCPU/
+/amd64/
+/arm64/
+/bld/
+/Bld/
+
+# .NET package directories
+/packages/
+/.nuget/
+/NuGet/
+/node_modules/
+/bower_components/
+
+# .NET test and coverage directories
+/TestResults/
+/TestResult.xml
+/coverage/
+/.coverage
+/*.coverage.xml
+/*.trx
+/*.vsmdi
+/*.testlog
+/.vs/
+/.vscode/
+
+# .NET temporary files
+/TemporaryGeneratedFile_*.cs
+/*.cache
+/*.tmp
+/tmp/
+/temp/
+/_ReSharper.*/
+*.resharper
+*.resharper.user
+
+# .NET IDE and project files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ncrunchproject
+*.crunchsolution
+*.vsp
+*.vspx
+*.vspscc
+*.testsettings
+*.testrunconfig
+/.idea/
+/*.csproj.user
+/*.vbproj.user
+/*.fsproj.user
+/*.vcxproj.user
+/*.vcxproj.filters
+
+# .NET configuration files (development)
+/appsettings.Development.json
+/appsettings.Local.json
+/appsettings.Test.json
+/web.config.local
+/web.debug.config
+/web.release.config
+/Properties/launchSettings.json
+
+# .NET environment and security files
+.env
+.env.*
+.env.example
+.env.local
+.env.production
+.env.staging
+.env.testing
+
+# .NET runtime and deployment files
+/runtimes/
+/runtime/
+/.dotnet/
+/dotnet/
+/*.runtimeconfig.json
+/*.runtimeconfig.dev.json
+/*.deps.json
+
+# .NET documentation
+/_gh_pages/
+/docs/_site/
+/docs/output/
+/Help/
+/*.chm
+/apidoc/
+/api-docs/
+
+# .NET backup and old files
+
+# .NET log files
+/logs/
+/Logs/
+/eventlog/
+/EventLog/
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

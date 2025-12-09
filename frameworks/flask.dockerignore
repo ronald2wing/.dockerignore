@@ -1,0 +1,44 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# FLASK DOCKERIGNORE TEMPLATE
+# ============================================
+# For Flask projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Flask-specific patterns.
+# Combine with language templates (Python.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# FLASK SPECIFIC PATTERNS
+# -----------------------------------------
+
+*.db
+*.sqlite
+*.sqlite3
+*.test.db
+*.test.sqlite
+*.test.sqlite3
+.env.example
+.flaskenv
+.flaskenv.*
+alembic.ini
+db.sqlite3
+db.sqlite3-journal
+flask_session/
+instance/
+local_settings.py
+media/
+migrations/
+!*/migrations/__init__.py
+*/migrations/*.py
+migrations/versions/
+!*/migrations/versions/__init__.py
+*/migrations/versions/*.py
+static/
+staticfiles/
+uploads/
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

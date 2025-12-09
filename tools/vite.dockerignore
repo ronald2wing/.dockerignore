@@ -1,0 +1,46 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# VITE DOCKERIGNORE TEMPLATE
+# ============================================
+# For Vite projects (modern frontend build tool).
+# TOOL-SPECIFIC TEMPLATE - Contains only Vite-specific patterns.
+# Combine with language templates (Node.dockerignore, JavaScript.dockerignore, TypeScript.dockerignore),
+# framework templates, and category templates for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# VITE SPECIFIC PATTERNS
+# -----------------------------------------
+
+/.vite/
+/vite.config.js
+/vite.config.ts
+/vite.config.js.map
+/vite.config.ts.map
+/vite.config.*.js
+/vite.config.*.ts
+
+# -----------------------------------------
+# VITE LOG FILES
+# -----------------------------------------
+
+/vite.log
+
+# -----------------------------------------
+# VITE HMR (HOT MODULE REPLACEMENT) FILES
+# -----------------------------------------
+
+/*.hot-update.*
+/*.hot-update.js
+/*.hot-update.json
+
+# ============================================
+# TOOL-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================
+# Combine with:
+# 1. Language templates (Node.dockerignore, JavaScript.dockerignore, TypeScript.dockerignore)
+# 2. Framework templates (React.dockerignore, Vue.dockerignore, Svelte.dockerignore, etc.)
+# 3. Category templates (Cache.dockerignore, Logs.dockerignore, Security.dockerignore, etc.)
+# 4. Build tool templates (Webpack.dockerignore, etc. if using multiple bundlers)
+# ============================================

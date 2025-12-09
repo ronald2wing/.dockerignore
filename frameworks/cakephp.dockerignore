@@ -1,0 +1,147 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# CAKEPHP DOCKERIGNORE TEMPLATE
+# ============================================
+# For CakePHP projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Cakephp-specific patterns.
+# Combine with language templates (PHP.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# CAKEPHP SPECIFIC PATTERNS
+# -----------------------------------------
+
+# CakePHP environment and security files
+.env
+.env.*
+.env.example
+.env.local
+.env.production
+.env.staging
+.env.testing
+
+# CakePHP cache directories
+/tmp/
+/tmp/cache/
+/tmp/cache/models/
+/tmp/cache/persistent/
+/tmp/cache/views/
+/tmp/sessions/
+/tmp/logs/
+
+# CakePHP log files
+/logs/
+/logs/*.log
+/logs/error.log
+/logs/debug.log
+
+# CakePHP configuration files (development)
+/config/app_local.php
+/config/app.default.php
+
+# CakePHP test files
+/tests/
+/tests/*.php
+/tests/Fixture/
+/tests/TestCase/
+/phpunit.xml
+/phpunit.xml.dist
+/.phpunit.result.cache
+
+# CakePHP vendor and dependency directories
+/vendor/
+/node_modules/
+/.npm/
+/.yarn/
+/.pnpm/
+
+# CakePHP build artifacts
+/webroot/css/cake.generic.css
+/webroot/js/empty
+/webroot/test.php
+/webroot/index.php
+/webroot/index-test.php
+
+# CakePHP documentation
+/docs/
+/docs/_build/
+/docs/api/
+/docs/build/
+
+# CakePHP IDE and editor files
+/.idea/
+/.vscode/
+/.vs/
+/.project
+/.buildpath
+/.settings/
+
+# CakePHP backup and old files
+*.sql
+*.sqlite
+*.sql.gz
+
+# CakePHP temporary files
+/*.tmp
+/*.temp
+/*.cache
+/.cache/
+
+# CakePHP database files
+/*.db
+/*.sqlite
+/*.sqlite3
+/database/
+/database.sqlite
+/database.sqlite3
+
+# CakePHP migration files
+/config/Migrations/
+/config/Seeds/
+/config/Schema/
+
+# CakePHP plugin development
+/plugins/*/vendor/
+/plugins/*/node_modules/
+/plugins/*/tmp/
+/plugins/*/logs/
+/plugins/*/tests/
+
+# CakePHP composer files
+/composer.json
+/composer.lock
+/composer.phar
+
+# CakePHP package management files
+/package.json
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+/bun.lockb
+
+# CakePHP OS metadata files
+/.DS_Store
+/.DS_Store?
+/._*
+/.Spotlight-V100
+/.Trashes
+/desktop.ini
+/ehthumbs.db
+/Thumbs.db
+/$RECYCLE.BIN/
+/*.lnk
+
+# CakePHP test coverage reports
+/coverage/
+/.coverage
+/html-report/
+/clover.xml
+/coverage.xml
+/junit.xml
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

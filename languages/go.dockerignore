@@ -1,0 +1,96 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# GO DOCKERIGNORE TEMPLATE
+# ============================================
+# For Go projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# and category templates (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# GO BINARY AND EXECUTABLE FILES
+# -----------------------------------------
+
+*.bench
+*.bench.bin
+*.bench.exe
+*.bench.out
+*.block.out
+*.block.prof
+*.cov
+*.cover
+*.coverprofile
+*.cpu.out
+*.cpu.prof
+*.dylib
+*.exe
+*.exe~
+*.mem.out
+*.mem.prof
+*.mutex.out
+*.mutex.prof
+*.prof
+*.pprof
+*.pprof.bin
+*.pprof.gz
+*.pprof.out
+*.test
+*.test.bin
+*.test.exe
+*.test.out
+*.trace
+*.trace.out
+
+# -----------------------------------------
+# GO DEPENDENCY AND MODULE FILES
+# -----------------------------------------
+
+go.mod~
+go.sum~
+go.work
+go.work.sum
+vendor/
+
+# Go module cache directories (typically in GOPATH/pkg)
+go/build/
+go/pkg/include/
+go/pkg/mod/
+go/pkg/obj/
+go/pkg/sumdb/
+go/pkg/tool/
+
+# -----------------------------------------
+# GO BUILD ARTIFACTS
+# -----------------------------------------
+
+.gocache/
+_output/
+bin/
+build/
+dist/
+out/
+pkg/
+
+# -----------------------------------------
+# GO TEST AND COVERAGE OUTPUTS
+# -----------------------------------------
+
+__coverage__/
+__tests__/__snapshots__/
+*.spec.go
+*.test.go
+test-results/
+
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates as needed
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

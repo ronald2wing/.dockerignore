@@ -1,0 +1,112 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# FLUTTER DOCKERIGNORE TEMPLATE
+# ============================================
+# For Flutter projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Flutter-specific patterns.
+# Combine with language templates (Dart.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# FLUTTER SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Flutter build artifacts
+.android/
+.ios/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.fvm/
+.flutter/
+.pub-cache/
+
+# Flutter platform directories
+android/
+ios/
+linux/
+macos/
+windows/
+web/
+
+# Flutter cache and temporary files
+.fvm/flutter_sdk/
+
+# Flutter package management
+pubspec.lock
+.packages
+.dart_tool/package_config.json
+
+# Flutter configuration files
+.flutter_settings
+.metadata
+
+# Flutter IDE files
+.xcuserdata/
+
+# Flutter test and coverage
+test/
+tests/
+__tests__/
+.coverage/
+lcov.info
+.coverage_badge.json
+.coverage_badge.svg
+
+# Flutter security files
+*.keystore
+*.jks
+*.mobileprovision
+*.provisionprofile
+
+# Flutter documentation
+docs/
+documentation/
+examples/
+samples/
+
+# Flutter OS metadata
+
+# Flutter backup files
+*.rar
+*.7z
+
+# Flutter development tools
+.husky/
+.lintstagedrc*
+.dev/
+.devcontainer/
+
+# Flutter bundle files
+*.app
+*.ipa
+*.apk
+*.aab
+*.app.zip
+*.ipa.zip
+*.apk.zip
+*.aab.zip
+
+# Flutter asset catalogs
+assets/
+resources/
+images/
+icons/
+
+# Flutter Gradle files (keep wrapper jar)
+android/gradle/wrapper/gradle-wrapper.properties
+!android/gradle/wrapper/gradle-wrapper.jar
+android/.gradle/
+android/gradle.properties
+
+# Flutter CocoaPods files
+ios/Pods/
+ios/Podfile.lock
+ios/.symlinks/
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

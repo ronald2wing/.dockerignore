@@ -1,0 +1,128 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# NODE.JS DOCKERIGNORE TEMPLATE
+# ============================================
+# For Node.js projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Contains only Node.js specific patterns.
+# Combine with framework templates (React.dockerignore, Express.dockerignore, etc.)
+# and category templates (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# NODE.JS PACKAGE MANAGER FILES
+# -----------------------------------------
+
+.npm/
+.npm/_cacache/
+.npm/_logs/
+.npm/_locks/
+.npmrc
+.npmrc.*
+.npmignore
+npm-debug.log*
+npm-shrinkwrap.json
+pnpm-debug.log*
+pnpm-workspace.yaml
+.yarn/
+.yarn/cache/
+.yarn/install-state.gz
+.yarn/metadata/
+.yarn/patches/
+.yarn/plugins/
+.yarn/releases/
+.yarn/sdks/
+.yarn/versions/
+.yarnrc
+.yarnrc.yml
+yarn-error.log
+
+# -----------------------------------------
+# NODE.JS DEPENDENCY DIRECTORIES
+# -----------------------------------------
+
+bower_components/
+node_modules/
+.pnp/
+.pnp.cjs
+.pnp.js
+.pnp.loader.mjs
+.pnpm-store/
+
+# -----------------------------------------
+# NODE.JS BUILD AND COMPILATION ARTIFACTS
+# -----------------------------------------
+
+.build/
+.dist/
+.next/  # Note: For Next.js projects, also use next.dockerignore
+.nuxt/  # Note: For Nuxt.js projects, also use nuxt.dockerignore
+.output/
+.parcel-cache/
+.turbo/
+build/
+dist/
+out/
+
+# -----------------------------------------
+# NODE.JS CACHE DIRECTORIES
+# -----------------------------------------
+
+.jest-cache/
+.tsbuildinfo
+
+# -----------------------------------------
+# NODE.JS TEST AND COVERAGE OUTPUTS
+# -----------------------------------------
+
+__tests__/__snapshots__/
+jest-cache/
+vitest.config.*.timestamp-*
+
+# -----------------------------------------
+# NODE.JS CONFIGURATION FILES
+# -----------------------------------------
+
+.babelrc
+.babelrc.*
+.browserslistrc
+.eslintignore
+.eslintrc
+.eslintrc.*
+.jsbeautifyrc
+.jscsrc
+.jshintrc
+.prettierignore
+.prettierrc
+.prettierrc.*
+.stylelintignore
+.stylelintrc
+.stylelintrc.*
+tsconfig.*.tsbuildinfo
+jsconfig.json
+
+# -----------------------------------------
+# NODE.JS RUNTIME AND PROCESS FILES
+# -----------------------------------------
+
+.node_repl_history
+
+# -----------------------------------------
+# NODE.JS SOURCE MAPS
+# -----------------------------------------
+
+*.css.map
+*.js.map
+
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates (React.dockerignore, Express.dockerignore, etc.)
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, WebStorm.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

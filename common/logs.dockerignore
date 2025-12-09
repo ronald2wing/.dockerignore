@@ -1,0 +1,126 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# LOGS DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding log files.
+# Combine with other templates as needed.
+# ============================================
+
+# -----------------------------------------
+# LOG FILES
+# -----------------------------------------
+
+# General log files
+*.log
+logs/
+*.pid
+*.pid.lock
+*.lock
+
+# Application-specific log files
+*.app.log
+*.application.log
+*.server.log
+*.client.log
+*.error.log
+*.access.log
+*.debug.log
+*.info.log
+*.warn.log
+*.warning.log
+*.trace.log
+*.fatal.log
+*.critical.log
+
+# Web server logs
+access.log
+error.log
+access_log
+error_log
+nginx-access.log
+nginx-error.log
+apache-access.log
+apache-error.log
+httpd-access.log
+httpd-error.log
+
+# Database logs
+*.dblog
+*.db.log
+mysql.log
+postgresql.log
+mongodb.log
+redis.log
+*.binlog
+*.relaylog
+*.slowlog
+*.query.log
+
+# Runtime and process logs
+*.out
+*.stdout
+*.stderr
+*.console
+*.console.log
+*.service.log
+*.daemon.log
+*.process.log
+*.thread.log
+
+# Crash and dump files
+*.core
+*.core.*
+*.dump
+*.crash
+*.crashdump
+*.minidump
+*.hdmp
+*.mdmp
+*.dmp
+
+# Performance and monitoring logs
+*.perf
+*.performance.log
+*.metric.log
+*.monitor.log
+*.telemetry.log
+*.analytics.log
+*.audit.log
+*.audit
+
+# Session and temporary logs
+*.session.log
+*.temp.log
+*.tmp.log
+*.cache.log
+
+# Backup log files
+*.log.bak
+*.log.backup
+*.log.old
+*.log.prev
+*.log.prev*
+
+# Rotated log files
+*.log.*
+*.log.[0-9]*
+*.log.[0-9][0-9]*
+*.log.gz
+*.log.bz2
+*.log.xz
+*.log.zip
+*.log.tar
+*.log.tar.gz
+
+# Directory for logs
+log/
+var/log/
+tmp/log/
+temp/log/
+cache/log/
+
+# ============================================
+# END OF LOGS PATTERNS
+# ============================================
+

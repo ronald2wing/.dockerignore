@@ -1,0 +1,38 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# DJANGO DOCKERIGNORE TEMPLATE
+# ============================================
+# For Django projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Django-specific patterns.
+# Combine with language templates (Python.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# DJANGO SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Django environment and security files
+.env
+.env.*
+.env.example
+.env.local
+.env.production
+.env.staging
+.env.testing
+
+!*/migrations/__init__.py
+*/migrations/*.py
+.django_cache/
+db.sqlite3
+db.sqlite3-journal
+local_settings.py
+media/
+secret_key.txt
+static/
+staticfiles/
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

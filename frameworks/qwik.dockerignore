@@ -1,0 +1,91 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# QWIK DOCKERIGNORE TEMPLATE
+# ============================================
+# For Qwik projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Qwik-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# QWIK SPECIFIC PATTERNS
+# -----------------------------------------
+
+!public/*.avif
+!public/*.ico
+!public/*.jpeg
+!public/*.jpg
+!public/*.png
+!public/*.svg
+!public/*.webp
+!public/favicon.ico
+!public/robots.txt
+!public/sitemap.xml
+!README.md
+!static/favicon.ico
+!static/robots.txt
+**/*.spec.js
+**/*.spec.ts
+**/*.test.js
+**/*.test.ts
+**/__mocks__/
+**/__tests__/
+*.md
+*.pid.lock
+*.seed
+*.tsbuildinfo
+.azure-pipelines.yml
+.biome/
+.bun/
+.circleci/
+.eslintcache
+.github/
+.gitlab-ci.yml
+.gitlab/
+.jenkins/
+.node_repl_history
+.npm/
+.nx/
+.nyc_output/
+.parcel-cache
+.pnpm-store/
+.prettiercache
+.qwik-city/
+.qwik-components/
+.qwik-insights/
+.qwik-optimizer/
+.qwik-types/
+.qwik/
+.rollup.cache
+.rush/
+.server/
+.travis.yml
+.yarn/
+bun.lockb
+coverage
+Dockerfile
+docs/
+manifest.json
+manifest.webmanifest
+package-lock.json
+pids
+pnpm-lock.yaml
+public/*
+src/entry.*.js
+src/entry.*.jsx
+src/entry.*.ts
+src/entry.*.tsx
+src/root.*.js
+src/root.*.jsx
+src/root.*.ts
+src/root.*.tsx
+static/*
+sw.js
+workbox-*.js
+yarn.lock
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

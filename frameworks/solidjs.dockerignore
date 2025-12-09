@@ -1,0 +1,76 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# SOLIDJS DOCKERIGNORE TEMPLATE
+# ============================================
+# For SolidJS projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only SolidJS-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# SOLIDJS SPECIFIC PATTERNS
+# -----------------------------------------
+
+!public/*.ico
+!public/*.jpeg
+!public/*.jpg
+!public/*.png
+!public/*.svg
+!public/favicon.ico
+!public/robots.txt
+!public/sitemap.xml
+!README.md
+**/*.spec.js
+**/*.spec.ts
+**/*.test.js
+**/*.test.ts
+**/__mocks__/
+**/__tests__/
+*.md
+*.pid.lock
+*.seed
+*.tsbuildinfo
+.azure-pipelines.yml
+.biome/
+.bun/
+.cache
+.circleci/
+.client/
+.eslintcache
+.github/
+.gitlab-ci.yml
+.gitlab/
+.jenkins/
+.netlify/
+.node_repl_history
+.npm/
+.nx/
+.nyc_output/
+.parcel-cache
+.pnpm-store/
+.prettiercache
+.rollup.cache
+.rush/
+.solid-components/
+.solid-devtools/
+.solid-router/
+.solid-start/
+.solid-store/
+.solid-types/
+.solid/
+.ssr/
+.travis.yml
+.vercel/
+.yarn/
+bun.lockb
+coverage
+Dockerfile
+docs/
+pids
+public/*
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

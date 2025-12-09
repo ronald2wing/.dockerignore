@@ -1,0 +1,76 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# SVELTE DOCKERIGNORE TEMPLATE
+# ============================================
+# For Svelte projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES - Includes comprehensive Svelte patterns.
+# Combine with language templates (Node.dockerignore, TypeScript.dockerignore)
+# and category templates (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# SVELTE BUILD OUTPUT AND CACHE
+# -----------------------------------------
+
+.svelte-kit/
+.svelte/
+.build/
+dist/
+.out/
+public/build/
+
+# -----------------------------------------
+# SVELTE DEVELOPMENT AND TOOLING
+# -----------------------------------------
+
+.vite/
+.vitest/
+.rollup.cache/
+.parcel-cache/
+*.pid.lock
+
+# -----------------------------------------
+# SVELTE TESTING AND COVERAGE
+# -----------------------------------------
+
+coverage/
+.nyc_output/
+__coverage__/
+__tests__/__snapshots__/
+playwright-report/
+test-results/
+vitest.config.*.timestamp-*
+
+# -----------------------------------------
+# SVELTE DOCUMENTATION AND STORYBOOK
+# -----------------------------------------
+
+.storybook/
+.storybook-out/
+storybook-static/
+docs/.svelte-kit/
+
+# -----------------------------------------
+# SVELTE TYPE DEFINITIONS AND BUILD INFO
+# -----------------------------------------
+
+*.d.ts
+*.d.ts.map
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# -----------------------------------------
+# SVELTE CONFIGURATION AND TEMPORARY FILES
+# -----------------------------------------
+
+.svelte-kit/output/
+.svelte-kit/types/
+.svelte-kit/ambient.d.ts
+svelte.config.*.timestamp-*
+vite.config.*.timestamp-*
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES - COMBINE WITH OTHER TEMPLATES
+# ============================================

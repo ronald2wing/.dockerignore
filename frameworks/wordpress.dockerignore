@@ -1,0 +1,74 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# WORDPRESS DOCKERIGNORE TEMPLATE
+# ============================================
+# For WordPress projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only WordPress-specific patterns.
+# Combine with language templates (PHP.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# WORDPRESS SPECIFIC PATTERNS
+# -----------------------------------------
+
+# WordPress core files that should not be in production
+/wp-config-sample.php
+/wp-content/debug.log
+/wp-content/plugins/hello.php
+/wp-content/themes/twentytwenty*
+/wp-content/themes/twentytwentyfive*
+/wp-content/themes/twentytwentyfour*
+/wp-content/themes/twentytwentyone*
+/wp-content/themes/twentytwentythree*
+/wp-content/themes/twentytwentytwo*
+
+# WordPress development and testing files
+/.php-cs-fixer.dist.php
+/.php-cs-fixer.php
+/.phpcs.xml
+/.phpcs.xml.dist
+/phpcs.xml
+/phpcs.xml.dist
+/phpunit.xml
+/phpunit.xml.dist
+
+# WordPress package management
+/bower.json
+/bower.lock
+/composer.json
+/composer.lock
+/Gruntfile.js
+/gulpfile.js
+/package.json
+/package-lock.json
+/webpack.config.js
+/webpack.mix.js
+/yarn.lock
+
+# WordPress build artifacts
+/assets/build/
+/public/build/
+
+# WordPress cache directories
+/.w3tc/
+/wp-content/ai1wm-backups/
+/wp-content/backup/
+/wp-content/backup-db/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/uploads/
+/wp-content/w3tc-config/
+
+# WordPress security and configuration files
+/local-config.php
+/wp-config-local.php
+
+# WordPress debug and log files
+/wp-content/error_log
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

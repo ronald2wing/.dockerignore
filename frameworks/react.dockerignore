@@ -1,0 +1,34 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# REACT DOCKERIGNORE TEMPLATE
+# ============================================
+# For React projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only React-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# REACT SPECIFIC PATTERNS
+# -----------------------------------------
+
+.cra/
+.jest/
+.react/
+.storybook-out/
+.storybook/
+.webpack/
+cypress.config.*.timestamp-*
+cypress/
+cypress/screenshots/
+cypress/videos/
+jest.config.*.timestamp-*
+playwright-report/
+storybook-static/
+styleguide/
+vitest.config.*.timestamp-*
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

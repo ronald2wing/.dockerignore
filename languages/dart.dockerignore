@@ -1,0 +1,76 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# DART DOCKERIGNORE TEMPLATE
+# ============================================
+# For Dart projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (Flutter.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# DART SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Dart tooling and build artifacts
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+.dart/
+.dartserver/
+
+# Dart package management
+pubspec.lock
+.dart_tool/package_config.json
+.dart_tool/package_config_subset
+
+# Dart compilation artifacts
+*.dill
+*.kernel
+*.kernel.dill
+*.aot
+*.jit
+*.snapshot
+*.js
+*.js.map
+*.dart.js
+*.dart.js.map
+
+# Dart test and coverage
+test/**.dart.js
+test/**.dart.js.map
+.coverage_badge.json
+.coverage_badge.svg
+lcov.info
+
+# Dart documentation
+doc/
+docs/
+api/
+dartdoc/
+.dartdoc/
+
+# Dart temporary files (Dart specific)
+.dart_tool/cache/
+
+# Dart analysis files
+.analysis_options
+.analysis_options.yaml
+analysis_options.yaml
+dart_analysis_server
+.dart_analysis_server
+
+# Dart build reports
+build/reports/
+build/test-results/
+build/benchmarks/
+build/profile/
+build/release/
+
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE - COMBINE WITH CATEGORY TEMPLATES
+# ============================================

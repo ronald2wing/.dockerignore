@@ -1,0 +1,94 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# NETLIFY DOCKERIGNORE TEMPLATE
+# ============================================
+# For Netlify projects (deployment platform).
+# TOOL-SPECIFIC TEMPLATE - Contains only Netlify-specific patterns.
+# Combine with language templates, framework templates, and category templates
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# NETLIFY SPECIFIC PATTERNS
+# -----------------------------------------
+
+/.netlify/
+/.netlify/cache/
+/.netlify/tmp/
+/.netlify-cli/
+/.netlify-cli/cache/
+/.netlify-cli/logs/
+/.netlify-cli/state.json
+/.netlify-cli/config.json
+
+# -----------------------------------------
+# NETLIFY CONFIGURATION FILES
+# -----------------------------------------
+
+/netlify.toml
+/netlify.toml.example
+/netlify.toml.bak
+/netlify.yaml
+/netlify.yaml.example
+/netlify.yaml.bak
+/netlify.yml
+/netlify.yml.example
+/netlify.yml.bak
+/netlify.env.*
+/netlify.env.local
+/netlify.env.production
+
+# -----------------------------------------
+# NETLIFY FUNCTIONS AND EDGE FUNCTIONS
+# -----------------------------------------
+
+/.netlify/functions/
+/.netlify/functions-internal/
+/.netlify/edge-functions/
+/functions/
+/edge-functions/
+
+# -----------------------------------------
+# NETLIFY DEPLOYMENT AND PLUGIN FILES
+# -----------------------------------------
+
+/.netlify/deploys/
+/.netlify/deploy-previews/
+/.netlify/plugins/
+/plugins/
+
+# -----------------------------------------
+# NETLIFY IDENTITY AND FORM FILES
+# -----------------------------------------
+
+/.netlify/identity/
+/.netlify/forms/
+/identity/
+/forms/
+
+# -----------------------------------------
+# NETLIFY REDIRECTS AND HEADERS
+# -----------------------------------------
+
+/_redirects
+/_headers
+/_redirects.example
+/_headers.example
+
+# -----------------------------------------
+# NETLIFY LOG FILES
+# -----------------------------------------
+
+/netlify.log
+/netlify-*.log
+
+# ============================================
+# TOOL-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================
+# Combine with:
+# 1. Language templates (Node.dockerignore, JavaScript.dockerignore, Python.dockerignore, etc.)
+# 2. Framework templates (React.dockerignore, Next.dockerignore, Gatsby.dockerignore, etc.)
+# 3. Category templates (Security.dockerignore, Cache.dockerignore, Logs.dockerignore, etc.)
+# 4. Build tool templates (Webpack.dockerignore, Vite.dockerignore, etc.)
+# ============================================

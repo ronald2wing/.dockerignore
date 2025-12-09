@@ -1,0 +1,54 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# ELIXIR DOCKERIGNORE TEMPLATE
+# ============================================
+# For Elixir projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (Phoenix.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# ELIXIR SPECIFIC PATTERNS
+# -----------------------------------------
+
+!README.md
+*.md
+.azure-pipelines.yml
+.circleci/
+.credo/
+.dialyzer/
+.dialyzer_ignore
+.elixir_ls/
+.github/
+.gitlab-ci.yml
+.gitlab/
+.jenkins/
+.sobelow/
+.travis.yml
+/_build/
+/assets/css/
+/assets/fonts/
+/assets/images/
+/assets/js/
+/assets/node_modules/
+/assets/vendor/
+/cover/
+/deps/
+/log/
+/mix.lock
+/priv/static/
+/rel/
+/temp/
+/test-output/
+/test-reports/
+/test-results/
+/tmp/
+Dockerfile
+docs/
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE - COMBINE WITH CATEGORY TEMPLATES
+# ============================================

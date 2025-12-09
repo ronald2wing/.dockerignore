@@ -1,0 +1,75 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# LUA DOCKERIGNORE TEMPLATE
+# ============================================
+# For Lua projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (LÖVE.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# LUA COMPILED AND BYTECODE FILES
+# -----------------------------------------
+
+*.luac
+*.out
+*.o
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.obj
+*.exe
+*.bin
+
+# -----------------------------------------
+# LUA DEPENDENCY AND PACKAGE DIRECTORIES
+# -----------------------------------------
+
+luarocks/
+.luarocks/
+.rocks/
+.rockspec
+.lock
+.lock-hash
+.vendor/
+deps/
+lib/
+*.rockspec
+
+# -----------------------------------------
+# LUA TEST AND DEVELOPMENT FILES
+# -----------------------------------------
+
+*.swp
+*.swo
+*~
+*#
+.#*
+.*.swp
+test-reports/
+test-results/
+coverage/
+*.cov
+*.cover
+.coverage
+.coverage.*
+
+# -----------------------------------------
+# LUA RUNTIME AND CACHE FILES
+# -----------------------------------------
+
+*.trace
+*.profile
+*.luap
+luac.out
+luac.err
+.lua_history
+.lua_debug
+.lua_repl
+

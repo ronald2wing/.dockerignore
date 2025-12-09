@@ -1,0 +1,84 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# C# DOCKERIGNORE TEMPLATE
+# ============================================
+# For C# projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (ASP.NET.dockerignore, Blazor.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# C# SPECIFIC PATTERNS
+# -----------------------------------------
+
+# C# build artifacts
+/bin/
+/obj/
+/Bin/
+/Obj/
+/build/
+/out/
+/publish/
+/Release/
+/Debug/
+/x64/
+/x86/
+/AnyCPU/
+/amd64/
+/arm64/
+
+# C# package and dependency directories
+/packages/
+/.nuget/
+/NuGet/
+
+# C# project and solution files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ncrunchproject
+*.crunchsolution
+*.vsp
+*.vspx
+*.vspscc
+*.testsettings
+*.testrunconfig
+
+# C# IDE and editor files (C# specific IDE files)
+/*.csproj.user
+/*.vbproj.user
+/*.fsproj.user
+/*.vcxproj.user
+/*.vcxproj.filters
+
+# C# temporary and cache files (C# specific)
+/TemporaryGeneratedFile_*.cs
+/_ReSharper.*/
+*.resharper
+*.resharper.user
+
+# C# test and coverage reports
+/TestResults/
+/TestResult.xml
+/coverage/
+/.coverage
+/*.coverage.xml
+/*.trx
+/*.vsmdi
+/*.testlog
+
+# C# documentation
+/_gh_pages/
+/docs/_site/
+/docs/output/
+/Help/
+/*.chm
+
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE - COMBINE WITH CATEGORY TEMPLATES
+# ============================================

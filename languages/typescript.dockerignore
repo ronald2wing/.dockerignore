@@ -1,0 +1,42 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# TYPESCRIPT DOCKERIGNORE TEMPLATE
+# ============================================
+# For TypeScript projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (React.dockerignore, Angular.dockerignore, Vue.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# TYPESCRIPT SPECIFIC PATTERNS
+# -----------------------------------------
+
+*.d.ts
+*.d.ts.map
+*.pid.lock
+*.seed
+*.tsbuildinfo
+.eslintcache
+.node_repl_history
+.npm
+.out
+.parcel-cache
+.rollup.cache
+.storybook-out
+coverage
+lib/
+tsconfig.tsbuildinfo
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates (React.dockerignore, Angular.dockerignore, Vue.dockerignore, etc.)
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, WebStorm.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

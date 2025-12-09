@@ -1,0 +1,212 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# BACKUP DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding backup and old files.
+# Combine with other templates as needed.
+# ============================================
+
+# -----------------------------------------
+# BACKUP AND OLD FILES
+# -----------------------------------------
+
+# Standard backup extensions
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*~
+\#*#
+.#*
+
+# Versioned backup files
+*.bak.1
+*.bak.2
+*.bak.3
+*.backup.1
+*.backup.2
+*.backup.3
+*.old.1
+*.old.2
+*.old.3
+
+# Date-stamped backup files
+*.bak.*
+*.backup.*
+*.old.*
+*.save.*
+*~.*
+*.YYYYMMDD
+*.YYYY-MM-DD
+*.YYMMDD
+*.YY-MM-DD
+
+# Compressed backup files
+*.bak.gz
+*.backup.gz
+*.old.gz
+*.save.gz
+*.bak.zip
+*.backup.zip
+*.old.zip
+*.save.zip
+*.bak.tar
+*.backup.tar
+*.old.tar
+*.save.tar
+*.bak.tar.gz
+*.backup.tar.gz
+*.old.tar.gz
+*.save.tar.gz
+
+# Editor backup files
+*.swp
+*.swo
+*.swn
+*.swm
+*.swl
+*.swx
+*.swpx
+*.un~
+*.undo
+*.undo-tree
+*.vim
+.viminfo
+.vimrc.local
+.vimrc.backup
+
+# IDE backup files
+.idea/backup/
+.idea/shelf/
+.vscode/backup/
+.vscode/shelf/
+*.iws
+*.ipr.old
+*.iml.old
+*.classpath.old
+*.project.old
+
+# Database backup files
+*.sql.bak
+*.sql.backup
+*.sql.old
+*.sql.save
+*.db.bak
+*.db.backup
+*.db.old
+*.db.save
+*.sqlite.bak
+*.sqlite.backup
+*.sqlite.old
+*.sqlite.save
+dump.sql
+backup.sql
+restore.sql
+
+# Configuration backup files
+*.config.bak
+*.config.backup
+*.config.old
+*.config.save
+*.conf.bak
+*.conf.backup
+*.conf.old
+*.conf.save
+*.ini.bak
+*.ini.backup
+*.ini.old
+*.ini.save
+*.yml.bak
+*.yml.backup
+*.yml.old
+*.yml.save
+*.yaml.bak
+*.yaml.backup
+*.yaml.old
+*.yaml.save
+*.json.bak
+*.json.backup
+*.json.old
+*.json.save
+*.xml.bak
+*.xml.backup
+*.xml.old
+*.xml.save
+
+# Document backup files
+*.doc.bak
+*.doc.backup
+*.doc.old
+*.doc.save
+*.docx.bak
+*.docx.backup
+*.docx.old
+*.docx.save
+*.pdf.bak
+*.pdf.backup
+*.pdf.old
+*.pdf.save
+*.txt.bak
+*.txt.backup
+*.txt.old
+*.txt.save
+*.md.bak
+*.md.backup
+*.md.old
+*.md.save
+*.rst.bak
+*.rst.backup
+*.rst.old
+*.rst.save
+
+# Source code backup files
+*.c.bak
+*.c.backup
+*.c.old
+*.c.save
+*.cpp.bak
+*.cpp.backup
+*.cpp.old
+*.cpp.save
+*.java.bak
+*.java.backup
+*.java.old
+*.java.save
+*.py.bak
+*.py.backup
+*.py.old
+*.py.save
+*.js.bak
+*.js.backup
+*.js.old
+*.js.save
+*.ts.bak
+*.ts.backup
+*.ts.old
+*.ts.save
+*.go.bak
+*.go.backup
+*.go.old
+*.go.save
+*.rs.bak
+*.rs.backup
+*.rs.old
+*.rs.save
+
+# Archive backup directories
+backup/
+backups/
+.bak/
+.backup/
+.old/
+.save/
+archive/
+archives/
+.archives/
+
+# ============================================
+# END OF BACKUP PATTERNS
+# ============================================
+

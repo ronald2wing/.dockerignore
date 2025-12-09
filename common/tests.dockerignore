@@ -1,0 +1,225 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# TESTS DOCKERIGNORE TEMPLATE
+# ============================================
+# For test files and reports across different testing frameworks.
+# Combine with language templates (Node.dockerignore, Python.dockerignore, etc.)
+# and framework templates for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# TEST COVERAGE AND REPORT FILES
+# -----------------------------------------
+
+coverage/
+.coverage
+.coverage.*
+.nyc_output/
+nyc_output/
+lcov.info
+*.lcov
+*.cov
+*.cover
+*.coverprofile
+*.coveralls
+*.coveralls.yml
+*.coveralls.json
+.codecov
+.codecov.yml
+.codecov.json
+.codeclimate
+.codeclimate.yml
+.codeclimate.json
+.sonar
+.sonar.yml
+.sonar.json
+.sonarqube
+.sonarqube.yml
+.sonarqube.json
+
+# -----------------------------------------
+# TEST OUTPUT AND RESULT FILES
+# -----------------------------------------
+
+test-results/
+test-reports/
+test-output/
+test-logs/
+.junit/
+junit/
+.junit.xml
+junit.xml
+.junit.json
+junit.json
+.test.xml
+test.xml
+.test.json
+test.json
+.xunit
+xunit/
+.xunit.xml
+xunit.xml
+.xunit.json
+xunit.json
+.mocha
+mocha/
+.mocha.json
+mocha.json
+.mocha.xml
+mocha.xml
+.jest
+jest/
+.jest.json
+jest.json
+.jest.xml
+jest.xml
+.cypress
+cypress/
+.cypress.json
+cypress.json
+.cypress.xml
+cypress.xml
+.pytest
+pytest/
+.pytest.json
+pytest.json
+.pytest.xml
+pytest.xml
+.phpunit
+phpunit/
+.phpunit.json
+phpunit.json
+.phpunit.xml
+phpunit.xml
+.rspec
+rspec/
+.rspec.json
+rspec.json
+.rspec.xml
+rspec.xml
+
+# -----------------------------------------
+# TEST TEMPORARY AND CACHE FILES
+# -----------------------------------------
+
+.test/
+.test-cache/
+.test-tmp/
+.test-temp/
+.test-coverage/
+.test-reports/
+.test-results/
+.test-output/
+.test-logs/
+.test-junit/
+.test-xunit/
+.test-mocha/
+.test-jest/
+.test-cypress/
+.test-pytest/
+.test-phpunit/
+.test-rspec/
+
+# -----------------------------------------
+# TEST SCREENSHOT AND VIDEO FILES
+# -----------------------------------------
+
+screenshots/
+.videos/
+videos/
+.screenshots/
+.snapshots/
+snapshots/
+.diff/
+diff/
+.diffs/
+diffs/
+.baseline/
+baseline/
+.baselines/
+baselines/
+.actual/
+actual/
+.actuals/
+actuals/
+.expected/
+expected/
+.expecteds/
+expecteds/
+
+# -----------------------------------------
+# TEST PROFILING AND PERFORMANCE FILES
+# -----------------------------------------
+
+.prof
+.profiling
+.profiling.json
+.profiling.xml
+.profiling.html
+.profiling.txt
+.profiling.out
+.profiling.err
+.performance
+.performance.json
+.performance.xml
+.performance.html
+.performance.txt
+.performance.out
+.performance.err
+.benchmark
+.benchmark.json
+.benchmark.xml
+.benchmark.html
+.benchmark.txt
+.benchmark.out
+.benchmark.err
+.trace
+.trace.json
+.trace.xml
+.trace.html
+.trace.txt
+.trace.out
+.trace.err
+.profile
+.profile.json
+.profile.xml
+.profile.html
+.profile.txt
+.profile.out
+.profile.err
+
+# -----------------------------------------
+# TEST SECURITY AND VULNERABILITY FILES
+# -----------------------------------------
+
+.vuln
+.vulnerability
+.vulnerability.json
+.vulnerability.xml
+.vulnerability.html
+.vulnerability.txt
+.vulnerability.out
+.vulnerability.err
+.security
+.security.json
+.security.xml
+.security.html
+.security.txt
+.security.out
+.security.err
+.audit
+.audit.json
+.audit.xml
+.audit.html
+.audit.txt
+.audit.out
+.audit.err
+.scan
+.scan.json
+.scan.xml
+.scan.html
+.scan.txt
+.scan.out
+.scan.err
+

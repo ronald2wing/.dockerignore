@@ -1,0 +1,36 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# RUBY DOCKERIGNORE TEMPLATE
+# ============================================
+# For Ruby projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (Rails.dockerignore, Sinatra.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# RUBY SPECIFIC PATTERNS
+# -----------------------------------------
+
+.bundle/
+.byebug_history
+.rbenv-vars
+.ruby-version
+/.bundle
+/public/assets
+Gemfile.lock
+spec/examples.txt
+spring/*.pid
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates (Rails.dockerignore, Sinatra.dockerignore, etc.)
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, WebStorm.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

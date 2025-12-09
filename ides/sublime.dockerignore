@@ -1,0 +1,48 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# SUBLIME TEXT DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding Sublime Text editor files.
+# IDE-SPECIFIC TEMPLATE - Contains only Sublime Text-specific patterns.
+# Combine with language templates, framework templates, and category templates
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# SUBLIME TEXT SPECIFIC PATTERNS
+# -----------------------------------------
+
+*.sublime-auto-save
+*.sublime-build
+*.sublime-color-scheme
+*.sublime-commands
+*.sublime-completions
+*.sublime-keymap
+*.sublime-macro
+*.sublime-menu
+*.sublime-mousemap
+*.sublime-settings
+*.sublime-syntax
+*.sublime-theme
+*.sublime_session
+Installed Packages/
+Package Control.cache/
+Package Control.last-run
+Package Control.merged-ca-bundle
+Package Control.sublime-settings
+Package Control.system-ca-bundle
+Package Control.user-ca-bundle
+Packages/
+Preferences.sublime-settings
+User/
+
+# ============================================
+# IDE-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================
+# Combine with:
+# 1. Language templates (Python.dockerignore, JavaScript.dockerignore, etc.)
+# 2. Framework templates (Django.dockerignore, React.dockerignore, etc.)
+# 3. Category templates (Cache.dockerignore, Backup.dockerignore, Security.dockerignore, etc.)
+# 4. Operating system templates (Linux.dockerignore, macOS.dockerignore, Windows.dockerignore)
+# ============================================

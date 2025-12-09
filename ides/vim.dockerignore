@@ -1,0 +1,53 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# VIM DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding Vim and Neovim editor files.
+# IDE-SPECIFIC TEMPLATE - Contains only Vim/Neovim-specific patterns.
+# Combine with language templates, framework templates, and category templates
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# VIM/Neovim SPECIFIC PATTERNS
+# -----------------------------------------
+
+*.fold
+*.nvim
+*.nviminfo
+*.shada
+*.spl
+*.sug
+*.undo
+*.view
+*.vim
+*.viminfo
+*.vimrc
+.*.undo
+.*.un~
+.netrwhist
+.nvim/
+.nviminfo
+.shada
+.spell/
+.swo
+.swp
+.undo/
+.vim/
+.viminfo
+.vimrc
+nvim/
+nviminfo
+pack/
+view/
+
+# ============================================
+# IDE-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================
+# Combine with:
+# 1. Language templates (Python.dockerignore, JavaScript.dockerignore, etc.)
+# 2. Framework templates (Django.dockerignore, React.dockerignore, etc.)
+# 3. Category templates (Cache.dockerignore, Backup.dockerignore, Security.dockerignore, etc.)
+# 4. Operating system templates (Linux.dockerignore, macOS.dockerignore, Windows.dockerignore)
+# ============================================

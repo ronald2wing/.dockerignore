@@ -1,0 +1,57 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# BUN DOCKERIGNORE TEMPLATE
+# ============================================
+# For Bun projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# and category templates (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# BUN RUNTIME AND CACHE DIRECTORIES
+# -----------------------------------------
+
+.bun/
+.bun/cache/
+.bun-install/
+.bun-build/
+.bun/logs/
+
+# -----------------------------------------
+# BUN CONFIGURATION AND LOCK FILES
+# -----------------------------------------
+
+bun.lockb
+bun.lock
+bunfig.toml
+bunfig.toml.example
+bunfig.toml.bak
+
+# -----------------------------------------
+# BUN STANDALONE EXECUTABLES
+# -----------------------------------------
+
+*.bun
+*.bun.exe
+*.bun.app
+
+# -----------------------------------------
+# BUN BACKUP AND OLD FILES
+# -----------------------------------------
+
+*.bun.old
+*.bun.bak
+
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates as needed
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

@@ -1,0 +1,125 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# SECURITY DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding security-sensitive files.
+# Combine with other templates as needed.
+# ============================================
+
+# -----------------------------------------
+# SECURITY AND ENVIRONMENT FILES
+# -----------------------------------------
+
+# Certificate and key files
+*.cert
+*.crt
+*.key
+*.pem
+*.priv
+*.pfx
+*.p12
+*.der
+*.cer
+*.jks
+*.keystore
+*.truststore
+*.p7b
+*.p7c
+*.spc
+*.crl
+*.csr
+*.req
+
+# Environment and configuration files
+.env
+.env.*
+.secret
+.secrets
+.secret.*
+.secrets.*
+.config
+.config.*
+.local
+.local.*
+
+# Local configuration files
+config/local.*
+config/secret.*
+config/credentials.*
+config/*.local.*
+credentials.*
+local.*
+local-*
+local_*
+local.config.*
+settings.local.*
+secrets.local.*
+credentials.local.*
+
+# SSH and authentication files
+*.pub
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.asc
+*.gpg
+*.pgp
+ssh_config
+ssh_known_hosts
+known_hosts
+authorized_keys
+.ssh/
+.ssh/known_hosts
+.ssh/authorized_keys
+.ssh/config
+.ssh/id_*
+
+# Password and credential files
+*.passwd
+*.password
+*.pwd
+passwd
+password
+pwd
+*.cred
+*.creds
+credential*
+*.token
+*.auth
+*.authz
+*.acl
+
+# Database credentials and dumps
+*.sql
+*.sqlite
+*.sql.gz
+*.sql.bz2
+*.sql.xz
+*.dump
+*.backup
+*.bak
+*.db
+*.db-journal
+*.mdb
+*.accdb
+*.frm
+*.myd
+*.myi
+*.ibd
+
+# Application secrets
+*.secret
+*.secrets
+secret*
+secrets*
+*.private
+private*
+*.confidential
+confidential*
+
+# ============================================
+# END OF SECURITY PATTERNS
+# ============================================
+

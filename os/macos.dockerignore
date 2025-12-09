@@ -1,0 +1,37 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# MACOS DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding macOS specific files.
+# Combine with other templates as needed.
+# ============================================
+
+# -----------------------------------------
+# MACOS SPECIFIC PATTERNS
+# -----------------------------------------
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.fseventsd/
+.Spotlight-V100/
+.Trashes/
+__MACOSX/
+
+# Cross-platform temporary files
+*.swp
+*.swo
+*~
+~$*
+*.tmp
+*.temp
+
+# ============================================
+# END OF MACOS PATTERNS
+# ============================================
+

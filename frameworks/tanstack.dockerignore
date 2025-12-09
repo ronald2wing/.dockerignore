@@ -1,0 +1,140 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# TANSTACK DOCKERIGNORE TEMPLATE
+# ============================================
+# For TanStack projects (React Query, TanStack Table, TanStack Router, etc.).
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Tanstack-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# TANSTACK SPECIFIC PATTERNS
+# -----------------------------------------
+
+# TanStack build artifacts
+/dist/
+/build/
+/.next/
+/.nuxt/
+/.svelte-kit/
+/.astro/
+/.output/
+
+# TanStack dependency directories
+/node_modules/
+/.npm/
+/.yarn/
+/.pnpm/
+/.cache/
+/.parcel-cache/
+/.turbo/
+
+# TanStack test files and reports
+/tests/
+/test/
+/coverage/
+/.nyc_output/
+/test-results/
+/playwright-report/
+/vitest-reports/
+/cypress/screenshots/
+/cypress/videos/
+/jest.config.js
+/jest.config.ts
+/vitest.config.js
+/vitest.config.ts
+/cypress.config.js
+/cypress.config.ts
+/playwright.config.js
+/playwright.config.ts
+
+# TanStack package management files
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+/bun.lockb
+/Gruntfile.js
+/gulpfile.js
+/webpack.config.js
+/webpack.config.ts
+/vite.config.js
+/vite.config.ts
+/rollup.config.js
+/rollup.config.ts
+
+# TanStack environment and configuration files
+/.env
+/.env.*
+/.env.local
+/.env.production
+/.env.development
+/.env.test
+/.env.staging
+/*.key
+/*.pem
+/*.crt
+/*.cert
+/config/*.js
+/config/*.json
+/config/*.ts
+
+# TanStack TypeScript compilation files
+/*.tsbuildinfo
+/tsconfig.tsbuildinfo
+/.tsbuildinfo
+/dist-ts/
+/out-tsc/
+
+# TanStack cache and temporary files
+/.tmp/
+/tmp/
+/temp/
+/*.tmp
+/*.temp
+/*.cache
+
+# TanStack log files
+/*.log
+/logs/
+/.next/logs/
+/debug.log
+
+# TanStack documentation and examples
+/docs/
+/documentation/
+/examples/
+/samples/
+/stories/
+/.storybook/
+
+# TanStack IDE and editor files
+/.idea/
+/.vscode/
+/.vs/
+/.sublime-*
+/*.sublime-*
+/*.code-workspace
+/*.iml
+/*.ipr
+/*.iws
+
+# TanStack OS metadata files
+/.DS_Store
+/.DS_Store?
+/._*
+/.Spotlight-V100
+/.Trashes
+/desktop.ini
+/ehthumbs.db
+/Thumbs.db
+/$RECYCLE.BIN/
+/*.lnk
+
+# TanStack backup and old files
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

@@ -1,0 +1,93 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# INTELLIJ DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding JetBrains IDE files (IntelliJ, PyCharm, WebStorm, Android Studio, etc.)
+# IDE-SPECIFIC TEMPLATE - Contains only JetBrains IDE-specific patterns.
+# Combine with language templates (Python.dockerignore, Java.dockerignore, etc.),
+# framework templates, and category templates for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# JETBRAINS IDE COMMON PATTERNS
+# -----------------------------------------
+
+.idea/.name
+.idea/artifacts/
+.idea/caches/
+.idea/caches/build_file_checksums.ser
+.idea/codeStyles/
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
+.idea/compiler.xml
+.idea/copyright/
+.idea/coverage-web/
+.idea/coverage/
+.idea/dataSources.ids
+.idea/dataSources.local.xml
+.idea/dataSources.xml
+.idea/dictionaries/
+.idea/dynamic.xml
+.idea/encodings.xml
+.idea/facets/
+.idea/fileTemplates/
+.idea/fileTemplates/internal/
+.idea/gradle.xml
+.idea/inspectionProfiles/
+.idea/inspectionProfiles/Project_Default.xml
+.idea/jarRepositories.xml
+.idea/libraries/
+.idea/maven.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/modules/
+.idea/runConfigurations/
+.idea/scopes/
+.idea/shelf/
+.idea/tasks.xml
+.idea/uiDesigner.xml
+.idea/vcs.xml
+.idea/workspace.xml
+
+# -----------------------------------------
+# PYCHARM SPECIFIC PATTERNS
+# -----------------------------------------
+
+.idea/assetWizardSettings.xml
+.idea/copyright/profiles_settings.xml
+.idea/jsLibraryMappings.xml
+.idea/navEditor.xml
+.idea/scopes/scope_settings.xml
+.idea/sqlDataSources.xml
+
+# -----------------------------------------
+# WEBSTORM SPECIFIC PATTERNS
+# -----------------------------------------
+
+.idea/assetWizardSettings.xml
+.idea/jsLibraryMappings.xml
+.idea/navEditor.xml
+.idea/scopes/scope_settings.xml
+.idea/sqlDataSources.xml
+
+# -----------------------------------------
+# ANDROID STUDIO SPECIFIC PATTERNS
+# -----------------------------------------
+
+.idea/assetWizardSettings.xml
+.idea/jsLibraryMappings.xml
+.idea/navEditor.xml
+.idea/scopes/scope_settings.xml
+.idea/sqlDataSources.xml
+
+# ============================================
+# IDE-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================
+# Combine with:
+# 1. Language templates (Python.dockerignore, Java.dockerignore, JavaScript.dockerignore, etc.)
+# 2. Framework templates (React.dockerignore, Django.dockerignore, etc.)
+# 3. Category templates (Security.dockerignore, Cache.dockerignore, Logs.dockerignore, etc.)
+# 4. Operating system templates (Linux.dockerignore, macOS.dockerignore, Windows.dockerignore)
+# ============================================
+

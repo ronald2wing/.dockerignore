@@ -1,0 +1,170 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# GHOST DOCKERIGNORE TEMPLATE
+# ============================================
+# For Ghost projects (Node.js blogging platform).
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Ghost-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# GHOST SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Ghost environment and security files
+.env
+.env.*
+.env.example
+.env.local
+.env.production
+.env.staging
+.env.testing
+
+# Ghost build artifacts
+/.astro/
+/.cache/
+/.next/
+/.nuxt/
+/.svelte-kit/
+/.turbo/
+/build/
+/core/built/
+/dist/
+
+# Ghost dependency directories
+/.npm/
+/.parcel-cache/
+/.pnpm/
+/.yarn/
+/node_modules/
+
+# Ghost content and data directories (development)
+/content/adapters/
+/content/data/
+/content/images/
+/content/logs/
+/content/settings/
+/content/themes/*/build/
+/content/themes/*/dist/
+/content/themes/*/node_modules/
+
+# Ghost cache and log directories
+/.logs/
+/logs/
+/var/cache/
+/var/log/
+
+# Ghost test files and reports
+/tests/
+/test/
+/coverage/
+/.nyc_output/
+/test-results/
+/playwright-report/
+/vitest-reports/
+/jest.config.js
+/jest.config.ts
+/vitest.config.js
+/vitest.config.ts
+/cypress.config.js
+/cypress.config.ts
+/playwright.config.js
+/playwright.config.ts
+
+# Ghost package management files
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+/bun.lockb
+/Gruntfile.js
+/gulpfile.js
+/webpack.config.js
+/webpack.config.ts
+/vite.config.js
+/vite.config.ts
+/rollup.config.js
+/rollup.config.ts
+
+# Ghost TypeScript compilation files
+/*.tsbuildinfo
+/tsconfig.tsbuildinfo
+/.tsbuildinfo
+/dist-ts/
+/out-tsc/
+
+# Ghost cache and temporary files
+/.tmp/
+/tmp/
+/temp/
+/*.tmp
+/*.temp
+/*.cache
+
+# Ghost log files
+/*.log
+/debug.log
+/error_log
+
+# Ghost backup and migration files
+/backups/
+/exports/
+*.sql
+*.sqlite
+*.sql.gz
+
+# Ghost database files
+/content/data/ghost.db
+/content/data/ghost-dev.db
+/*.db
+/*.sqlite
+/*.sqlite3
+/data/
+/database/
+
+# Ghost theme development files
+/content/themes/*/.git/
+/content/themes/*/.github/
+/content/themes/*/.gitignore
+
+# Ghost documentation and examples
+/docs/
+/documentation/
+/examples/
+/samples/
+/patches/
+
+# Ghost IDE and editor files
+/.idea/
+/.vscode/
+/.vs/
+/.sublime-*
+/*.sublime-*
+/*.code-workspace
+/*.iml
+/*.ipr
+/*.iws
+
+# Ghost OS metadata files
+/.DS_Store
+/.DS_Store?
+/._*
+/.Spotlight-V100
+/.Trashes
+/desktop.ini
+/ehthumbs.db
+/Thumbs.db
+/$RECYCLE.BIN/
+/*.lnk
+
+# Ghost uploads and media files (development)
+/uploads/
+/media/
+/static/
+/assets/
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

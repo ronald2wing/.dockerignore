@@ -1,0 +1,180 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# HAPI DOCKERIGNORE TEMPLATE
+# ============================================
+# For Hapi projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Combine with language templates
+# (Node.dockerignore, TypeScript.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# HAPI.JS BUILD AND DEPLOYMENT FILES
+# -----------------------------------------
+
+dist/
+build/
+.out/
+.output/
+.release/
+release/
+.stage/
+stage/
+.target/
+target/
+.coverage/
+coverage/
+.nyc_output/
+nyc_output/
+.test/
+test/
+.tests/
+tests/
+.spec/
+spec/
+.specs/
+specs/
+
+# -----------------------------------------
+# HAPI.JS CONFIGURATION AND PLUGIN FILES
+# -----------------------------------------
+
+.config/
+config/
+.config.local/
+config.local/
+.config.*.local/
+config.*.local/
+.config.development/
+config.development/
+.config.development.local/
+config.development.local/
+.config.test/
+config.test/
+.config.test.local/
+config.test.local/
+.config.production/
+config.production/
+.config.production.local/
+config.production.local/
+.config.staging/
+config.staging/
+.config.staging.local/
+config.staging.local/
+.plugins/
+plugins/
+.plugin/
+plugin/
+.modules/
+modules/
+.module/
+module/
+.extensions/
+extensions/
+.extension/
+extension/
+.middlewares/
+middlewares/
+.middleware/
+middleware/
+.routes/
+routes/
+.route/
+route/
+.handlers/
+handlers/
+.handler/
+handler/
+.controllers/
+controllers/
+.controller/
+controller/
+.services/
+services/
+.service/
+service/
+.repositories/
+repositories/
+.repository/
+repository/
+
+# -----------------------------------------
+# HAPI.JS LOG AND MONITORING FILES
+# -----------------------------------------
+
+*.log
+logs/
+.log/
+.logs/
+.monitoring/
+monitoring/
+.metrics/
+metrics/
+.traces/
+traces/
+.spans/
+spans/
+.audit/
+audit/
+.audits/
+audits/
+
+# -----------------------------------------
+# HAPI.JS TEST AND DOCUMENTATION FILES
+# -----------------------------------------
+
+test-reports/
+test-results/
+.docs/
+docs/
+.doc/
+doc/
+.documentation/
+documentation/
+.api/
+api/
+.swagger/
+swagger/
+.openapi/
+openapi/
+
+# -----------------------------------------
+# HAPI.JS SECURITY AND AUTHENTICATION FILES
+# -----------------------------------------
+
+.auth/
+auth/
+.authentication/
+authentication/
+.authorization/
+authorization/
+.jwt/
+jwt/
+.tokens/
+tokens/
+.token/
+token/
+.sessions/
+sessions/
+.session/
+session/
+.cookies/
+cookies/
+.cookie/
+cookie/
+.keys/
+keys/
+.key/
+key/
+.certs/
+certs/
+.cert/
+cert/
+.ssl/
+ssl/
+.tls/
+tls/
+

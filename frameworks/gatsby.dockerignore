@@ -1,0 +1,95 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# GATSBY DOCKERIGNORE TEMPLATE
+# ============================================
+# For Gatsby projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Gatsby-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# GATSBY SPECIFIC PATTERNS
+# -----------------------------------------
+
+!README.md
+**/*.spec.js
+**/*.spec.ts
+**/*.test.js
+**/*.test.ts
+**/__mocks__/
+**/__tests__/
+*.7z
+*.avi
+*.avif
+*.doc
+*.docx
+*.eot
+*.gif
+*.gz
+*.ico
+*.jpeg
+*.jpg
+*.md
+*.mov
+*.mp3
+*.mp4
+*.ogg
+*.otf
+*.pid.lock
+*.png
+*.ppt
+*.pptx
+*.rar
+*.seed
+*.svg
+*.tsbuildinfo
+*.ttf
+*.wav
+*.webm
+*.webp
+*.woff
+*.woff2
+*.xls
+*.xlsx
+.azure-pipelines.yml
+.biome/
+.bun/
+.circleci/
+.eslintcache
+.gatsby-browser.js
+.gatsby-context.js
+.gatsby-node.js
+.gatsby-ssr.js
+.github/
+.gitlab-ci.yml
+.gitlab/
+.jenkins/
+.node_repl_history
+.npm/
+.nx/
+.nyc_output/
+.parcel-cache
+.pnpm-store/
+.prettiercache
+.rollup.cache
+.rush/
+.travis.yml
+.yarn/
+bun.lockb
+coverage
+Dockerfile
+docs/
+package-lock.json
+pids
+pnpm-lock.yaml
+public/
+src/gatsby-theme-*/
+sw.js
+workbox-*.js
+yarn.lock
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

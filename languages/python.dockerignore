@@ -1,0 +1,88 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# PYTHON DOCKERIGNORE TEMPLATE
+# ============================================
+# For Python projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (Django.dockerignore, Flask.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# PYTHON SPECIFIC PATTERNS
+# -----------------------------------------
+
+*$py.class
+*.cover
+*.egg
+*.egg-info/
+*.manifest
+*.mo
+*.pot
+*.py,cover
+*.py[cod]
+*.sage.py
+*.spec
+.dmypy.json
+.eggs/
+.hatch/
+.hypothesis/
+.installed.cfg
+.instance/
+.ipynb_checkpoints
+.mypy_cache/
+.nosetests.xml
+.nox/
+.pdm.toml
+.pybuilder/
+.pyenv/
+.pyre/
+.pytest_cache/
+.Python
+.python-version
+.pytype/
+.ruff_cache/
+.scrapy
+.tox/
+.uv/
+.webassets-cache
+__pypackages__/
+celerybeat-schedule
+celerybeat.pid
+cover/
+coverage.xml
+cython_debug/
+develop-eggs/
+dmypy.json
+downloads/
+eggs/
+env.bak/
+ENV/
+ipython_config.py
+lib/
+lib64/
+MANIFEST
+parts/
+pip-delete-this-directory.txt
+pip-log.txt
+Pipfile.lock
+poetry.lock
+profile_default/
+sdist/
+share/python-wheels/
+var/
+venv.bak/
+wheels/
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates (Django.dockerignore, Flask.dockerignore, etc.)
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, WebStorm.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

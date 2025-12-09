@@ -1,0 +1,129 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# DRUPAL DOCKERIGNORE TEMPLATE
+# ============================================
+# For Drupal projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Drupal-specific patterns.
+# Combine with language templates (PHP.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# DRUPAL SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Drupal core files that should not be in production
+/README.txt
+/CHANGELOG.txt
+/COPYRIGHT.txt
+/LICENSE.txt
+/MAINTAINERS.txt
+/INSTALL*.txt
+/UPGRADE*.txt
+/core/COPYRIGHT.txt
+/core/CHANGELOG.txt
+/core/INSTALL*.txt
+/core/MAINTAINERS.txt
+/core/UPGRADE*.txt
+
+# Drupal development and testing files
+/phpunit.xml
+/phpunit.xml.dist
+/phpcs.xml
+/phpcs.xml.dist
+/.phpcs.xml
+/.phpcs.xml.dist
+/.php-cs-fixer.php
+/.php-cs-fixer.dist.php
+/behat.yml
+/behat.yml.dist
+/.behat.yml
+/.behat.yml.dist
+
+# Drupal package management
+/composer.json
+/composer.lock
+/package.json
+/package-lock.json
+/yarn.lock
+/bower.json
+/bower.lock
+/Gruntfile.js
+/gulpfile.js
+/webpack.config.js
+/webpack.mix.js
+
+# Drupal build artifacts
+/libraries/
+/themes/custom/*/node_modules/
+/themes/custom/*/dist/
+/themes/custom/*/build/
+/modules/custom/*/node_modules/
+/modules/custom/*/dist/
+/modules/custom/*/build/
+
+# Drupal backup and migration files
+*.sql
+*.sqlite
+*.sql.gz
+
+# Drupal file directories (should be managed separately)
+/sites/*/config/
+/sites/*/config_*/  # config sync directories
+/sites/*/files/
+/sites/*/private/
+/sites/*/tmp/
+/sites/*/translations/
+
+# Drupal cache and temporary directories
+/var/
+/var/cache/
+/var/page_cache/
+/var/session/
+/var/tmp/
+
+# Drupal security and configuration files
+/sites/*/development.services.yml
+/sites/*/services.local.yml
+/sites/*/settings.local.php
+
+# Drupal debug and log files
+/dblog/
+/php-error.log
+/php-fpm-error.log
+/watchdog/
+
+# Drupal temporary and cache files
+/aggregate/
+/css/
+/ctools/
+/entity_cache/
+/features/
+/imagecache/
+/js/
+/php/
+/twig/
+/views_cache/
+
+# Drupal test coverage and reports
+/simpletest/
+/sites/simpletest/
+
+# Drupal documentation and examples
+/contrib/  # Contributed modules/themes (should be managed via composer)
+/docs/
+/documentation/
+/examples/
+/patches/
+/samples/
+
+# Drupal configuration exports (should be managed via config sync)
+/config/
+/config_*/
+/sites/*/config_*/
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

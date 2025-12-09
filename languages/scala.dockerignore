@@ -1,0 +1,71 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# SCALA DOCKERIGNORE TEMPLATE
+# ============================================
+# For Scala projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (PlayFramework.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# SCALA BUILD ARTIFACTS AND COMPILED FILES
+# -----------------------------------------
+
+*.class
+*.ctxt
+*.jar
+*.o
+*.so
+*.stackdump
+*.swp
+*.swo
+*~
+*#
+.#*
+.*.swp
+
+# -----------------------------------------
+# SCALA BUILD DIRECTORIES (SBT, Gradle, etc.)
+# -----------------------------------------
+
+target/
+build/
+.bloop/
+.metals/
+.bsp/
+.ensime_cache/
+.jvm/
+.js/
+.native/
+project/target/
+project/project/
+.coursier/
+
+# -----------------------------------------
+# SCALA TOOL FILES
+# -----------------------------------------
+
+.ensime
+.sbt/
+.sbtrc
+.scala_dependencies
+.scala-build/
+.scala_dependencies.lock
+
+# -----------------------------------------
+# SCALA TEST AND COVERAGE REPORTS
+# -----------------------------------------
+
+coverage/
+.coverage
+.coverage.*
+*.cover
+test-reports/
+test-results/
+*.test
+*.spec
+

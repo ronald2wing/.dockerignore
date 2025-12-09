@@ -1,0 +1,94 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# SVELTEKIT DOCKERIGNORE TEMPLATE
+# ============================================
+# For SvelteKit projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Sveltekit-specific patterns.
+# Combine with language templates (Node.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# SVELTEKIT SPECIFIC PATTERNS
+# -----------------------------------------
+
+# SvelteKit build artifacts
+.svelte-kit/
+.out/
+.output/
+.vercel/
+.netlify/
+.render/
+
+# SvelteKit configuration and cache
+svelte.config.*.js
+svelte.config.*.ts
+svelte.config.*.mjs
+vite.config.*.js
+vite.config.*.ts
+vite.config.*.mjs
+.svelte-kit/types.d.ts
+.svelte-kit/generated/
+.svelte-kit/output/
+.svelte-kit/ambient.d.ts
+
+# SvelteKit package management
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+.npm/
+.yarn/
+.pnpm/
+
+# SvelteKit test and coverage
+test/
+tests/
+__tests__/
+__mocks__/
+vitest.config.*
+vitest.config.*.ts
+vitest.config.*.js
+vitest.config.*.mjs
+playwright.config.*
+cypress.config.*
+jest.config.*
+
+# SvelteKit IDE files
+
+# SvelteKit temporary files
+
+# SvelteKit security files
+
+# SvelteKit deployment files
+.fly/
+.railway/
+.aws/
+.azure/
+.gcp/
+
+# SvelteKit documentation
+docs/
+documentation/
+examples/
+samples/
+
+# SvelteKit OS metadata
+
+# SvelteKit backup files
+*.rar
+*.7z
+
+# SvelteKit development server
+.dev/
+.devcontainer/
+.husky/
+
+# SvelteKit type generation
+.svelte-kit/types/
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

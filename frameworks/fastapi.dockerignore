@@ -1,0 +1,60 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# FASTAPI DOCKERIGNORE TEMPLATE
+# ============================================
+# For FastAPI projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only FastAPI-specific patterns.
+# Combine with language templates (Python.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# FASTAPI SPECIFIC PATTERNS
+# -----------------------------------------
+
+# FastAPI environment and security files
+.env
+.env.*
+.env.example
+.env.local
+.env.production
+.env.staging
+.env.testing
+
+*.db
+*.sqlite
+*.sqlite3
+*.test.db
+*.test.sqlite
+*.test.sqlite3
+alembic.ini
+alembic/
+!alembic/versions/__init__.py
+alembic/versions/*.py
+assets/node_modules/
+db.sqlite3
+db.sqlite3-journal
+fastapi.log
+hypercorn.log
+instance/
+local_settings.py
+media/
+migrations/
+!*/migrations/__init__.py
+*/migrations/*.py
+openapi.json
+openapi.yaml
+openapi.yml
+redoc-static.html
+static/
+staticfiles/
+swagger.json
+swagger.yaml
+swagger.yml
+uploads/
+uvicorn.log
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================

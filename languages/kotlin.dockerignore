@@ -1,0 +1,95 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# KOTLIN DOCKERIGNORE TEMPLATE
+# ============================================
+# For Kotlin projects.
+# LANGUAGE-SPECIFIC TEMPLATE - Combine with framework templates
+# (SpringBoot.dockerignore, Ktor.dockerignore, etc.) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# KOTLIN SPECIFIC PATTERNS
+# -----------------------------------------
+
+# Gradle build artifacts
+.gradle/
+*.jar
+*.war
+*.ear
+
+# Gradle wrapper (keep gradle-wrapper.jar but exclude others)
+gradle/wrapper/gradle-wrapper.properties
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ/Android Studio files
+.idea_modules/
+
+# Kotlin compilation artifacts
+*.kotlin_module
+*.kotlin_builtins
+.kotlin/
+.kotlinc/
+.kapt/
+
+# Android specific files
+local.properties
+*.keystore
+*.jks
+*.apk
+*.aab
+*.ap_
+*.dex
+proguard/
+proguard-rules.pro
+lint/
+lint-results/
+android/
+
+# Kotlin build reports
+build/reports/
+build/test-results/
+build/classes/
+build/generated/
+build/kotlin/
+build/tmp/
+
+# Dependency caches
+.gradle/daemon/
+.gradle/native/
+.gradle/wrapper/dists/
+
+# Kotlin documentation
+docs/
+javadoc/
+dokka/
+
+# Kotlin test coverage
+.jacoco/
+build/jacoco/
+build/reports/jacoco/
+
+# Kotlin temporary files
+.gradle/buildOutputCleanup/
+
+# Kotlin package management
+gradle.properties
+gradlew
+gradlew.bat
+settings.gradle.kts
+build.gradle.kts
+gradle/verification-metadata.xml
+
+# ============================================
+# LANGUAGE-SPECIFIC TEMPLATE
+# ============================================
+# Combine with:
+# 1. Framework templates (SpringBoot.dockerignore, Ktor.dockerignore, etc.)
+# 2. Category templates (Security.dockerignore, OperatingSystem.dockerignore,
+#    Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# 3. IDE templates (VSCode.dockerignore, WebStorm.dockerignore, etc.)
+# 4. Version control templates (Git.dockerignore)
+# ============================================

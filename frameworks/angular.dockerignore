@@ -1,0 +1,42 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# ANGULAR DOCKERIGNORE TEMPLATE
+# ============================================
+# For Angular projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Angular-specific patterns.
+# Combine with language templates (Node.dockerignore, TypeScript.dockerignore)
+# and category templates (Security.dockerignore, OperatingSystem.dockerignore,
+# Logs.dockerignore, Cache.dockerignore, Backup.dockerignore, etc.)
+# for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# ANGULAR SPECIFIC PATTERNS
+# -----------------------------------------
+
+.angular-cli.json
+.angular/
+angular.json
+
+# -----------------------------------------
+# ANGULAR BUILD AND CACHE DIRECTORIES
+# -----------------------------------------
+
+.angular/cache/
+dist/
+node_modules/  # Note: For Angular projects, node_modules should be excluded
+               # but this pattern is also in Node.dockerignore
+
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================
+# Combine with:
+# 1. Language templates (Node.dockerignore, TypeScript.dockerignore)
+# 2. Category templates (Security.dockerignore, Cache.dockerignore,
+#    Logs.dockerignore, Backup.dockerignore, etc.)
+# 3. Build tool templates (Webpack.dockerignore if using custom webpack config)
+# 4. IDE templates (VSCode.dockerignore, etc.)
+# 5. Operating system templates (Linux.dockerignore, macOS.dockerignore,
+#    Windows.dockerignore)
+# ============================================

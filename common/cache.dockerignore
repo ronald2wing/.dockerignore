@@ -1,0 +1,135 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# CACHE DOCKERIGNORE TEMPLATE
+# ============================================
+# For excluding temporary and cache files.
+# Combine with other templates as needed.
+# ============================================
+
+# -----------------------------------------
+# TEMPORARY AND CACHE FILES
+# -----------------------------------------
+
+# Temporary directories
+tmp/
+temp/
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Cache directories
+.cache/
+cache/
+*.cache
+.cache.*
+cache.*
+.cache-*
+cache-*
+
+# Package manager caches
+.npm/
+.npminstall/
+.yarn/
+.yarn-cache/
+.pnpm-store/
+.bun/
+.cargo/
+.cargo/registry/
+.cargo/git/
+go/pkg/mod/
+pip-cache/
+composer-cache/
+maven-repo/
+gradle-cache/
+ivy-cache/
+sbt-cache/
+
+# Build system caches
+.parcel-cache/
+.turbo/
+.nx/
+.nx/cache/
+.pnp/
+.pnp.cjs
+.pnp.js
+.pnp.loader.mjs
+.eslintcache
+.prettiercache
+.stylelintcache
+.babel-cache/
+.tsbuildinfo
+.tsbuildinfo.*
+.swiftpm/
+.xcodebuild/
+.cmake/
+.cmake-build-*/
+cmake-build-*/
+build-*/
+out-*/
+target-*/
+
+# Browser and web caches
+.webassets-cache
+.sass-cache/
+.less-cache/
+.stylus-cache/
+.postcss-cache/
+.browser-cache/
+.chrome-cache/
+.firefox-cache/
+.safari-cache/
+
+# IDE and editor caches
+.idea/caches/
+.vscode/cache/
+.vscode/workspaceStorage/
+.sublime-cache/
+.atom-cache/
+.vim-cache/
+.emacs.d/auto-save-list/
+.emacs.d/backup/
+
+# Operating system caches
+/var/cache/
+/var/tmp/
+/tmp/
+/private/tmp/
+/private/var/tmp/
+
+# Application-specific caches
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.py,cover
+*.so
+*.o
+*.obj
+*.lib
+*.dll
+*.exe
+*.class
+*.jar
+*.war
+*.ear
+*.rar
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+
+# Session and state files
+*.session
+*.state
+*.lock
+*.lck
+*.pid
+*.pid.lock
+
+# ============================================
+# END OF TEMPORARY PATTERNS
+# ============================================
+

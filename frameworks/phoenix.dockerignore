@@ -1,0 +1,64 @@
+# Created by https://dockerignore.com/
+
+# ============================================
+# PHOENIX DOCKERIGNORE TEMPLATE
+# ============================================
+# For Phoenix projects.
+# FRAMEWORK-SPECIFIC TEMPLATE - Contains only Phoenix-specific patterns.
+# Combine with language templates (Elixir.dockerignore) and category templates
+# (Security.dockerignore, OperatingSystem.dockerignore, Logs.dockerignore,
+# Cache.dockerignore, Backup.dockerignore, etc.) for complete coverage.
+# ============================================
+
+# -----------------------------------------
+# PHOENIX SPECIFIC PATTERNS
+# -----------------------------------------
+
+*.db
+*.ez
+*.secret.exs
+*.sqlite3
+.credo/
+.elixir_ls/
+.erlang.cookie
+.eunit/
+.mix/
+.plt/
+.plt_*/
+.rebar/
+.rebar3/
+.reltool
+_build/
+_build/dev/rel/
+_build/prod/rel/
+_rel/
+assets/.cache/
+assets/.parcel-cache/
+assets/node_modules/
+config/*.secret.exs
+cover/
+deps/
+dialyzer_ignore.exs
+doc/
+Dockerfile
+docs/
+mix.exs
+mix.exs.bak
+mix.lock
+package-lock.json
+priv/gettext/
+priv/repo/
+priv/repo/migrations/
+priv/static/
+priv/static/assets/
+priv/static/cache_manifest.json
+priv/static/js/app.js
+priv/static/js/app.js.map
+priv/static/js/presence.js
+priv/static/js/presence.js.map
+priv/static/js/socket.js
+priv/static/js/socket.js.map
+yarn.lock
+# ============================================
+# FRAMEWORK-SPECIFIC TEMPLATE - COMBINE WITH OTHER TEMPLATES
+# ============================================
