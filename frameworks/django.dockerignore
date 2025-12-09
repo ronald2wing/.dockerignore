@@ -1,0 +1,187 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Django
+# Website: https://www.djangoproject.com/
+# Repository: https://github.com/django/django
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Django-specific ignore patterns
+# • OFFICIAL SOURCES: Django community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Django setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.nyc_output/
+**/.out/
+**/.output/
+**/dist/
+**/sdist/
+
+*.manifest
+*.mo
+*.pot
+*.py,cover
+*.py[cod]
+*.sage.py
+*.spec
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/__pycache__/
+**/__pypackages__/
+**/.eggs/
+**/.hatch/
+**/.mypy_cache/
+**/.nox/
+**/.pdm-build/
+**/.profile_default/
+**/.pybuilder/
+**/.pyenv/
+**/.pypackages/
+**/.pyre/
+**/.pytest_cache/
+**/.pytype/
+**/.ruff_cache/
+**/.tox/
+**/.uv/
+**/.venv/
+**/develop-eggs/
+**/downloads/
+**/eggs/
+**/ENV/
+**/env.bak/
+**/env/
+**/lib64/
+**/parts/
+**/share/python-wheels/
+**/venv.bak/
+**/venv/
+**/virtualenv/
+**/wheels/
+
+.dmypy.json
+.installed.cfg
+.ipynb_checkpoints
+.nosetests.xml
+.pdm.toml
+.Python
+.python-version
+.scrapy
+.webassets-cache
+
+*.egg
+*.egg-info/
+
+celerybeat-schedule
+celerybeat.pid
+MANIFEST
+pip-delete-this-directory.txt
+pip-log.txt
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/.django_cache/
+**/.hypothesis/
+**/.instance/
+**/.nose/
+**/.vite-cache/
+**/.vite/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cover/
+**/cover/
+**/coverage/
+**/cython_debug/
+**/test-results/
+
+.coverage
+.coverage.*
+coverage.xml
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.bzr/
+**/.cvs/
+**/.git/
+**/.hg/
+**/.svn/
+**/media/
+**/static/
+**/staticfiles/
+
+._*
+!*/migrations/__init__.py
+
+*$py.class
+*.old
+*.orig
+*.save
+*.swo
+*.swp
+
+*/migrations/*.py
+db.sqlite3
+db.sqlite3-journal
+local_settings.py
+secret_key.txt

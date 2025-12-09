@@ -1,0 +1,222 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Ionic
+# Website: https://ionicframework.com/
+# Repository: https://github.com/ionic-team/ionic-framework
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Ionic-specific ignore patterns
+# • OFFICIAL SOURCES: Ionic community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Ionic setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.build/
+**/.builds/
+**/.dist/
+**/.dists/
+**/.nyc_output/
+**/.output/
+**/.outputs/
+**/build/
+**/builds/
+**/dist/
+**/dists/
+**/output/
+**/outputs/
+**/www/
+
+*.out
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.npm/
+**/.pnpm-store/
+**/.pnpm/
+**/.yarn/
+**/node_modules/
+
+.npmignore
+.npmrc
+.pnpm-debug.log*
+.pnpmfile.js
+.yarnignore
+.yarnrc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.cache/
+**/.temp/
+**/.tmp/
+**/.turbo/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+ionic.environment.dev.js
+ionic.environment.dev.json
+ionic.environment.dev.ts
+ionic.environment.js
+ionic.environment.json
+ionic.environment.prod.js
+ionic.environment.prod.json
+ionic.environment.prod.ts
+ionic.environment.staging.js
+ionic.environment.staging.json
+ionic.environment.staging.ts
+ionic.environment.test.js
+ionic.environment.test.json
+ionic.environment.test.ts
+ionic.environment.ts
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/coverage/
+**/test-results/*.cov
+
+.coverage
+.coverage.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.artifact/
+**/.artifacts/
+**/.bundle/
+**/.bundles/
+**/.capacitor/
+**/.cookie/
+**/.cookies/
+**/.cordova/
+**/.icon/
+**/.icons/
+**/.log/
+**/.native/
+**/.natives/
+**/.package/
+**/.packages/
+**/.pids/
+**/.plugin/
+**/.plugins/
+**/.release/
+**/.releases/
+**/.resources/
+**/.session/
+**/.sessions/
+**/.sockets/
+**/.splash/
+**/.stage/
+**/.stages/
+**/.target/
+**/.targets/
+**/artifact/
+**/artifacts/
+**/bundle/
+**/bundles/
+**/cache/
+**/capacitor/
+**/cookie/
+**/cookies/
+**/cordova/
+**/icon/
+**/icons/
+**/native/
+**/natives/
+**/package/
+**/packages/
+**/pids/
+**/platforms/
+**/plugin/
+**/plugins/
+**/release/
+**/releases/
+**/resources/
+**/session/
+**/sessions/
+**/sockets/
+**/splash/
+**/stage/
+**/stages/
+**/target/
+**/targets/
+**/test-reports/
+
+*.cover
+*.err
+*.swo
+*.swp
+
+capacitor.config.js
+capacitor.config.json
+capacitor.config.ts
+config.xml
+cordova.config.json
+cordova.config.xml
+ionic.app
+ionic.app.json
+ionic.config.json
+ionic.project
+ionic.starter.json

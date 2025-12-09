@@ -1,0 +1,118 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# COMMON TEMPLATE for Cache
+# Website: https://dockerignore.com/
+# Repository: https://github.com/ronald2wing/.dockerignore
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMMON TEMPLATE
+# • PURPOSE: Cache and temp file patterns
+# • DESIGN PHILOSOPHY: Modular cache patterns
+# • COMBINATION GUIDANCE: Combine with language or framework templates
+# • SECURITY CONSIDERATIONS: Impacts build performance only
+# • BEST PRACTICES: Exclude for faster builds
+# • OFFICIAL SOURCES: Docker best practices and community patterns
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Package Manager Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.npm/
+**/.npminstall/
+**/.pnpm-store/
+**/.yarn/
+**/.yarn-cache/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Output
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.cmake-build-*/
+**/.xcodebuild/
+**/build-*/
+**/cmake-build-*/
+**/out-*/
+
+.tsbuildinfo
+.tsbuildinfo.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache & Temp
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.cache/
+**/.parcel-cache/
+**/.temp/
+**/.tmp/
+**/.turbo/
+**/temp/
+**/tmp/
+
+.cache-*
+.cache.*
+
+*.cache
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dev Tool Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.atom-cache/
+**/.babel-cache/
+**/.browser-cache/
+**/.bun/
+**/.cargo/
+**/.chrome-cache/
+**/.cmake/
+**/.emacs.d/auto-save-list/
+**/.emacs.d/backup/
+**/.firefox-cache/
+**/.idea/caches/
+**/.less-cache/
+**/.nx/
+**/.pnp/
+**/.postcss-cache/
+**/.safari-cache/
+**/.sass-cache/
+**/.stylus-cache/
+**/.sublime-cache/
+**/.swiftpm/
+**/.vim-cache/
+**/.vscode/cache/
+**/.vscode/workspaceStorage/
+**/__pycache__/
+**/cache/
+**/composer-cache/
+**/go/pkg/mod/
+**/gradle-cache/
+**/ivy-cache/
+**/maven-repo/
+**/pip-cache/
+**/sbt-cache/
+**/target-*/
+
+.eslintcache
+.pnp.cjs
+.pnp.js
+.pnp.loader.mjs
+.prettiercache
+.stylelintcache
+.webassets-cache
+
+*.lck
+*.pid
+*.pid.lock
+*.py,cover
+*.pyc
+*.pyd
+*.pyo
+*.session
+*.state
+
+cache-*
+cache.*

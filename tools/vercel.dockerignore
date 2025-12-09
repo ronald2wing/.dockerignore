@@ -1,0 +1,51 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# TOOL TEMPLATE for Vercel
+# Website: https://vercel.com/
+# Repository: https://github.com/vercel/vercel
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: TOOL TEMPLATE
+# • PURPOSE: Vercel-specific patterns
+# • DESIGN PHILOSOPHY: Vercel-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Review and test with your setup
+# • OFFICIAL SOURCES: https://vercel.com/docs
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Output
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.vercel/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.vercel/tmp/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Logs
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+vercel-*.log
+vercel.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+now.json
+now.json.bak
+now.json.example
+project.json
+project.json.bak
+project.json.example
+vercel.env.*
+vercel.json
+vercel.json.bak
+vercel.json.example

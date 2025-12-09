@@ -1,0 +1,86 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# LANGUAGE TEMPLATE for Java
+# Website: https://www.java.com/
+# Repository: https://github.com/openjdk/jdk
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: LANGUAGE TEMPLATE
+# • PURPOSE: Java-specific patterns for Docker builds
+# • DESIGN PHILOSOPHY: Contains only Java-specific patterns (no security patterns)
+# • COMBINATION GUIDANCE: Combine with framework or common templates as needed
+# • SECURITY CONSIDERATIONS: Does NOT include security patterns (use common/security.dockerignore)
+# • BEST PRACTICES: Combine with security template for complete protection
+# • OFFICIAL SOURCES: Java community patterns and Docker best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/_output/
+**/out/
+
+*.class
+*.ctxt
+*.ear
+*.jar
+*.nar
+*.rar
+*.war
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependencies
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.m2/repository/
+**/.m2/wrapper/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/__coverage__/
+**/failsafe-reports/
+**/jacoco-reports/
+**/jmeter-reports/
+**/surefire-reports/
+**/test-output/
+**/test-reports/
+
+*.spec.java
+*.test.java
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tools & Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/*.settings/
+**/.bazel/
+**/.gradle/
+**/.micronaut/
+**/.mvn/
+
+.bazelrc
+.m2/settings-security.xml
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+bazel-*
+gradle-app.setting
+gradle-wrapper.jar
+hs_err_pid*
+mvnw
+mvnw.cmd
+pom.xml.releaseBackup
+pom.xml.tag
+pom.xml.versionsBackup
+
+*.classpath
+*.factorypath
+*.project
+
+!**/.gradle/wrapper/
+!gradle/wrapper/gradle-wrapper.jar

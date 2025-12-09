@@ -1,0 +1,42 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# OS TEMPLATE for macOS
+# Website: https://www.apple.com/macos/
+# Repository: https://github.com/ronald2wing/.dockerignore
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: OS TEMPLATE
+# • PURPOSE: macOS-specific patterns
+# • DESIGN PHILOSOPHY: macOS-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Follow security guidelines
+# • OFFICIAL SOURCES: macOS development patterns and best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# System Files
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.fseventsd/
+**/.Spotlight-V100/
+**/.Trashes/
+**/__MACOSX/
+
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+
+*~
+~$*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache & Temp
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.temp
+*.tmp

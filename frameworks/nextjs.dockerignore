@@ -1,0 +1,219 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Next.js
+# Website: https://nextjs.org/
+# Repository: https://github.com/vercel/next.js
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Next.js-specific ignore patterns
+# • OFFICIAL SOURCES: Next.js community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Next.js setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.astro/
+**/.build/
+**/.gatsby/
+**/.nuxt/
+**/.output/
+**/.svelte-kit/
+**/_build/
+**/_site/
+**/dist/
+**/out/
+**/public/static/chunks/
+**/public/static/css/
+**/public/static/media/
+**/storybook-static/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.bun/
+**/.npm/
+**/.pnpm-store/
+**/.pnpm/
+**/.yarn/
+**/bower_components/
+**/node_modules/
+
+.npmignore
+.npmrc
+.npmrc.*
+.yarnrc
+.yarnrc.yml
+npm-debug.log*
+pnpm-debug.log*
+pnpm-workspace.yaml
+yarn-error.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.cache/
+**/.eslintcache
+**/.idea/
+**/.static/
+**/.storybook/
+**/.stylelintcache
+**/.tmp/
+**/.turbo/
+**/.vs/
+**/.vscode/
+**/temp/
+**/tmp/
+
+*.log
+*.pid
+*.sock
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.coverage_html/
+**/.nyc_output/
+**/.pytest_cache/
+**/.spec/
+**/.ssg/
+**/.ssr/
+**/.tests/
+**/coverage/
+**/coverage_html/
+**/test-reports/
+**/test-results/
+
+.coverage
+.coverage.*
+junit.xml
+test-results.xml
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.allure/
+**/.blitz/
+**/.cypress/
+**/.devcontainer/
+**/.devpod/
+**/.docusaurus/
+**/.esbuild/
+**/.expo/
+**/.firebase/
+**/.functions/
+**/.hydrogen/
+**/.jest/
+**/.keystone/
+**/.netlify/
+**/.next/
+**/.parcel-cache/
+**/.playwright/
+**/.puppeteer/
+**/.qwik/
+**/.redwood/
+**/.remix/
+**/.rollup.cache/
+**/.sanity/
+**/.sapper/
+**/.serverless/
+**/.solid-start/
+**/.swc/
+**/.testcontainers/
+**/.tina/
+**/.vercel/
+**/.vitest/
+**/.webpack/
+**/.wrangler/
+**/allure-results/
+**/bazel-*
+**/bazel-bin/
+**/bazel-out/
+**/bazel-testlogs/
+**/buck-out/
+**/config/development.*
+**/config/local.*
+**/config/production.*
+**/config/staging.*
+**/config/test.*
+**/cypress/screenshots/
+**/cypress/videos/
+**/dist-newstyle/
+**/elm-stuff/
+**/functions/
+**/migrations/local/
+**/pkg/
+**/playwright-report/
+**/public/_next/
+**/seeds/local/
+**/settings/development.*
+**/settings/local.*
+**/settings/production.*
+**/settings/staging.*
+**/settings/test.*
+
+.cypress
+.eslintrc.local.*
+.prettierrc.local.*
+.stylelintrc.local.*
+
+database.local.*
+db.local.*
+docker-compose.dev.*
+docker-compose.local.*
+docker-compose.override.*
+docker-compose.test.*
+next.config.local.*
+redis.local.*
+vite.config.local.*
+webpack.config.local.*

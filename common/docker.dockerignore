@@ -1,0 +1,74 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# COMMON TEMPLATE for Docker
+# Website: https://dockerignore.com/
+# Repository: https://github.com/ronald2wing/.dockerignore
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMMON TEMPLATE
+# • PURPOSE: Docker-specific patterns
+# • DESIGN PHILOSOPHY: Modular Docker patterns
+# • COMBINATION GUIDANCE: Combine with language or framework templates
+# • SECURITY CONSIDERATIONS: Should be excluded from images
+# • BEST PRACTICES: Exclude Docker files from builds
+# • OFFICIAL SOURCES: Docker best practices and community patterns
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Output
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.docker-build/
+**/docker-build/
+**/docker-build-output/
+
+docker-build.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache & Temp
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.docker-tmp/
+**/docker-tmp/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Logs & Debug
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/docker-logs/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Docker Files
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.docker/
+**/docker-cache/
+**/docker-context/
+**/docker-networks/
+**/docker-volumes/
+
+.dockercfg
+.dockerconfig
+.dockerconfig.json
+.dockerignore
+
+Dockerfile.dev
+Dockerfile.example
+Dockerfile.local
+Dockerfile.test
+
+docker-compose.ci.yml
+docker-compose.debug.yml
+docker-compose.dev.yml
+docker-compose.example.yml
+docker-compose.local.yml
+docker-compose.override.yml
+docker-compose.test.yml
+
+docker-security-scan.json
+docker-vulnerability-report.json
+grype-report.json
+snyk-report.json
+trivy-report.json

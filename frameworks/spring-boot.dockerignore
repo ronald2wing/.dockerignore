@@ -1,0 +1,196 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Spring Boot
+# Website: https://spring.io/projects/spring-boot
+# Repository: https://github.com/spring-projects/spring-boot
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Spring Boot-specific ignore patterns
+# • OFFICIAL SOURCES: Spring Boot community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Spring Boot setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/_output/
+**/out/
+**/test-output/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.gradle/
+**/.m2/
+**/.mvn/
+**/gradle/
+**/m2/
+**/maven/
+**/mvn/
+
+.gradle/*
+.gradle/wrapper/*
+.m2/settings-security.xml
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+gradle-wrapper.jar
+mvnw
+mvnw.cmd
+pom.xml.releaseBackup
+pom.xml.tag
+pom.xml.versionsBackup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.coverage/
+**/__coverage__/
+**/coverage/
+**/failsafe-reports/
+**/jacoco-reports/
+**/jmeter-reports/
+**/surefire-reports/
+**/test-results/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/*.settings/
+**/.bazel/
+**/.bzr/
+**/.cvs/
+**/.debug/
+**/.debugs/
+**/.git/
+**/.hg/
+**/.log/
+**/.micronaut/
+**/.spring/
+**/.svn/
+**/actuator/
+**/debug/
+**/debugs/
+**/target/
+**/test/
+**/test-reports/
+**/tests/
+
+.bazelrc
+.springBeans
+
+*.bak
+*.class
+*.classpath
+*.ctxt
+*.ear
+*.factorypath
+*.jar
+*.javac
+*.javadoc
+*.jsp
+*.jsp.bak
+*.jsp.old
+*.jsp.save
+*.jsp.swo
+*.jsp.swp
+*.jspf
+*.jspf.bak
+*.jspf.old
+*.jspf.save
+*.jspf.swo
+*.jspf.swp
+*.jspf~
+*.jspx
+*.jspx.bak
+*.jspx.old
+*.jspx.save
+*.jspx.swo
+*.jspx.swp
+*.jspx~
+*.jsp~
+*.jws
+*.jws.bak
+*.jws.old
+*.jws.save
+*.jws.swo
+*.jws.swp
+*.jws~
+*.nar
+*.old
+*.orig
+*.project
+*.rar
+*.save
+*.spec.java
+*.swo
+*.swp
+*.test.java
+*.war
+application-*.properties
+application-*.yaml
+application-*.yml
+bazel-*
+config/application-*.properties
+config/application-*.yaml
+config/application-*.yml
+gradle-app.setting
+hs_err_pid*

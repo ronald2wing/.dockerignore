@@ -1,0 +1,160 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Qwik
+# Website: https://qwik.builder.io/
+# Repository: https://github.com/BuilderIO/qwik
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Qwik-specific ignore patterns
+# • OFFICIAL SOURCES: Qwik community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Qwik setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.nyc_output/
+
+.tsbuildinfo
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.bun/
+**/.npm/
+**/.pnpm-store/
+**/.yarn/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/.turbo/
+**/temp/
+**/tmp/
+
+.node_repl_history
+.parcel-cache
+.rollup.cache
+
+*.cache
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/*.spec.js
+**/*.spec.ts
+**/*.test.js
+**/*.test.ts
+**/__mocks__/
+**/__tests__/
+**/coverage/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Documentation & Examples
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/docs/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.biome/
+**/.circleci/
+**/.github/
+**/.gitlab/
+**/.jenkins/
+**/.nx/
+**/.qwik/
+**/.qwik-city/
+**/.qwik-components/
+**/.qwik-insights/
+**/.qwik-optimizer/
+**/.qwik-types/
+**/.rush/
+**/.server/
+
+.azure-pipelines.yml
+.eslintcache
+.gitlab-ci.yml
+.prettiercache
+.travis.yml
+
+*.md
+*.pid.lock
+*.seed
+manifest.json
+manifest.webmanifest
+pids
+public/*
+src/entry.*.js
+src/entry.*.jsx
+src/entry.*.ts
+src/entry.*.tsx
+src/root.*.js
+src/root.*.jsx
+src/root.*.ts
+src/root.*.tsx
+static/*
+sw.js
+workbox-*.js
+
+!public/*.avif
+!public/*.ico
+!public/*.jpeg
+!public/*.jpg
+!public/*.png
+!public/*.svg
+!public/*.webp
+!public/favicon.ico
+!public/robots.txt
+!public/sitemap.xml
+!README.md
+!static/favicon.ico
+!static/robots.txt

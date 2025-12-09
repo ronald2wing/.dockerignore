@@ -1,0 +1,53 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# IDE TEMPLATE for Vim
+# Website: https://www.vim.org/
+# Repository: https://github.com/vim/vim
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: IDE TEMPLATE
+# • PURPOSE: Vim-specific patterns
+# • DESIGN PHILOSOPHY: Vim-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Review for sensitive data
+# • OFFICIAL SOURCES: https://www.vim.org/docs.php
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Configuration & Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.nvim/
+**/.spell/
+**/.undo/
+**/.vim/
+**/nvim/
+**/pack/
+**/view/
+
+.*.undo
+.*.un~
+.netrwhist
+.nviminfo
+.shada
+.swo
+.swp
+.viminfo
+.vimrc
+
+*.fold
+*.nvim
+*.nviminfo
+*.shada
+*.spl
+*.sug
+*.undo
+*.view
+*.vim
+*.viminfo
+*.vimrc
+
+nviminfo

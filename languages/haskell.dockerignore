@@ -1,0 +1,88 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# LANGUAGE TEMPLATE for Haskell
+# Website: https://www.haskell.org/
+# Repository: https://github.com/ghc/ghc
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: LANGUAGE TEMPLATE
+# • PURPOSE: Haskell-specific patterns for Docker builds
+# • DESIGN PHILOSOPHY: Contains only Haskell-specific patterns (no security patterns)
+# • COMBINATION GUIDANCE: Combine with framework or common templates as needed
+# • SECURITY CONSIDERATIONS: Does NOT include security patterns (use common/security.dockerignore)
+# • BEST PRACTICES: Combine with security template for complete protection
+# • OFFICIAL SOURCES: Haskell community patterns and Docker best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/dist-newstyle/
+
+*.a
+*.annot
+*.bc
+*.cmm
+*.cmm.h
+*.cmm.s
+*.dump-*
+*.dyn_hi
+*.dyn_o
+*.hcr
+*.hi
+*.hp
+*.lib
+*.ll
+*.manifest
+*.o
+*.p_hi
+*.p_o
+*.s
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependencies
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.cabal/
+**/.cabal-dev/
+**/.cabal-sandbox/
+**/.cabal-store/
+**/.stack/
+**/.stack-work/
+**/.vendor/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.hpc/
+**/bench-results/
+**/test-reports/
+
+*.eventlog
+*.prof
+*.tix
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tools & Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.haskell/
+**/.haskell-ci/
+**/.haskell-code/
+**/.hie/
+**/.hiedb/
+**/package.db/
+
+.ghci-history
+.ghci.local
+.haskeline
+.hdevtools.sock
+.hlint.yaml
+
+cabal.project.freeze
+cabal.project.local
+stack.yaml.lock

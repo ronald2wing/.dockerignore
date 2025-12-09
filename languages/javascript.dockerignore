@@ -1,0 +1,96 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# LANGUAGE TEMPLATE for JavaScript
+# Website: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+# Repository: https://github.com/tc39/ecma262
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: LANGUAGE TEMPLATE
+# • PURPOSE: JavaScript-specific patterns for Docker builds
+# • DESIGN PHILOSOPHY: Contains only JavaScript-specific patterns (no security patterns)
+# • COMBINATION GUIDANCE: Combine with framework or common templates as needed
+# • SECURITY CONSIDERATIONS: Does NOT include security patterns (use common/security.dockerignore)
+# • BEST PRACTICES: Combine with security template for complete protection
+# • OFFICIAL SOURCES: JavaScript community patterns and Docker best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.nyc_output/
+**/.output/
+**/build/
+**/dist/
+**/out/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache & Temporary
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.cache/
+**/.turbo/
+
+.node_repl_history
+
+.eslintcache
+.prettiercache
+.stylelintcache
+
+*.cache
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependencies
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.npm/
+**/.pnpm-store/
+**/.yarn/
+**/bower_components/
+**/node_modules/
+
+.npmignore
+.npmrc
+.npmrc.*
+.yarnrc
+.yarnrc.yml
+
+pnpm-workspace.yaml
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Logs & Debug
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/logs/
+
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log
+*.log
+*.log.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tools & Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.babelrc
+.babelrc.*
+.browserslistrc
+.eslintignore
+.eslintrc
+.eslintrc.*
+.jsbeautifyrc
+.jscsrc
+.jshintrc
+.prettierignore
+.prettierrc
+.prettierrc.*
+.stylelintignore
+.stylelintrc
+.stylelintrc.*
+
+jsconfig.json

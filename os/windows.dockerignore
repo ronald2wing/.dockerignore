@@ -1,0 +1,36 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# OS TEMPLATE for Windows
+# Website: https://www.microsoft.com/windows/
+# Repository: https://github.com/ronald2wing/.dockerignore
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: OS TEMPLATE
+# • PURPOSE: Windows-specific patterns
+# • DESIGN PHILOSOPHY: Windows-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Follow security guidelines
+# • OFFICIAL SOURCES: Windows development patterns and best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# System Files
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/$RECYCLE.BIN/
+
+Desktop.ini
+
+*.lnk
+*.stackdump
+*.swo
+*.swp
+*.temp
+*.tmp
+
+*~
+
+~$*

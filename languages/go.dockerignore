@@ -1,0 +1,86 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# LANGUAGE TEMPLATE for Go
+# Website: https://go.dev/
+# Repository: https://github.com/golang/go
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: LANGUAGE TEMPLATE
+# • PURPOSE: Go-specific patterns for Docker builds
+# • DESIGN PHILOSOPHY: Contains only Go-specific patterns (no security patterns)
+# • COMBINATION GUIDANCE: Combine with framework or common templates as needed
+# • SECURITY CONSIDERATIONS: Does NOT include security patterns (use common/security.dockerignore)
+# • BEST PRACTICES: Combine with security template for complete protection
+# • OFFICIAL SOURCES: Go community patterns and Docker best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/_output/
+**/out/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache & Temporary
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+go.mod~
+go.sum~
+
+*.exe~
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependencies
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.gocache/
+**/go/pkg/include/
+**/go/pkg/mod/
+**/go/pkg/sumdb/
+**/go/pkg/tool/
+**/vendor/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/__coverage__/
+
+*.bench
+*.bench.bin
+*.bench.exe
+*.bench.out
+*.block.out
+*.block.prof
+*.cov
+*.cover
+*.coverprofile
+*.cpu.out
+*.cpu.prof
+*.mem.out
+*.mem.prof
+*.mutex.out
+*.mutex.prof
+*.pprof
+*.pprof.bin
+*.pprof.gz
+*.pprof.out
+*.prof
+*.spec.go
+*.test
+*.test.bin
+*.test.exe
+*.test.go
+*.test.out
+*.trace
+*.trace.out
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tools & Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+go.work
+go.work.sum

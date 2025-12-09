@@ -1,0 +1,170 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for AdonisJS
+# Website: https://adonisjs.com/
+# Repository: https://github.com/adonisjs/core
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: AdonisJS-specific ignore patterns
+# • OFFICIAL SOURCES: AdonisJS community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific AdonisJS setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.build/
+**/.nyc_output/
+**/.out/
+**/.output/
+**/dist/
+**/public/build/
+
+.tsbuildinfo
+tsconfig.*.tsbuildinfo
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.npm/
+**/.pnpm-store/
+**/.pnpm/
+**/.yarn/
+**/bower_components/
+**/node_modules/
+
+.npmignore
+.npmrc
+.npmrc.*
+.yarnrc
+.yarnrc.yml
+
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/.parcel-cache/
+**/.turbo/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.jest-cache/
+**/__tests__/__snapshots__/
+**/coverage/
+**/test-results/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.adonis-cache/
+**/.adonis/
+**/.babel-cache/
+**/.bzr/
+**/.cvs/
+**/.git/
+**/.hg/
+**/.nx/
+**/.pnp/
+**/.svn/
+**/jest-cache/
+
+._*
+.adonisrc.*.js
+.adonisrc.*.json
+.adonisrc.*.ts
+.adonisrc.js
+.adonisrc.json
+.adonisrc.ts
+.babelrc
+.babelrc.*
+.browserslistrc
+.eslintcache
+.eslintignore
+.eslintrc
+.eslintrc.*
+.jsbeautifyrc
+.jscsrc
+.jshintrc
+.pnp.cjs
+.pnp.js
+.pnp.loader.mjs
+.prettiercache
+.prettierignore
+.prettierrc
+.prettierrc.*
+.stylelintcache
+.stylelintignore
+.stylelintrc
+.stylelintrc.*
+
+*.bak
+*.old
+*.orig
+*.save
+*.swo
+*.swp
+
+database/*.sqlite
+database/*.sqlite-journal
+database/migrations/*.sqlite
+jsconfig.json
+pnpm-workspace.yaml
+vitest.config.*.timestamp-*

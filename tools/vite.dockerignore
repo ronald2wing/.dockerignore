@@ -1,0 +1,58 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# TOOL TEMPLATE for Vite
+# Website: https://vitejs.dev/
+# Repository: https://github.com/vitejs/vite
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: TOOL TEMPLATE
+# • PURPOSE: Vite-specific patterns
+# • DESIGN PHILOSOPHY: Vite-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Review and test with your setup
+# • OFFICIAL SOURCES: https://vitejs.dev/guide/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Output
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.vite/
+**/vite-build/
+**/vite-dist/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Logs
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+vite.*.log
+vite-debug.log
+vite-error.log
+vite.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+vite.config.*.js
+vite.config.*.timestamp-*
+vite.config.*.ts
+vite.config.js
+vite.config.js.map
+vite.config.ts
+vite.config.ts.map
+
+vite.env
+vite.env.*
+vite.local
+vite.preview
+vite.preview.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Hot Update
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.hot-update.*

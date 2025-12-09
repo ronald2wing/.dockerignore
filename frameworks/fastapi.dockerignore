@@ -1,0 +1,165 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for FastAPI
+# Website: https://fastapi.tiangolo.com/
+# Repository: https://github.com/tiangolo/fastapi
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: FastAPI-specific ignore patterns
+# • OFFICIAL SOURCES: FastAPI community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific FastAPI setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.nyc_output/
+**/.out/
+**/.output/
+**/dist/
+**/sdist/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.eggs/
+**/.mypy_cache/
+**/.pytest_cache/
+**/.pyre/
+**/.pytype/
+**/.venv/
+**/__pycache__/
+**/assets/node_modules/
+**/develop-eggs/
+**/downloads/
+**/eggs/
+**/instance/
+**/parts/
+**/share/python-wheels/
+**/wheels/
+
+.installed.cfg
+.Python
+
+*.egg
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/.parcel-cache/
+**/.turbo/
+**/.vite-cache/
+**/.vite/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/coverage/
+**/test-results/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.bzr/
+
+**/.cvs/
+**/.git/
+**/.hg/
+**/.nx/
+**/.svn/
+**/alembic/
+**/media/
+**/migrations/
+**/static/
+**/staticfiles/
+**/uploads/
+._*
+!*/migrations/__init__.py
+!alembic/versions/__init__.py
+
+*$py.class
+*.bak
+*.db
+*.old
+*.orig
+*.py[cod]
+*.save
+*.sqlite
+*.sqlite3
+*.swo
+*.swp
+*.test.db
+*.test.sqlite
+*.test.sqlite3
+
+*/migrations/*.py
+alembic.ini
+alembic/versions/*.py
+db.sqlite3
+db.sqlite3-journal
+fastapi.log
+hypercorn.log
+local_settings.py
+MANIFEST
+openapi.json
+openapi.yaml
+openapi.yml
+redoc-static.html
+swagger.json
+swagger.yaml
+swagger.yml
+uvicorn.log

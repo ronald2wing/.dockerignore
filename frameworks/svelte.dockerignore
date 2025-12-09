@@ -1,0 +1,175 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Svelte
+# Website: https://svelte.dev/
+# Repository: https://github.com/sveltejs/svelte
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Svelte-specific ignore patterns
+# • OFFICIAL SOURCES: Svelte community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Svelte setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.build/
+**/.nyc_output/
+**/.out/
+**/.output/
+**/.storybook-out/
+**/dist/
+**/public/build/
+
+.tsbuildinfo
+tsconfig.*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.npm/
+**/.pnpm/
+**/.pnpm-store/
+**/.yarn/
+**/bower_components/
+**/node_modules/
+
+.npmignore
+.npmrc
+.npmrc.*
+.yarnrc
+.yarnrc.yml
+
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/.esbuild/
+**/.parcel-cache/
+**/.rollup.cache/
+**/.swc/
+**/.turbo/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.jest-cache/
+**/__coverage__/
+**/coverage/
+**/test-results/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.babel-cache/
+**/.bzr/
+**/.cvs/
+**/.git/
+**/.hg/
+**/.nx/
+**/.pnp/
+**/.storybook/
+**/.svelte/
+**/.svelte-kit/
+**/.svn/
+**/.vite/
+**/.vitest/
+**/jest-cache/
+**/playwright-report/
+**/storybook-static/
+
+.babelrc
+.babelrc.*
+.browserslistrc
+.eslintcache
+.eslintignore
+.eslintrc
+.eslintrc.*
+.jsbeautifyrc
+.jscsrc
+.jshintrc
+.pnp.cjs
+.pnp.js
+.pnp.loader.mjs
+.prettiercache
+.prettierignore
+.prettierrc
+.prettierrc.*
+.stylelintcache
+.stylelintignore
+.stylelintrc
+.stylelintrc.*
+.svelte-kit/ambient.d.ts
+
+*.bak
+*.d.ts
+*.d.ts.map
+*.old
+*.orig
+*.pid.lock
+*.save
+*.swo
+*.swp
+jsconfig.json
+pnpm-workspace.yaml
+svelte.config.*.timestamp-*
+vite.config.*.timestamp-*
+vitest.config.*.timestamp-*

@@ -1,0 +1,147 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for CakePHP
+# Website: https://cakephp.org/
+# Repository: https://github.com/cakephp/cakephp
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: CakePHP-specific ignore patterns
+# • OFFICIAL SOURCES: CakePHP community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific CakePHP setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/docs/_build/
+**/docs/build/
+
+.buildpath
+phpunit.xml.dist
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.npm/
+**/.pnpm/
+**/.yarn/
+**/node_modules/
+**/plugins/*/node_modules/
+**/plugins/*/vendor/
+**/vendor/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/logs/
+**/plugins/*/logs/
+**/plugins/*/tmp/
+**/tmp/
+
+.phpunit.result.cache
+
+*.cache
+*.temp
+*.tmp
+
+logs/*.log
+logs/debug.log
+logs/error.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/coverage/
+**/plugins/*/tests/
+**/tests/
+**/tests/Fixture/
+**/tests/TestCase/
+
+.coverage
+coverage.xml
+junit.xml
+phpunit.xml
+tests/*.php
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Documentation & Examples
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/docs/
+**/docs/api/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/$RECYCLE.BIN/
+**/config/Migrations/
+**/config/Schema/
+**/config/Seeds/
+**/database/
+**/html-report/
+
+*.db
+*.sqlite
+*.sqlite3
+
+*.sql
+*.sql.gz
+
+clover.xml
+composer.json
+composer.phar
+config/app.default.php
+config/app_local.php
+database.sqlite
+database.sqlite3
+package.json
+webroot/css/cake.generic.css
+webroot/index-test.php
+webroot/index.php
+webroot/js/empty
+webroot/test.php

@@ -1,0 +1,51 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# TOOL TEMPLATE for Rollup
+# Website: https://rollupjs.org/
+# Repository: https://github.com/rollup/rollup
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: TOOL TEMPLATE
+# • PURPOSE: Rollup-specific patterns
+# • DESIGN PHILOSOPHY: Rollup-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Review and test with your setup
+# • OFFICIAL SOURCES: https://rollupjs.org/guide/en/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Output
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/bundles/
+**/dist/
+**/output/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.rollup/
+**/.rollup.cache/
+**/rollup.build/
+**/rollup.cache/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+rollup.config.*.cjs
+rollup.config.*.js
+rollup.config.*.mjs
+rollup.config.*.ts
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Logs
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+rollup-debug.log*
+rollup-error.log*
+rollup.log*

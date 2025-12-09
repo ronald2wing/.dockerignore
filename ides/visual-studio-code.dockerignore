@@ -1,0 +1,49 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# IDE TEMPLATE for Visual Studio Code
+# Website: https://code.visualstudio.com/
+# Repository: https://github.com/microsoft/vscode
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: IDE TEMPLATE
+# • PURPOSE: VS Code-specific patterns
+# • DESIGN PHILOSOPHY: VS Code-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Review for sensitive data
+# • OFFICIAL SOURCES: https://code.visualstudio.com/docs
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Logs
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.vscode/logs/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.vscode/coverage/
+**/.vscode/test-results/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Configuration & Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.vscode/extensions/
+**/.vscode/history/
+**/.vscode/profiles/
+**/.vscode/remote/
+**/.vscode/snippets/
+**/.vscode/user-data/
+.vscode/argv.json
+
+.vscode/extension-*
+.vscode/machineid
+.vscode/remote-*
+.vscode/serverdata
+.vscode/state.vscdb
+!.vscode/*.code-snippets

@@ -1,0 +1,33 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# COMMON TEMPLATE for Git
+# Website: https://dockerignore.com/
+# Repository: https://github.com/ronald2wing/.dockerignore
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMMON TEMPLATE
+# • PURPOSE: Git version control patterns
+# • DESIGN PHILOSOPHY: Modular Git patterns
+# • COMBINATION GUIDANCE: Combine with language or framework templates
+# • SECURITY CONSIDERATIONS: Should be excluded from images
+# • BEST PRACTICES: Exclude Git files from Docker builds
+# • OFFICIAL SOURCES: Docker best practices and community patterns
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Git Files
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.git/
+**/.git-crypt/
+**/.git-rewrite/
+
+.git-blame-ignore-revs
+.gitattributes
+.gitconfig
+.gitcredentials
+.gitkeep
+.gitmodules
+.gitreview

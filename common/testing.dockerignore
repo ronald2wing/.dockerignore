@@ -1,0 +1,232 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# COMMON TEMPLATE for Testing
+# Website: https://dockerignore.com/
+# Repository: https://github.com/ronald2wing/.dockerignore
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMMON TEMPLATE
+# • PURPOSE: Testing and QA patterns
+# • DESIGN PHILOSOPHY: Modular testing patterns
+# • COMBINATION GUIDANCE: Combine with language or framework templates
+# • SECURITY CONSIDERATIONS: Should be excluded from images
+# • BEST PRACTICES: Exclude for faster builds
+# • OFFICIAL SOURCES: Docker best practices and community patterns
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Test Output
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.nyc_output/
+**/.test-output/
+**/nyc_output/
+**/test-output/
+
+.audit.out
+.benchmark.out
+.performance.out
+.profile.out
+.profiling.out
+.scan.out
+.security.out
+.trace.out
+.vulnerability.out
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache & Temp
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.test-temp/
+**/.test-tmp/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Test Logs
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.test-logs/
+**/test-logs/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Coverage
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.test-coverage/
+**/.test-results/
+**/coverage/
+**/test-results/
+
+.coverage
+.coverage.*
+.jest
+.jest.json
+.jest.xml
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Test Files
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.actual/
+**/.actuals/
+**/.baseline/
+**/.baselines/
+**/.diff/
+**/.diffs/
+**/.expected/
+**/.expecteds/
+**/.junit/
+**/.screenshots/
+**/.snapshots/
+**/.test/
+**/.test-cache/
+**/.test-cypress/
+**/.test-jest/
+**/.test-junit/
+**/.test-mocha/
+**/.test-phpunit/
+**/.test-pytest/
+**/.test-reports/
+**/.test-rspec/
+**/.test-xunit/
+**/.videos/
+**/actual/
+**/actuals/
+**/baseline/
+**/baselines/
+**/cypress/
+**/diff/
+**/diffs/
+**/expected/
+**/expecteds/
+**/jest/
+**/junit/
+**/mocha/
+**/phpunit/
+**/pytest/
+**/rspec/
+**/screenshots/
+**/snapshots/
+**/test-reports/
+**/videos/
+**/xunit/
+
+.audit
+.audit.err
+.audit.html
+.audit.json
+.audit.txt
+.audit.xml
+.benchmark
+.benchmark.err
+.benchmark.html
+.benchmark.json
+.benchmark.txt
+.benchmark.xml
+.codeclimate
+.codeclimate.json
+.codeclimate.yml
+.codecov
+.codecov.json
+.codecov.yml
+.cypress
+.cypress.json
+.cypress.xml
+.junit.json
+.junit.xml
+.mocha
+.mocha.json
+.mocha.xml
+.performance
+.performance.err
+.performance.html
+.performance.json
+.performance.txt
+.performance.xml
+.phpunit
+.phpunit.json
+.phpunit.xml
+.prof
+.profile
+.profile.err
+.profile.html
+.profile.json
+.profile.txt
+.profile.xml
+.profiling
+.profiling.err
+.profiling.html
+.profiling.json
+.profiling.txt
+.profiling.xml
+.pytest
+.pytest.json
+.pytest.xml
+.rspec
+.rspec.json
+.rspec.xml
+.scan
+.scan.err
+.scan.html
+.scan.json
+.scan.txt
+.scan.xml
+.security
+.security.err
+.security.html
+.security.json
+.security.txt
+.security.xml
+.sonar
+.sonar.json
+.sonar.yml
+.sonarqube
+.sonarqube.json
+.sonarqube.yml
+.test.json
+.test.xml
+.trace
+.trace.err
+.trace.html
+.trace.json
+.trace.txt
+.trace.xml
+.vuln
+.vulnerability
+.vulnerability.err
+.vulnerability.html
+.vulnerability.json
+.vulnerability.txt
+.vulnerability.xml
+.xunit
+.xunit.json
+.xunit.xml
+
+*.cov
+*.cover
+*.coveralls
+*.coveralls.json
+*.coveralls.yml
+*.coverprofile
+*.lcov
+
+cypress.json
+cypress.xml
+jest.json
+jest.xml
+junit.json
+junit.xml
+lcov.info
+mocha.json
+mocha.xml
+phpunit.json
+phpunit.xml
+pytest.json
+pytest.xml
+rspec.json
+rspec.xml
+test.json
+test.xml
+xunit.json
+xunit.xml

@@ -1,0 +1,167 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# COMMON TEMPLATE for Backup
+# Website: https://dockerignore.com/
+# Repository: https://github.com/ronald2wing/.dockerignore
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMMON TEMPLATE
+# • PURPOSE: Backup and archive patterns
+# • DESIGN PHILOSOPHY: Modular backup patterns
+# • COMBINATION GUIDANCE: Combine with language or framework templates
+# • SECURITY CONSIDERATIONS: May contain sensitive data
+# • BEST PRACTICES: Exclude for faster builds
+# • OFFICIAL SOURCES: Docker best practices and community patterns
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Backup Files
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.archives/
+**/.backup/
+**/.bak/
+**/.idea/backup/
+**/.idea/shelf/
+**/.old/
+**/.save/
+**/.vscode/backup/
+**/.vscode/shelf/
+**/archive/
+**/archives/
+**/backup/
+**/backups/
+
+.viminfo
+.vimrc.backup
+.vimrc.local
+
+*.backup
+*.backup.*
+*.bak
+*.bak.*
+*.c.backup
+*.c.bak
+*.c.old
+*.c.save
+*.classpath.old
+*.conf.backup
+*.conf.bak
+*.conf.old
+*.conf.save
+*.config.backup
+*.config.bak
+*.config.old
+*.config.save
+*.cpp.backup
+*.cpp.bak
+*.cpp.old
+*.cpp.save
+*.db.backup
+*.db.bak
+*.db.old
+*.db.save
+*.doc.backup
+*.doc.bak
+*.doc.old
+*.doc.save
+*.docx.backup
+*.docx.bak
+*.docx.old
+*.docx.save
+*.go.backup
+*.go.bak
+*.go.old
+*.go.save
+*.iml.old
+*.ini.backup
+*.ini.bak
+*.ini.old
+*.ini.save
+*.ipr.old
+*.iws
+*.java.backup
+*.java.bak
+*.java.old
+*.java.save
+*.js.backup
+*.js.bak
+*.js.old
+*.js.save
+*.json.backup
+*.json.bak
+*.json.old
+*.json.save
+*.md.backup
+*.md.bak
+*.md.old
+*.md.save
+*.old
+*.old.*
+*.orig
+*.pdf.backup
+*.pdf.bak
+*.pdf.old
+*.pdf.save
+*.project.old
+*.py.backup
+*.py.bak
+*.py.old
+*.py.save
+*.rs.backup
+*.rs.bak
+*.rs.old
+*.rs.save
+*.rst.backup
+*.rst.bak
+*.rst.old
+*.rst.save
+*.save
+*.save.*
+*.sql.backup
+*.sql.bak
+*.sql.old
+*.sql.save
+*.sqlite.backup
+*.sqlite.bak
+*.sqlite.old
+*.sqlite.save
+*.swl
+*.swm
+*.swn
+*.swo
+*.swp
+*.swpx
+*.swx
+*.ts.backup
+*.ts.bak
+*.ts.old
+*.ts.save
+*.txt.backup
+*.txt.bak
+*.txt.old
+*.txt.save
+*.undo
+*.undo-tree
+*.un~
+*.vim
+*.xml.backup
+*.xml.bak
+*.xml.old
+*.xml.save
+*.yaml.backup
+*.yaml.bak
+*.yaml.old
+*.yaml.save
+*.yml.backup
+*.yml.bak
+*.yml.old
+*.yml.save
+*~
+*~.*
+
+backup.sql
+dump.sql
+restore.sql

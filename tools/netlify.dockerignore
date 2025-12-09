@@ -1,0 +1,64 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# TOOL TEMPLATE for Netlify
+# Website: https://www.netlify.com/
+# Repository: https://github.com/netlify/cli
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: TOOL TEMPLATE
+# • PURPOSE: Netlify-specific patterns
+# • DESIGN PHILOSOPHY: Netlify-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Review and test with your setup
+# • OFFICIAL SOURCES: https://docs.netlify.com/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Output
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.netlify/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.netlify-cli/
+**/.netlify/tmp/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Logs
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+netlify-*.log
+netlify.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.netlify-cli/config.json
+.netlify-cli/state.json
+
+netlify.env.*
+netlify.toml
+netlify.toml.bak
+netlify.toml.example
+netlify.yaml
+netlify.yaml.bak
+netlify.yaml.example
+netlify.yml
+netlify.yml.bak
+netlify.yml.example
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Headers & Redirects
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+_headers
+_headers.example
+_redirects
+_redirects.example

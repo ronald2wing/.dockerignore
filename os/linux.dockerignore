@@ -1,0 +1,43 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# OS TEMPLATE for Linux
+# Website: https://www.linux.org/
+# Repository: https://github.com/ronald2wing/.dockerignore
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: OS TEMPLATE
+# • PURPOSE: Linux-specific patterns
+# • DESIGN PHILOSOPHY: Linux-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Follow security guidelines
+# • OFFICIAL SOURCES: Linux system administration best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# System Files
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.bash_history
+.bashrc
+.cshrc
+.fish_history
+.fishrc
+.history
+.login
+.logout
+.profile
+.zsh_history
+.zshrc
+
+*~
+~$*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache & Temp
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.temp
+*.tmp

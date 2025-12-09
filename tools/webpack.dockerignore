@@ -1,0 +1,66 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# TOOL TEMPLATE for Webpack
+# Website: https://webpack.js.org/
+# Repository: https://github.com/webpack/webpack
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: TOOL TEMPLATE
+# • PURPOSE: Webpack-specific patterns
+# • DESIGN PHILOSOPHY: Webpack-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Review and test with your setup
+# • OFFICIAL SOURCES: https://webpack.js.org/concepts/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Output
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.dll/
+**/dll/
+
+*.bundle.css
+*.bundle.css.map
+*.bundle.js
+*.bundle.js.map
+*.chunk.css
+*.chunk.js
+*.dll.js
+*.dll.js.map
+*.hot-update.*
+*.manifest.json
+*.stats.json
+*.vendor.css
+*.vendor.js
+*.webpack-manifest.json
+*.webpack-stats.json
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.webpack-cache/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+webpack.*.config.js
+webpack.*.config.ts
+webpack.config.*.js
+webpack.config.*.ts
+webpack.config.js
+webpack.config.js.map
+webpack.config.ts
+webpack.config.ts.map
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Logs
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+webpack-*.log
+webpack.log

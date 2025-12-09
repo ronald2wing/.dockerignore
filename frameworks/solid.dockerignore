@@ -1,0 +1,163 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for SolidJS
+# Website: https://www.solidjs.com/
+# Repository: https://github.com/solidjs/solid
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: SolidJS-specific ignore patterns
+# • OFFICIAL SOURCES: SolidJS community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone, do NOT combine with javascript.dockerignore
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific SolidJS setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.nyc_output/
+**/.output/
+**/.solid-router/
+**/dist/
+**/out/
+
+.tsbuildinfo
+tsconfig.*.tsbuildinfo
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.npm/
+**/.pnpm/
+**/.pnpm-store/
+**/.yarn/
+**/node_modules/
+
+.npmignore
+.npmrc
+.npmrc.*
+.yarnrc
+.yarnrc.yml
+
+npm-debug.log*
+pnpm-debug.log*
+pnpm-workspace.yaml
+yarn-error.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/.turbo/
+**/temp/
+**/tmp/
+
+.node_repl_history
+.parcel-cache
+.rollup.cache
+
+*.cache
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/*.spec.js
+**/*.spec.ts
+**/*.test.js
+**/*.test.ts
+**/__mocks__/
+**/__tests__/
+**/coverage/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Documentation & Examples
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/docs/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.biome/
+**/.bun/
+**/.circleci/
+**/.client/
+**/.github/
+**/.gitlab/
+**/.jenkins/
+**/.netlify/
+**/.nx/
+**/.rush/
+**/.solid/
+**/.solid-components/
+**/.solid-devtools/
+**/.solid-start/
+**/.solid-store/
+**/.solid-types/
+**/.ssr/
+**/.vercel/
+
+.azure-pipelines.yml
+.eslintcache
+.gitlab-ci.yml
+.prettiercache
+.travis.yml
+
+*.md
+*.pid.lock
+*.seed
+pids
+
+!public/*.ico
+!public/*.jpeg
+!public/*.jpg
+!public/*.png
+!public/*.svg
+!public/favicon.ico
+!public/robots.txt
+!public/sitemap.xml
+!README.md

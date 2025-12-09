@@ -1,0 +1,66 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# LANGUAGE TEMPLATE for Kotlin
+# Website: https://kotlinlang.org/
+# Repository: https://github.com/JetBrains/kotlin
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: LANGUAGE TEMPLATE
+# • PURPOSE: Kotlin-specific patterns for Docker builds
+# • DESIGN PHILOSOPHY: Contains only Kotlin-specific patterns (no security patterns)
+# • COMBINATION GUIDANCE: Combine with framework or common templates as needed
+# • SECURITY CONSIDERATIONS: Does NOT include security patterns (use common/security.dockerignore)
+# • BEST PRACTICES: Combine with security template for complete protection
+# • OFFICIAL SOURCES: Kotlin community patterns and Docker best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/android/
+**/docs/
+**/dokka/
+**/javadoc/
+**/lint/
+**/lint-results/
+**/proguard/
+
+*.aab
+*.ap_
+*.apk
+*.dex
+*.ear
+*.jar
+*.kotlin_builtins
+*.kotlin_module
+*.war
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.jacoco/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tools & Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.gradle/
+**/.idea_modules/
+**/.kapt/
+**/.kotlin/
+**/.kotlinc/
+
+gradle.properties
+gradle/verification-metadata.xml
+gradle/wrapper/gradle-wrapper.properties
+gradlew
+gradlew.bat
+local.properties
+proguard-rules.pro
+settings.gradle.kts
+
+!gradle/wrapper/gradle-wrapper.jar

@@ -1,0 +1,197 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Astro
+# Website: https://astro.build/
+# Repository: https://github.com/withastro/astro
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Astro-specific ignore patterns
+# • OFFICIAL SOURCES: Astro community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Astro setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.nyc_output/
+**/.out/
+**/.output/
+**/dist/
+**/public/build/
+
+.tsbuildinfo
+tsconfig.*.tsbuildinfo
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.npm/
+**/.pnpm-store/
+**/.pnpm/
+**/.yarn/
+**/bower_components/
+**/node_modules/
+
+.npmignore
+.npmrc
+.npmrc.*
+.yarnrc
+.yarnrc.yml
+
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/.parcel-cache/
+**/.turbo/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.jest-cache/
+**/__tests__/__snapshots__/
+**/coverage/
+**/test-results/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Documentation & Examples
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/docs/
+**/documentation/
+**/examples/
+**/samples/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.astro/
+**/.aws/
+**/.azure/
+**/.babel-cache/
+**/.bzr/
+**/.cvs/
+**/.dev/
+**/.devcontainer/
+**/.fly/
+**/.gcp/
+**/.git/
+**/.hg/
+**/.husky/
+**/.netlify/
+**/.nx/
+**/.pnp/
+**/.railway/
+**/.render/
+**/.svn/
+**/.vercel/
+**/__mocks__/
+**/__tests__/
+**/jest-cache/
+**/test/
+**/tests/
+
+._*
+.astro/content.config.*.js
+.astro/content.config.*.mjs
+.astro/content.config.*.ts
+.astro/content.d.ts
+.astro/types.d.ts
+.babelrc
+.babelrc.*
+.browserslistrc
+.eslintcache
+.eslintignore
+.eslintrc
+.eslintrc.*
+.jsbeautifyrc
+.jscsrc
+.jshintrc
+.pnp.cjs
+.pnp.js
+.pnp.loader.mjs
+.prettiercache
+.prettierignore
+.prettierrc
+.prettierrc.*
+.stylelintcache
+.stylelintignore
+.stylelintrc
+.stylelintrc.*
+
+*.7z
+*.bak
+*.old
+*.orig
+*.rar
+*.save
+*.swo
+*.swp
+
+astro.config.*.js
+astro.config.*.mjs
+astro.config.*.ts
+cypress.config.*
+jest.config.*
+playwright.config.*
+pnpm-workspace.yaml
+vitest.config.*
+vitest.config.*.js
+vitest.config.*.mjs
+vitest.config.*.ts

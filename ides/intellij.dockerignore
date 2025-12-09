@@ -1,0 +1,63 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# IDE TEMPLATE for IntelliJ IDEA
+# Website: https://www.jetbrains.com/idea/
+# Repository: https://github.com/JetBrains/intellij-community
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: IDE TEMPLATE
+# • PURPOSE: IntelliJ IDEA-specific patterns
+# • DESIGN PHILOSOPHY: IntelliJ IDEA-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Review for sensitive data
+# • OFFICIAL SOURCES: https://www.jetbrains.com/help/idea/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Configuration & Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.idea/artifacts/
+**/.idea/caches/
+**/.idea/codeStyles/
+**/.idea/copyright/
+**/.idea/dictionaries/
+**/.idea/facets/
+**/.idea/fileTemplates/
+**/.idea/inspectionProfiles/
+**/.idea/libraries/
+**/.idea/modules/
+**/.idea/runConfigurations/
+**/.idea/scopes/
+**/.idea/shelf/
+
+.idea/.name
+.idea/assetWizardSettings.xml
+.idea/compiler.xml
+.idea/dataSources.ids
+.idea/dataSources.local.xml
+.idea/dataSources.xml
+.idea/dynamic.xml
+.idea/encodings.xml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+.idea/jsLibraryMappings.xml
+.idea/maven.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/sqlDataSources.xml
+.idea/tasks.xml
+.idea/uiDesigner.xml
+.idea/vcs.xml
+.idea/workspace.xml
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.idea/coverage/
+**/.idea/coverage-web/

@@ -1,0 +1,166 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for PrestaShop
+# Website: https://www.prestashop.com/
+# Repository: https://github.com/PrestaShop/PrestaShop
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: PrestaShop-specific ignore patterns
+# • OFFICIAL SOURCES: PrestaShop community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific PrestaShop setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/dist/
+**/out/
+**/web/bundles/
+**/web/css/
+**/web/js/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.bun-install/
+**/.bun/
+**/.npm/
+**/.pnpm-store/
+**/.yarn/
+**/composer.phar
+**/node_modules/
+**/npm-debug.log*
+**/vendor/
+**/yarn-debug.log*
+**/yarn-error.log*
+
+.npm
+.npmrc
+.npmrc.*
+.nuxt
+pnpm-debug.log*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.cache/
+**/.esbuild/
+**/.eslintcache
+**/.next/cache/
+**/.nx/
+**/.parcel-cache/
+**/.swc/
+**/.turbo/
+**/.vite/
+**/app/cache/
+**/app/logs/
+**/cache/
+**/log/
+**/logs/
+**/run/
+**/temp/
+**/var/cache/
+**/var/logs/
+**/var/sessions/
+
+*.log
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.nyc_output/
+**/.test-output/
+**/coverage/
+**/lcov.info
+**/nyc_output/
+**/test-output/
+**/test/
+**/Test/
+**/tests/
+
+.audit.out
+.benchmark.out
+.performance.out
+.profile.out
+.profiling.out
+.scan.out
+.security.out
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/*.swo
+**/*.swp
+**/app/config/parameters.yml
+**/app/config/parameters.yml.dist
+**/config/settings.inc.php
+**/download/
+**/img/
+**/upload/
+
+.editorconfig
+.git
+.gitreview
+.hg
+.project
+.ropeproject
+.svn
+CVS
+__pycache__
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# IDE / Editor Files
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.idea/
+**/.vscode/

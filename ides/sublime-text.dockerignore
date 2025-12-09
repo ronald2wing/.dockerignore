@@ -1,0 +1,53 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# IDE TEMPLATE for Sublime Text
+# Website: https://www.sublimetext.com/
+# Repository: https://github.com/sublimehq/sublime_text
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: IDE TEMPLATE
+# • PURPOSE: Sublime Text-specific patterns
+# • DESIGN PHILOSOPHY: Sublime Text-specific only
+# • COMBINATION GUIDANCE: Combine with framework/language templates
+# • SECURITY CONSIDERATIONS: Use common/security.dockerignore for security
+# • BEST PRACTICES: Review for sensitive data
+# • OFFICIAL SOURCES: https://www.sublimetext.com/docs/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Output
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.sublime-build
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Configuration & Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/Installed Packages/
+**/Package Control.cache/
+**/Packages/
+**/User/
+
+*.sublime-auto-save
+*.sublime-color-scheme
+*.sublime-commands
+*.sublime-completions
+*.sublime-keymap
+*.sublime-macro
+*.sublime-menu
+*.sublime-mousemap
+*.sublime-session
+*.sublime-settings
+*.sublime-syntax
+*.sublime-theme
+*.sublime_session
+
+Package Control.last-run
+Package Control.merged-ca-bundle
+Package Control.sublime-settings
+Package Control.system-ca-bundle
+Package Control.user-ca-bundle
+Preferences.sublime-settings

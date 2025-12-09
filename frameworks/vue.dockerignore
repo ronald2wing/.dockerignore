@@ -1,0 +1,236 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Vue.js
+# Website: https://vuejs.org/
+# Repository: https://github.com/vuejs/vue
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Vue.js-specific ignore patterns
+# • OFFICIAL SOURCES: Vue.js community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Vue.js setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.astro/
+**/.build/
+**/.gatsby/
+**/.next/
+**/.nuxt/
+**/.output/
+**/.svelte-kit/
+**/_build/
+**/_site/
+**/dist/
+**/out/
+**/public/_next/
+**/public/static/chunks/
+**/public/static/css/
+**/public/static/media/
+**/storybook-static/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.bun/
+**/.deno/
+**/.deno_cache/
+**/.deno_dir/
+**/.npm/
+**/.nx/
+**/.pnpm/
+**/.pnpm-store/
+**/.turbo/
+**/.yarn/
+**/bower_components/
+**/node_modules/
+
+.npmignore
+.npmrc
+.npmrc.*
+.yarnrc
+.yarnrc.yml
+
+bun-debug.log*
+deno.lock
+npm-debug.log*
+pnpm-debug.log*
+pnpm-workspace.yaml
+yarn-error.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/.static/
+**/.tmp/
+**/.vite/
+**/temp/
+**/tmp/
+
+*.log
+*.pid
+*.sock
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.coverage_html/
+**/.nyc_output/
+**/.pytest_cache/
+**/.spec/
+**/.ssg/
+**/.ssr/
+**/.tests/
+**/coverage/
+**/coverage_html/
+**/test-reports/
+**/test-results/
+
+.coverage
+.coverage.*
+junit.xml
+test-results.xml
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.allure/
+**/.blitz/
+**/.cypress/
+**/.devcontainer/
+**/.devpod/
+**/.docusaurus/
+**/.esbuild/
+**/.eslintcache
+**/.expo/
+**/.firebase/
+**/.functions/
+**/.hydrogen/
+**/.jest/
+**/.keystone/
+**/.netlify/
+**/.parcel-cache/
+**/.playwright/
+**/.puppeteer/
+**/.qwik/
+**/.redwood/
+**/.remix/
+**/.rollup.cache/
+**/.sanity/
+**/.sapper/
+**/.serverless/
+**/.solid-start/
+**/.storybook/
+**/.stylelintcache
+**/.swc/
+**/.testcontainers/
+**/.tina/
+**/.vercel/
+**/.vitest/
+**/.vs/
+**/.vue/
+**/.vuepress/
+**/.vuepress/dist/
+**/.webpack/
+**/.wrangler/
+**/allure-results/
+**/bazel-*
+**/bazel-bin/
+**/bazel-out/
+**/bazel-testlogs/
+**/buck-out/
+**/config/development.*
+**/config/local.*
+**/config/production.*
+**/config/staging.*
+**/config/test.*
+**/cypress/screenshots/
+**/cypress/videos/
+**/dist-newstyle/
+**/elm-stuff/
+**/functions/
+**/migrations/local/
+**/pkg/
+**/playwright-report/
+**/seeds/local/
+**/settings/development.*
+**/settings/local.*
+**/settings/production.*
+**/settings/staging.*
+**/settings/test.*
+**/.terraform/local/
+**/vue.config.*.local.*
+
+.cypress.config.local.*
+.eslintrc.local.*
+.jest.config.local.*
+.prettierrc.local.*
+.stylelintrc.local.*
+.tsconfig.local.*
+.vitest.config.local.*
+vite.config.local.*
+vue.config.local.*
+webpack.config.local.*
+
+database.local.*
+db.local.*
+docker-compose.dev.*
+docker-compose.local.*
+docker-compose.override.*
+docker-compose.test.*
+redis.local.*
+terraform.auto.tfvars.local
+terraform.tfvars.local
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# IDE / Editor Files
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.idea/
+**/.vscode/

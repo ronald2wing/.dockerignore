@@ -1,0 +1,179 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Tauri
+# Website: https://tauri.app/
+# Repository: https://github.com/tauri-apps/tauri
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Tauri-specific ignore patterns
+# • OFFICIAL SOURCES: Tauri community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Tauri setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.nyc_output/
+**/.output/
+**/dist/
+**/dist-ts/
+**/out-tsc/
+**/src-tauri/dist/
+
+.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.npm/
+**/.pnpm/
+**/.yarn/
+**/node_modules/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/.parcel-cache/
+**/.tmp/
+**/.turbo/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+src-tauri/*.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/coverage/
+**/test-results/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Documentation & Examples
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/docs/
+**/documentation/
+**/examples/
+**/samples/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.astro/
+**/.next/
+**/.next/logs/
+**/.nuxt/
+**/.storybook/
+**/.svelte-kit/
+**/.vs/
+**/assets/
+**/cypress/screenshots/
+**/cypress/videos/
+**/icons/
+**/playwright-report/
+**/src-tauri/.cargo/
+**/src-tauri/assets/
+**/src-tauri/icons/
+**/src-tauri/target/
+**/stories/
+**/test/
+**/tests/
+**/vitest-reports/
+
+*.app
+*.AppImage
+*.code-workspace
+*.deb
+*.dmg
+*.exe
+*.iml
+*.ipr
+*.iws
+*.msi
+*.rpm
+*.snap
+cypress.config.js
+cypress.config.ts
+debug.log
+Gruntfile.js
+gulpfile.js
+jest.config.js
+jest.config.ts
+playwright.config.js
+playwright.config.ts
+rollup.config.js
+rollup.config.ts
+src-tauri/*.rs.bk
+src-tauri/*.rs.old
+src-tauri/.rustc_info.json
+src-tauri/tauri.conf.json
+src-tauri/tauri.conf.json.bak
+src-tauri/tauri.conf.json.example
+tauri.conf.json
+tauri.conf.json.bak
+tauri.conf.json.example
+vite.config.js
+vite.config.ts
+vitest.config.js
+vitest.config.ts
+webpack.config.js
+webpack.config.ts
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# IDE / Editor Files
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.idea/
+**/.vscode/
+*.sublime-*
+.sublime-*

@@ -1,0 +1,72 @@
+# ==============================================================================
+# IDE & Editor
+# ==============================================================================
+
+# Vim
+*.swp
+*.swo
+*.swm
+*.swn
+*~
+.netrwhist
+Session.vim
+Sessionx.vim
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Emacs
+\#*\#
+.\#*
+*.*~
+
+# Kate
+*.kate-swp
+
+# ==============================================================================
+# OS
+# ==============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.fuse_hidden*

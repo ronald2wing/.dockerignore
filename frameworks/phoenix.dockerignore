@@ -1,0 +1,206 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Phoenix
+# Website: https://www.phoenixframework.org/
+# Repository: https://github.com/phoenixframework/phoenix
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Phoenix-specific ignore patterns
+# • OFFICIAL SOURCES: Phoenix community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Phoenix setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.nyc_output/
+**/.out/
+**/.output/
+**/_build/
+**/_build/dev/rel/
+**/_build/prod/rel/
+**/dist/
+**/public/build/
+
+.tsbuildinfo
+tsconfig.*.tsbuildinfo
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.npm/
+**/.pnpm-store/
+**/.pnpm/
+**/.yarn/
+**/assets/node_modules/
+**/bower_components/
+**/node_modules/
+
+.npmignore
+.npmrc
+.npmrc.*
+.yarnrc
+.yarnrc.yml
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.cache/
+**/.parcel-cache/
+**/.turbo/
+**/assets/.cache/
+**/assets/.parcel-cache/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.jest-cache/
+**/__tests__/__snapshots__/
+**/coverage/
+**/cover/
+**/test-results/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Documentation & Examples
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/docs/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.babel-cache/
+**/.bzr/
+**/.credo/
+**/.cvs/
+**/.elixir_ls/
+**/.eunit/
+**/.git/
+**/.hg/
+**/.mix/
+**/.nx/
+**/.plt/
+**/.plt_*/
+**/.pnp/
+**/.rebar/
+**/.rebar3/
+**/.svn/
+**/_rel/
+**/deps/
+**/doc/
+**/jest-cache/
+**/priv/gettext/
+**/priv/repo/
+**/priv/repo/migrations/
+**/priv/static/
+**/priv/static/assets/
+
+._*
+.babelrc
+.babelrc.*
+.browserslistrc
+.env.testing
+.erlang.cookie
+.eslintcache
+.eslintignore
+.eslintrc
+
+.eslintrc.*
+.jsbeautifyrc
+.jscsrc
+.jshintrc
+.jsconfig.json
+.pnp.cjs
+.pnp.js
+.pnp.loader.mjs
+.prettiercache
+.prettierignore
+.prettierrc
+.prettierrc.*
+.reltool
+.stylelintcache
+.stylelintignore
+.stylelintrc
+.stylelintrc.*
+*.bak
+*.db
+*.ez
+*.old
+*.orig
+*.save
+*.swo
+*.swp
+
+config/*.secret.exs
+dialyzer_ignore.exs
+mix.exs
+mix.exs.bak
+mix.lock
+pnpm-workspace.yaml
+priv/static/cache_manifest.json
+priv/static/js/app.js
+priv/static/js/app.js.map
+priv/static/js/presence.js
+priv/static/js/presence.js.map
+priv/static/js/socket.js
+priv/static/js/socket.js.map
+vitest.config.*.timestamp-*

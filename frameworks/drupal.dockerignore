@@ -1,0 +1,240 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Drupal
+# Website: https://www.drupal.org/
+# Repository: https://github.com/drupal/drupal
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Drupal-specific ignore patterns
+# • OFFICIAL SOURCES: Drupal community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Drupal setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.nyc_output/
+**/.out/
+**/.output/
+**/dist/
+**/modules/custom/*/dist/
+**/public/build/
+**/themes/custom/*/dist/
+
+.tsbuildinfo
+tsconfig.*.tsbuildinfo
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.npm/
+**/.pnpm-store/
+**/.pnpm/
+**/.yarn/
+**/bower_components/
+**/modules/custom/*/node_modules/
+**/node_modules/
+**/themes/custom/*/node_modules/
+**/vendor/
+
+.npmignore
+.npmrc
+.npmrc.*
+.yarnrc
+.yarnrc.yml
+
+bower.json
+composer.json
+package.json
+
+npm-debug.log*
+pnpm-debug.log*
+pnpm-workspace.yaml
+yarn-error.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/.parcel-cache/
+**/.turbo/
+**/.vite-cache/
+**/.vite/
+**/logs/
+**/sites/*/tmp/
+**/temp/
+**/tmp/
+**/var/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.jest-cache/
+**/__tests__/__snapshots__/
+**/coverage/
+**/jest-cache/
+**/test-results/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Documentation & Examples
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/docs/
+**/documentation/
+**/examples/
+**/samples/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**//contrib/
+**/.bzr/
+**/.cvs/
+**/.git/
+**/.hg/
+**/.nx/
+**/.pnp/
+**/.svn/
+**/aggregate/
+**/config/
+**/config_*/
+**/css/
+**/ctools/
+**/dblog/
+**/entity_cache/
+**/features/
+**/imagecache/
+**/js/
+**/libraries/
+**/patches/
+**/php/
+**/simpletest/
+**/sites/*/config/
+**/sites/*/config_*/
+**/sites/*/files/
+**/sites/*/private/
+**/sites/*/translations/
+**/sites/simpletest/
+**/twig/
+**/var/
+**/views_cache/
+**/watchdog/
+
+._*
+.babelrc
+.babelrc.*
+.browserslistrc
+.eslintcache
+.eslintignore
+.eslintrc
+.eslintrc.*
+.jsbeautifyrc
+.jscsrc
+.jshintrc
+.pnp.cjs
+.pnp.js
+.pnp.loader.mjs
+.prettiercache
+.prettierignore
+.prettierrc
+.prettierrc.*
+.stylelintcache
+.stylelintignore
+.stylelintrc
+.stylelintrc.*
+
+*.bak
+*.old
+*.orig
+*.save
+*.sql
+*.sql.gz
+*.sqlite
+*.swo
+*.swp
+
+.behat.yml
+.behat.yml.dist
+.php-cs-fixer.dist.php
+.php-cs-fixer.php
+.phpcs.xml
+.phpcs.xml.dist
+CHANGELOG.txt
+COPYRIGHT.txt
+Gruntfile.js
+INSTALL*.txt
+LICENSE.txt
+MAINTAINERS.txt
+README.txt
+UPGRADE*.txt
+behat.yml
+behat.yml.dist
+core/CHANGELOG.txt
+core/COPYRIGHT.txt
+core/INSTALL*.txt
+core/MAINTAINERS.txt
+core/UPGRADE*.txt
+gulpfile.js
+php-error.log
+php-fpm-error.log
+phpcs.xml
+phpcs.xml.dist
+phpunit.xml
+phpunit.xml.dist
+sites/*/development.services.yml
+sites/*/services.local.yml
+sites/*/settings.local.php
+webpack.config.js
+webpack.mix.js
+
+jsconfig.json
+vitest.config.*.timestamp-*

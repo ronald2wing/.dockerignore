@@ -1,0 +1,174 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Electron
+# Website: https://www.electronjs.org/
+# Repository: https://github.com/electron/electron
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Electron-specific ignore patterns
+# • OFFICIAL SOURCES: Electron community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Electron setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.electron-builder/
+**/.nyc_output/
+**/.out/
+**/.output/
+**/dist/
+**/nyc_output/
+
+*.out
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/node_modules/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/.turbo/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.coverage/
+**/coverage/
+**/test-reports/
+**/test-results/
+**/test/
+**/tests/
+
+.coverage
+.coverage.*
+
+*.cov
+*.cover
+*.lcov
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.core/
+**/.cores/
+**/.crash/
+**/.crashes/
+**/.debug/
+**/.debugs/
+**/.dump/
+**/.dumps/
+**/.electron-angular/
+**/.electron-astro/
+**/.electron-forge/
+**/.electron-gatsby/
+**/.electron-next/
+**/.electron-nuxt/
+**/.electron-packager/
+**/.electron-preact/
+**/.electron-qwik/
+**/.electron-react/
+**/.electron-remix/
+**/.electron-solid/
+**/.electron-svelte/
+**/.electron-vue/
+**/.electron/
+**/.log/
+**/.minidump/
+**/.minidumps/
+**/.release/
+**/.spec/
+**/.specs/
+**/.stage/
+**/.target/
+**/.test/
+**/.tests/
+**/core/
+**/cores/
+**/crash/
+**/crashes/
+**/debug/
+**/debugs/
+**/dump/
+**/dumps/
+**/minidump/
+**/minidumps/
+**/release/
+**/spec/
+**/specs/
+**/stage/
+**/target/
+
+ *.7z
+ *.AppImage
+ *.appimage
+ *.deb
+ *.dmg
+ *.img
+ *.iso
+ *.msi
+ *.nsis
+ *.pkg
+ *.rar
+ *.rpm
+ *.snap
+ *.tar.bz2
+ *.tar.gz
+ *.tar.xz
+ *.zip

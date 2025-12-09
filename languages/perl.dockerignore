@@ -1,0 +1,123 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# LANGUAGE TEMPLATE for Perl
+# Website: https://www.perl.org/
+# Repository: https://github.com/Perl/perl5
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: LANGUAGE TEMPLATE
+# • PURPOSE: Perl-specific patterns for Docker builds
+# • DESIGN PHILOSOPHY: Contains only Perl-specific patterns (no security patterns)
+# • COMBINATION GUIDANCE: Combine with framework or common templates as needed
+# • SECURITY CONSIDERATIONS: Does NOT include security patterns (use common/security.dockerignore)
+# • BEST PRACTICES: Combine with security template for complete protection
+# • OFFICIAL SOURCES: Perl community patterns and Docker best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/blib/
+**/lib/auto/
+
+Build
+Build.bat
+Build.com
+Build.PL
+Makefile
+Makefile.old
+Makefile.PL
+
+*.a
+*.bin
+*.bs
+*.def
+*.egg
+*.exp
+*.lib
+*.o
+*.obj
+*.pmc
+*.tar.bz2
+*.tar.gz
+*.tar.xz
+*.whl
+*.xs
+*.zip
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cache & Temporary
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.perl_debug
+.perl_history
+.perl_repl
+.perldb
+
+*.sock
+*.xsub
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependencies
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.carton/
+**/.cpan/
+**/.cpanm/
+**/.dzil/
+**/.fatpacker/
+**/.local/
+**/.perl/
+**/.perl5/
+**/.perlbrew/
+**/.vendor/
+**/inc/
+**/local/
+**/site/
+**/site_perl/
+**/vendor/
+**/vendor_perl/
+
+.minilla
+
+cpanfile
+cpanfile.snapshot
+META.json
+META.yml
+MYMETA.json
+MYMETA.yml
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Logs & Debug
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/nytprof/
+
+nytprof.out
+
+*.nytprof
+*.pid
+*.prof
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/cover_db/
+**/Devel-Cover/
+**/test-reports/
+
+.coverage
+.coverage.*
+
+*.cover
+*.gcda
+*.gcno
+*.gcov
+*.t
+*.t.bak
+*.t.orig
+*.t.rej

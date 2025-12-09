@@ -1,0 +1,68 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# LANGUAGE TEMPLATE for Swift
+# Website: https://www.swift.org/
+# Repository: https://github.com/apple/swift
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: LANGUAGE TEMPLATE
+# • PURPOSE: Swift-specific patterns for Docker builds
+# • DESIGN PHILOSOPHY: Contains only Swift-specific patterns (no security patterns)
+# • COMBINATION GUIDANCE: Combine with framework or common templates as needed
+# • SECURITY CONSIDERATIONS: Does NOT include security patterns (use common/security.dockerignore)
+# • BEST PRACTICES: Combine with security template for complete protection
+# • OFFICIAL SOURCES: Swift community patterns and Docker best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.swiftpm/
+**/Carthage/
+**/DerivedData/
+**/Pods/
+
+*.app
+*.autolink
+*.bundle
+*.d
+*.dia
+*.dSYM.zip
+*.framework
+*.ipa
+*.swiftdeps
+*.swiftdoc
+*.swiftinterface
+*.swiftmodule
+*.swiftsourceinfo
+*.symbols
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tools & Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/*.dSYM/
+**/*.xcodeproj/
+**/*.xcworkspace/
+**/.swiftdoc/
+**/.vendor/
+**/.xcode/
+**/.xcresult/
+**/.xcuserdata/
+**/Documentation/
+**/Package.resolved
+**/docs/
+**/project.xcworkspace/
+**/xcschemes/
+**/xcshareddata/
+**/xcuserdata/
+
+.codecov.yml
+.xccheckout
+.xcscheme
+.xcscmblueprint
+.xctestplan
+.xcworkspacedata

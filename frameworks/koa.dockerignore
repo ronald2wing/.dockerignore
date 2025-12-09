@@ -1,0 +1,216 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for Koa
+# Website: https://koajs.com/
+# Repository: https://github.com/koajs/koa
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: Koa-specific ignore patterns
+# • OFFICIAL SOURCES: Koa community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific Koa setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.nyc_output/
+**/.out/
+**/.output/
+**/dist/
+**/nyc_output/
+
+*.out
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.npm/
+**/.pnpm-store/
+**/.pnpm/
+**/.yarn/
+**/node_modules/
+
+.npmignore
+.npmrc
+.npmrc.*
+.yarnrc
+.yarnrc.yml
+
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.cache/
+**/.temp/
+**/.tmp/
+**/.turbo/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.coverage/
+**/coverage/
+**/test-results/
+
+.coverage
+.coverage.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Documentation & Examples
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.docs/
+**/.documentation/
+**/docs/
+**/documentation/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.assets/
+**/.audios/
+**/.config.*.local/
+**/.config.development.local/
+**/.config.development/
+**/.config.local/
+**/.config.production.local/
+**/.config.production/
+**/.config.staging.local/
+**/.config.staging/
+**/.config.test.local/
+**/.config.test/
+**/.config/
+**/.doc/
+**/.fonts/
+**/.icons/
+**/.images/
+**/.log/
+**/.media/
+**/.pids/
+**/.public/
+**/.release/
+**/.sockets/
+**/.spec/
+**/.specs/
+**/.stage/
+**/.static/
+**/.target/
+**/.test/
+**/.tests/
+**/.uploads/
+**/.videos/
+**/assets/
+**/audios/
+**/cache/
+**/config.*.local/
+**/config.development.local/
+**/config.development/
+**/config.local/
+**/config.production.local/
+**/config.production/
+**/config.staging.local/
+**/config.staging/
+**/config.test.local/
+**/config.test/
+**/config/
+**/doc/
+**/fonts/
+**/icons/
+**/images/
+**/media/
+**/pids/
+**/public/
+**/release/
+**/sockets/
+**/spec/
+**/specs/
+**/stage/
+**/static/
+**/target/
+**/test-reports/
+**/test/
+**/tests/
+**/uploads/
+**/videos/
+
+*.cov
+*.cover
+*.err
+*.html
+*.coverage.json
+*.lcov
+*.txt
+*.xml
+
+favicon.gif
+favicon.gif~
+favicon.ico
+favicon.ico~
+favicon.jpeg
+favicon.jpeg~
+favicon.jpg
+favicon.jpg~
+favicon.png
+favicon.png~
+favicon.svg
+favicon.svg~
+favicon.webp
+favicon.webp~

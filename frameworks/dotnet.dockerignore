@@ -1,0 +1,165 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# FRAMEWORK TEMPLATE for .NET
+# Website: https://dotnet.microsoft.com/
+# Repository: https://github.com/dotnet/core
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: FRAMEWORK TEMPLATE
+# • PURPOSE: .NET-specific ignore patterns
+# • OFFICIAL SOURCES: .NET community patterns and best practices
+# • DESIGN PHILOSOPHY: Self-contained template with security patterns first
+# • COMBINATION GUIDANCE: Use standalone - no need to combine with other templates
+# • SECURITY CONSIDERATIONS: Includes security patterns for .env files and credentials
+# • BEST PRACTICES: Review before use, test with your specific .NET setup
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment files contain sensitive API keys, database credentials,
+# and other secrets that must not be included in Docker images
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.env
+.env.*
+
+*.auth
+*.authz
+*.password
+*.secret
+*.secrets
+*.token
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+credentials
+database.ini
+database.yml
+dbconfig.xml
+secrets.json
+secrets.yaml
+secrets.yml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Build Artifacts & Distribution
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/Bin/
+**/bin/
+**/build/
+**/Debug/
+**/docs/output/
+**/Obj/
+**/obj/
+**/out/
+**/publish/
+**/Release/
+**/TestResults/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dependency Management & Package Cache
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/packages/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Development & Runtime Artifacts
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.cache/
+**/logs/
+**/temp/
+**/tmp/
+
+*.cache
+*.log
+*.temp
+*.tmp
+
+TemporaryGeneratedFile_*.cs
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Testing & Quality Assurance
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/coverage/
+
+.coverage
+*.coverage.xml
+*.testlog
+*.trx
+TestResult.xml
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Tool-Specific Patterns
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+**/.bzr/
+**/.cvs/
+**/.dotnet/
+**/.git/
+**/.hg/
+**/.nuget/
+**/.svn/
+**/_ReSharper.*/
+**/_gh_pages/
+**/Help/
+**/NuGet/
+**/amd64/
+**/AnyCPU/
+**/arm64/
+**/docs/_site/
+**/dotnet/
+**/runtime/
+**/runtimes/
+**/x64/
+**/x86/
+
+._*
+
+*.chm
+*.csproj.user
+*.deps.json
+*.fsproj.user
+*.runtimeconfig.dev.json
+*.runtimeconfig.json
+*.vbproj.user
+*.vcxproj.filters
+*.vcxproj.user
+*.vsmdi
+
+*.bak
+*.crunchsolution
+*.ncrunchproject
+*.old
+*.orig
+*.resharper
+*.resharper.user
+*.save
+*.sln.docstates
+*.suo
+*.swo
+*.swp
+*.testrunconfig
+*.testsettings
+*.user
+*.userosscache
+*.vsp
+*.vspscc
+*.vspx
+
+Properties/launchSettings.json
+appsettings.Test.json
+web.config.local
+web.debug.config
+web.release.config

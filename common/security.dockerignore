@@ -1,0 +1,186 @@
+# ==============================================================================
+# Created by https://dockerignore.com/
+# COMMON TEMPLATE for Security
+# Website: https://dockerignore.com/
+# Repository: https://github.com/ronald2wing/.dockerignore
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: COMMON TEMPLATE
+# • PURPOSE: Security patterns
+# • DESIGN PHILOSOPHY: Modular security patterns
+# • COMBINATION GUIDANCE: Combine with language or framework templates
+# • SECURITY CONSIDERATIONS: Critical — protects sensitive data
+# • BEST PRACTICES: Place first in .dockerignore
+# • OFFICIAL SOURCES: Docker best practices and community patterns
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Security & Sensitive Data
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Environment Files
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.env
+.env.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cryptographic Keys
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.accdb
+*.acl
+*.asc
+*.auth
+*.authz
+*.cer
+*.cert
+*.confidential
+*.cred
+*.creds
+*.crl
+*.crt
+*.csr
+*.der
+*.frm
+*.gpg
+*.ibd
+*.jks
+*.key
+*.keystore
+*.mdb
+*.myd
+*.myi
+*.p12
+*.p7b
+*.p7c
+*.passwd
+*.password
+*.pem
+*.pfx
+*.pgp
+*.priv
+*.private
+*.pub
+*.pwd
+*.req
+*.secret
+*.secrets
+*.sig
+*.spc
+*.token
+*.truststore
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Cloud Credentials
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.aws/
+**/.azure/
+**/.gcloud/
+**/.kube/
+**/.terraform/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# SSH & Authentication
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/.ssh/
+
+authorized_keys
+confidential*
+config/*.local.*
+config/secret.*
+credential*
+id_dsa
+id_dsa.pub
+id_ecdsa
+id_ecdsa.pub
+id_ed25519
+id_ed25519.pub
+id_rsa
+id_rsa.pub
+known_hosts
+local-*
+local.*
+local_*
+passwd
+private*
+pwd
+secret*
+settings.local.*
+ssh_config
+ssh_known_hosts
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Application Secrets
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/config/credentials.*
+**/config/secrets.*
+**/keys/
+**/passwords/
+**/private/
+**/secrets/
+
+.config
+.config.*
+.local
+.local.*
+.secret
+.secret.*
+.secrets
+.secrets.*
+
+*_tokens
+*password*
+
+apikeys.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+connectionstrings.config
+database.ini
+database.yml
+dbconfig.xml
+tokens.*
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Dev Configuration
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/config/development.*
+**/config/local.*
+**/config/staging.*
+**/config/test.*
+**/settings/development.*
+**/settings/local.*
+**/settings/staging.*
+**/settings/test.*
+
+docker-compose.dev.yml
+docker-compose.local.yml
+docker-compose.override.yml
+docker-compose.test.yml
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# Database & Storage
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+**/backups/
+**/dumps/
+**/exports/
+
+*.backup
+*.bak
+*.db
+*.db-journal
+*.dump
+*.sql
+*.sql.bz2
+*.sql.gz
+*.sql.xz
+*.sqlite
