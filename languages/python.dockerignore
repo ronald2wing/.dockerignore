@@ -31,7 +31,7 @@ MANIFEST
 
 *$py.class
 *.egg
-*.egg-info/
+**/*.egg-info/
 *.manifest
 *.mo
 *.pot
@@ -66,12 +66,12 @@ pip-delete-this-directory.txt
 **/__pypackages__/
 **/ENV/
 **/env/
-**/env.bak/
+**/env.*/
 **/venv/
-**/venv.bak/
+**/venv.*/
+**/.venv/
+**/.venv.*/
 **/virtualenv/
-
-.venv/
 
 # ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 # Logs & Debug
